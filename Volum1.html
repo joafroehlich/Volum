@@ -1,0 +1,1665 @@
+<!DOCTYPE html>
+<html lang="de"><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volumen</title>
+  
+</head>
+<body style="background-color: #B9D1EA;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+<p class="Text1">Wie löse ich Matheaufgaben?</p>
+<p class="Text1">Volumen</p>    
+        
+<!--//Aufgabe 1-->
+
+<pre><p class="Aufgabe"><strong>Aufgabe 1
+
+Welches Volumen V und welche Oberfläche O hat 
+ein Würfel mit der Seitenlänge a = 3 cm? </strong>
+
+<button  onclick="window.open('Volum_Aufgabe1.html');" >Lösung</button></p></pre>
+
+
+<!--//Aufgabe 2-->
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 2
+
+Welche Seitenlänge a hat ein Würfel 
+a) mit dem Volumen V = 64 cm<sup>3</sup>?
+b) mit der Oberfläche = 150 cm<sup>2</sup>?  </strong>
+
+b) a = <input type="text" id="Eintrag2" maxlength="1" size="1" style= background-color:yellow ></input> cm <button id="Pruef2" onclick="Aufgabe2()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe2() { 
+                                                
+                          if (Eintrag2.value=="5") {alert("Richtig"); document.getElementById("Pruef2").disabled= true;
+                          }  
+                           
+                          else if (Eintrag2.value!=="5" && Eintrag2.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag2").value="5"; window.open('Volum_Aufgabe2.html');           
+                          document.getElementById("Pruef2").disabled= true;}
+                               
+                          else if (Eintrag2.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+
+        <!--//Aufgabe 3-->                  
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 3
+
+Ein Prisma hat einen Umfang U der Grundfläche von 56,8 dm,
+eine Höhe h von 9,5 dm und eine Grundfläche G von 94,5 dm<sup>2</sup>.
+Wie groß sind die Mantelfläche M und die Oberfläche O? </strong>
+
+<button  onclick="window.open('Volum_Aufgabe3.html');">Lösung</button></p></pre>
+
+<!--//Aufgabe 4-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 4
+
+Ein Prisma hat eine Grundfläche G von 63,8 cm<sup>2</sup>, 
+eine Höhe h von 22,5 cm und eine Mantelfläche M 
+von 518,75 cm<sup>2</sup>. Wie groß sind die Oberfläche O 
+und der Umfang U der Grundfläche?   </strong>
+
+U = <input type="text" id="Eintrag4" maxlength="5" size="2" style= background-color:yellow ></input> cm <button id="Pruef4" onclick="Aufgabe4()">Prüfen</button></p><nobr>
+</pre>
+ 
+                      <script>
+                        function Aufgabe4() { 
+                                                
+                          if (Eintrag4.value=="23,06") {alert("Richtig"); document.getElementById("Pruef4").disabled= true;
+                          }  
+                           
+                          else if (Eintrag4.value!=="23,06" && Eintrag4.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag4").value="23,06"; window.open('Volum_Aufgabe4.html');           
+                          document.getElementById("Pruef4").disabled= true;}
+                               
+                          else if (Eintrag4.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+ <!--//Aufgabe 5-->  
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 5
+
+Ein Prisma hat eine Oberfläche O von 54,63 cm<sup>2</sup>, 
+eine Mantelfläche M von 36,83 cm<sup>2</sup> und einen 
+Umfang U der Grundfläche von 6,35 cm. 
+Wie groß sind die Grundläche G und die Höhe h?   </strong>  
+
+<button  onclick="window.open('Volum_Aufgabe5.html');">Lösung</button></p></pre>
+
+<!--//Aufgabe 6-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 6
+
+Ein Prisma hat eine Oberfläche O von 1225 cm<sup>2</sup>, 
+eine Höhe h von 23 cm und einen Umfang U der 
+Grundfläche von 42 cm. Wie groß sind die 
+Grundläche G und die Mantelfläche M? </strong>  
+
+M = <input type="text" id="Eintrag6" maxlength="3" size="1" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef6" onclick="Aufgabe6()">Prüfen</button>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe6() { 
+                                                
+                          if (Eintrag6.value=="966") {alert("Richtig"); document.getElementById("Pruef6").disabled= true;
+                          }  
+                           
+                          else if (Eintrag6.value!=="966" && Eintrag6.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag6").value="966"; window.open('Volum_Aufgabe6.html');           
+                          document.getElementById("Pruef6").disabled= true;}
+                               
+                          else if (Eintrag6.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+  <!--//Aufgabe 7-->   
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 7</nobr>
+
+Berechnen Sie das Volumen V des dargestellten Prismas.  </strong>
+
+<img src="Aufgabe7.jpg" >
+
+<button  onclick="window.open('Volum_Aufgabe7.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 8-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 8
+
+Berechnen Sie das Volumen V des dargestellten Prismas. </strong>
+
+<img src="Aufgabe8.jpg" >
+
+V = <input type="text" id="Eintrag8" maxlength="4" size="1" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef8" onclick="Aufgabe8()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe8() { 
+                                                
+                          if (Eintrag8.value=="4368") {alert("Richtig"); document.getElementById("Pruef8").disabled= true;
+                          }  
+                           
+                          else if (Eintrag8.value!=="4368" && Eintrag8.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag8").value="4368"; window.open('Volum_Aufgabe8.html');           
+                          document.getElementById("Pruef8").disabled= true;}
+                               
+                          else if (Eintrag8.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+  <!--//Aufgabe 9-->   
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 9
+
+Berechnen Sie die Höhe h eines Prismas mit dem Volumen 
+V = 180,7 dm<sup>3</sup> und einer Grundfläche G = 27,8 dm<sup>2</sup>. </strong> 
+
+<button  onclick="window.open('Volum_Aufgabe9.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 10-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 10
+
+Berechnen Sie das Volumen V eines Prismas (Quaders) 
+mit der Länge a = 4 cm, der Breite b = 3 cm und 
+der Höhe h = 70 mm. </strong>
+
+V = <input type="text" id="Eintrag10" maxlength="2" size="1" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef10" onclick="Aufgabe10()">Prüfen</button></p></pre>
+   
+                      <script>
+                        function Aufgabe10() { 
+                                                
+                          if (Eintrag10.value=="84") {alert("Richtig"); document.getElementById("Pruef10").disabled= true;
+                          }  
+                           
+                          else if (Eintrag10.value!=="84" && Eintrag10.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag10").value="84"; window.open('Volum_Aufgabe10.html');           
+                          document.getElementById("Pruef10").disabled= true;}
+                               
+                          else if (Eintrag10.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                                   
+
+ <!--//Aufgabe 11-->   
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 11
+
+Berechnen Sie das Volumen V eines Prismas (Quaders) 
+mit der Länge a = 15 cm, der Breite b = 85 cm und 
+der Höhe h = 9 dm.</strong> 
+
+<button  onclick="window.open('Volum_Aufgabe11.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 12-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 12
+
+Berechnen Sie das Volumen V eines Prismas (Quaders)
+mit der Länge a = 2,7 dm, der Breite b = 9,3 cm und 
+der Höhe h = 85 mm.    </strong>
+
+V = <input type="text" id="Eintrag12" maxlength="7" size="3" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef12" onclick="Aufgabe12()">Prüfen</button></p></pre>
+    
+                      <script>
+                        function Aufgabe12() { 
+                                                
+                          if (Eintrag12.value=="2134,35") {alert("Richtig"); document.getElementById("Pruef12").disabled= true;
+                          }  
+                           
+                          else if (Eintrag12.value!=="2134,35" && Eintrag12.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag12").value="2134,35"; window.open('Volum_Aufgabe12.html');           
+                          document.getElementById("Pruef12").disabled= true;}
+                               
+                          else if (Eintrag12.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+              
+    <!--//Aufgabe 13--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 13</nobr>
+
+Berechnen Sie das Volumen V eines Dreieckprismas 
+mit der Gesamtlänge l = 5,3 cm, der Grundseite 
+des Dreiecks a = 60 mm und der Höhe des Dreiecks 
+h = 1,7 cm. </strong> 
+
+<button  onclick="window.open('Volum_Aufgabe13.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 14-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 14
+
+Berechnen Sie das Volumen V eines rechtwinkligen 
+Dreieckprismas mit der Gesamtlänge l = 5,3 cm und 
+der Länge der Katheten a = 45 mm und b = 2,5 cm.  </strong>
+
+V = <input type="text" id="Eintrag14" maxlength="6" size="2" style= background-color:yellow ></input> dm<sup>3</sup> <button id="Pruef14" onclick="Aufgabe14()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe14() { 
+                                                
+                          if (Eintrag14.value=="0,0298") {alert("Richtig"); document.getElementById("Pruef14").disabled= true;
+                          }  
+                           
+                          else if (Eintrag14.value!=="0,0298" && Eintrag14.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag14").value="0,0298"; window.open('Volum_Aufgabe14.html');           
+                          document.getElementById("Pruef14").disabled= true;}
+                               
+                          else if (Eintrag14.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+     <!--//Aufgabe 15--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 15
+
+Berechnen Sie die Oberfläche O eines rechtwinkligen 
+Dreieckprismas mit der Gesamtlänge l = 4 cm und der 
+Länge der Katheten a und b = 2,5 cm. </strong> 
+
+<button  onclick="window.open('Volum_Aufgabe15.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 16-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 16
+
+Berechnen Sie das Volumen V des dargestellten Körpers.  </strong>
+
+<img src="Aufgabe16.jpg" > 
+
+V = <input type="text" id="Eintrag16" maxlength="3" size="1" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef16" onclick="Aufgabe16()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe16() { 
+                                                
+                          if (Eintrag16.value=="372") {alert("Richtig"); document.getElementById("Pruef16").disabled= true;
+                          }  
+                           
+                          else if (Eintrag16.value!=="372" && Eintrag16.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag16").value="372"; window.open('Volum_Aufgabe16.html');           
+                          document.getElementById("Pruef16").disabled= true;}
+                               
+                          else if (Eintrag16.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 17--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 17
+
+Berechnen Sie das Volumen V des dargestellten Körpers.</strong>  
+
+<img src="Aufgabe17.jpg" > 
+
+<button  onclick="window.open('Volum_Aufgabe17.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 18-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 18
+
+Berechnen Sie das Volumen V des dargestellten Körpers.  </strong>
+
+<img src="Aufgabe18.jpg" > 
+
+V = <input type="text" id="Eintrag18" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef18" onclick="Aufgabe18()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe18() { 
+                                                
+                          if (Eintrag18.value=="484,2") {alert("Richtig"); document.getElementById("Pruef18").disabled= true;
+                          }  
+                           
+                          else if (Eintrag18.value!=="484,2" && Eintrag18.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag18").value="484,2"; window.open('Volum_Aufgabe18.html');           
+                          document.getElementById("Pruef18").disabled= true;}
+                               
+                          else if (Eintrag18.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 19--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 19
+
+Berechnen Sie das Volumen V des dargestellten Körpers.    </strong> 
+
+<img src="Aufgabe19.jpg" > 
+
+<button  onclick="window.open('Volum_Aufgabe19.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 20-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 20
+
+Berechnen Sie das Volumen V des dargestellten Körpers.  </strong>
+
+<img src="Aufgabe20.jpg" > 
+
+V = <input type="text" id="Eintrag20" maxlength="4" size="1" style= background-color:yellow ></input> dm<sup>3</sup> <button id="Pruef20" onclick="Aufgabe20()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe20() { 
+                                                
+                          if (Eintrag20.value=="0,32") {alert("Richtig"); document.getElementById("Pruef20").disabled= true;
+                          }  
+                           
+                          else if (Eintrag20.value!=="0,32" && Eintrag20.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag20").value="0,32"; window.open('Volum_Aufgabe20.html');           
+                          document.getElementById("Pruef20").disabled= true;}
+                               
+                          else if (Eintrag20.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+         <!--//Aufgabe 21--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 21
+
+Berechnen Sie das Volumen V des dargestellten Körpers. </strong> 
+
+<img src="Aufgabe21.jpg" > 
+
+<button onclick="window.open('Volum_Aufgabe21.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 22-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 22
+
+Ein Zylinder hat einen Radius r von 2 m und eine 
+Höhe h von 3 cm. Wie groß ist sein Volumen V?  </strong>
+
+V = <input type="text" id="Eintrag22" maxlength="6" size="2" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef22" onclick="Aufgabe22()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe22() { 
+                                                
+                          if (Eintrag22.value=="376800") {alert("Richtig"); document.getElementById("Pruef22").disabled= true;
+                          }  
+                           
+                          else if (Eintrag22.value!=="376800" && Eintrag22.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag22").value="376800"; window.open('Volum_Aufgabe22.html');           
+                          document.getElementById("Pruef22").disabled= true;}
+                               
+                          else if (Eintrag22.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+             <!--//Aufgabe 23--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 23
+
+Ein Zylinder hat einen Durchmesser d von 4,8 cm und 
+eine Höhe h von 5 cm. Wie groß ist sein Volumen V? </strong> 
+
+<button  onclick="window.open('Volum_Aufgabe23.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 24-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 24
+
+Ein Zylinder hat einen Grundfläche G von 70 cm² 
+und eine Höhe h von 8 cm. Wie groß ist 
+a) sein Durchmesser d, 
+b) sein Volumen V? </strong>
+
+d = <input type="text" id="Eintrag24" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef24" onclick="Aufgabe24()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe24() { 
+                                                
+                          if (Eintrag24.value=="9,4") {alert("Richtig"); document.getElementById("Pruef24").disabled= true;
+                          }  
+                           
+                          else if (Eintrag24.value!=="9,4" && Eintrag24.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag24").value="9,4"; window.open('Volum_Aufgabe24.html');           
+                          document.getElementById("Pruef24").disabled= true;}
+                               
+                          else if (Eintrag24.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+   <!--//Aufgabe 25--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 25
+
+Berechnen Sie das Volumen V des dargestellten Körpers. </strong> 
+
+<img src="Aufgabe25.jpg" > 
+
+<button  onclick="window.open('Volum_Aufgabe25.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 26-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 26
+
+Berechnen Sie das Volumen V des dargestellten Körpers.  </strong>
+
+<img src="Aufgabe26.jpg" >
+
+V = <input type="text" id="Eintrag26" maxlength="6" size="2" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef26" onclick="Aufgabe26()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe26() { 
+                                                
+                          if (Eintrag26.value=="659400") {alert("Richtig"); document.getElementById("Pruef26").disabled= true;
+                          }  
+                           
+                          else if (Eintrag26.value!=="659400" && Eintrag26.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag26").value="659400"; window.open('Volum_Aufgabe26.html');           
+                          document.getElementById("Pruef26").disabled= true;}
+                               
+                          else if (Eintrag26.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                   
+                      
+     <!--//Aufgabe 27--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 27</nobr>
+
+Berechnen Sie das Volumen V und die 
+Oberfläche O des dargestellten Körpers. </strong> 
+
+<img src="Aufgabe27.jpg" >
+
+<button  onclick="window.open('Volum_Aufgabe27.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 28-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 28
+
+Berechnen Sie das Volumen V des dargestellten Körpers. </strong>
+
+<img src="Aufgabe28.jpg">
+
+V = <input type="text" id="Eintrag28" maxlength="6" size="2" style= background-color:yellow ></input> mm<sup>3</sup> <button id="Pruef28" onclick="Aufgabe28()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe28() { 
+                                                
+                          if (Eintrag28.value=="3268,3") {alert("Richtig"); document.getElementById("Pruef28").disabled= true;
+                          }  
+                           
+                          else if (Eintrag28.value!=="3268,3" && Eintrag28.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag28").value="3268,3"; window.open('Volum_Aufgabe28.html');           
+                          document.getElementById("Pruef28").disabled= true;}
+                               
+                          else if (Eintrag28.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 29--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 29
+
+Berechnen Sie die Oberfläche O eines quadratischen 
+Prismas mit einer Grundfläche G = 25 cm<sup>2</sup> und einer 
+Länge l von 13 cm.</strong> 
+
+<button  onclick="window.open('Volum_Aufgabe29.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 30-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 30
+
+Ein Würfel hat eine Gesamtseitenlänge L von 72 cm.
+Wie groß sind sein Volumen V und seine Oberfläche O? </strong>
+
+V = <input type="text" id="Eintrag30" maxlength="3" size="1" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef30" onclick="Aufgabe30()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe30() { 
+                                                
+                          if (Eintrag30.value=="216") {alert("Richtig"); document.getElementById("Pruef30").disabled= true;
+                          }  
+                           
+                          else if (Eintrag30.value!=="216" && Eintrag30.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag30").value="216"; window.open('Volum_Aufgabe30.html');           
+                          document.getElementById("Pruef30").disabled= true;}
+                               
+                          else if (Eintrag30.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                      
+                      
+       <!--//Aufgabe 31--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 31
+
+Ein Prisma hat eine quadratische Grundfläche 
+mit einem Umfang von 12 cm und einer Höhe 
+von 8 cm. Wie groß sind sein Volumen V und 
+seine Oberfläche O? </strong> 
+
+<button  onclick="window.open('Volum_Aufgabe31.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 32-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 32
+
+Berechnen Sie die Masse m eines Zylinders 
+mit r = 2 cm,h = 15 cm und ρ = 7,85 g/cm<sup>3</sup>.       </strong>
+
+m = <input type="text" id="Eintrag32" maxlength="6" size="2" style= background-color:yellow ></input> g <button id="Pruef32" onclick="Aufgabe32()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe32() { 
+                                                
+                          if (Eintrag32.value=="1478,9") {alert("Richtig"); document.getElementById("Pruef32").disabled= true;
+                          }  
+                           
+                          else if (Eintrag32.value!=="1478,9" && Eintrag32.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag32").value="1478,9"; window.open('Volum_Aufgabe32.html');           
+                          document.getElementById("Pruef32").disabled= true;}
+                               
+                          else if (Eintrag32.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>  
+                      
+       <!--//Aufgabe 33--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 33
+
+Berechnen Sie die Masse m eines Zylinders 
+mit r = 7,5 cm, h = 65 cm und ρ = 2,7 kg/dm<sup>3</sup>.     </strong> 
+
+<button  onclick="window.open('Volum_Aufgabe33.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 34-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 34
+
+Berechnen Sie die Masse m eines Zylinders 
+mit d = 12 mm,h = 27 mm und ρ = 10,5 kg/dm<sup>3</sup>.         </strong>
+
+m = <input type="text" id="Eintrag34" maxlength="5" size="2" style= background-color:yellow ></input> kg <button id="Pruef34" onclick="Aufgabe34()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe34() { 
+                                                
+                          if (Eintrag34.value=="0,032") {alert("Richtig"); document.getElementById("Pruef34").disabled= true;
+                          }  
+                           
+                          else if (Eintrag34.value!=="0,032" && Eintrag34.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag34").value="0,032"; window.open('Volum_Aufgabe34.html');           
+                          document.getElementById("Pruef34").disabled= true;}
+                               
+                          else if (Eintrag34.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 35--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 35
+
+Berechnen Sie die Masse m eines Zylinders mit 
+d = 1,4 m,h = 8,6 m und ρ = 2,4 t/m<sup>3</sup>. </strong> 
+
+<button  onclick="window.open('Volum_Aufgabe35.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 36-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 36
+
+Ein Zylinder hat ein Volumen V von 200 cm<sup>3</sup> und 
+eine Höhe h von 5 cm. Wie groß ist sein Radius r?   </strong>
+
+r = <input type="text" id="Eintrag36" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef36" onclick="Aufgabe36()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe36() { 
+                                                
+                          if (Eintrag36.value=="3,57") {alert("Richtig"); document.getElementById("Pruef36").disabled= true;
+                          }  
+                           
+                          else if (Eintrag36.value!=="3,57" && Eintrag36.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag36").value="3,57"; window.open('Volum_Aufgabe36.html');           
+                          document.getElementById("Pruef36").disabled= true;}
+                               
+                          else if (Eintrag36.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 37--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 37
+
+Ein Zylinder hat ein Volumen V von 176 cm<sup>3</sup> und einen 
+Radius r von 4,5 cm. Wie groß ist seine Höhe h?   </strong> 
+
+<button  onclick="window.open('Volum_Aufgabe37.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 38-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 38
+
+Ein Zylinder hat eine Mantelfläche M von 83,9 cm<sup>2</sup> 
+und einen Radius r von 3,8 cm. Wie groß sind seine 
+Höhe h und sein Volumen V?  </strong>
+
+h = <input type="text" id="Eintrag38" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef38" onclick="Aufgabe38()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe38() { 
+                                                
+                          if (Eintrag38.value=="3,5") {alert("Richtig"); document.getElementById("Pruef38").disabled= true;
+                          }  
+                           
+                          else if (Eintrag38.value!=="3,5" && Eintrag38.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag38").value="3,5"; window.open('Volum_Aufgabe38.html');           
+                          document.getElementById("Pruef38").disabled= true;}
+                               
+                          else if (Eintrag38.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>  
+                      
+       <!--//Aufgabe 39--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 39
+
+Ein Zylinder hat eine Mantelfläche M von 246,8 cm² 
+und eine Höhe h von 27 cm. Wie groß sind seine 
+Oberfläche O und sein Volumen V?  </strong>
+
+<button  onclick="window.open('Volum_Aufgabe39.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 40-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 40
+
+Berechnen Sie das Volumen V und die Oberfläche O 
+des dargestellten Körpers.   </strong>
+
+<img src="Aufgabe40.jpg">
+
+V = <input type="text" id="Eintrag40" maxlength="6" size="2" style= background-color:yellow ></input> mm<sup>3</sup> <button id="Pruef40" onclick="Aufgabe40()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe40() { 
+                                                
+                          if (Eintrag40.value=="1226,1") {alert("Richtig"); document.getElementById("Pruef40").disabled= true;
+                          }  
+                           
+                          else if (Eintrag40.value!=="1226,1" && Eintrag40.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag40").value="1226,1"; window.open('Volum_Aufgabe40.html');           
+                          document.getElementById("Pruef40").disabled= true;}
+                               
+                          else if (Eintrag40.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 41--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 41</nobr>
+
+Berechnen Sie das Volumen V und die Oberfläche O 
+des dargestellten Körpers. </strong> 
+
+<img src="Aufgabe41.jpg"> 
+
+<button  onclick="window.open('Volum_Aufgabe41.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 42-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 42
+
+Berechnen Sie die Masse m des Körpers mit einer 
+Dichte ρ von 8,9 g/cm<sup>3</sup>. </strong>
+
+<img src="Aufgabe42.jpg">
+
+m = <input type="text" id="Eintrag42" maxlength="5" size="2" style= background-color:yellow > g <button id="Pruef42" onclick="Aufgabe42()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe42() { 
+                                                
+                          if (Eintrag42.value=="133,4") {alert("Richtig"); document.getElementById("Pruef42").disabled= true;
+                          }  
+                           
+                          else if (Eintrag42.value!=="133,4" && Eintrag42.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag42").value="133,4"; window.open('Volum_Aufgabe42.html');           
+                          document.getElementById("Pruef42").disabled= true;}
+                               
+                          else if (Eintrag42.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 43--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 43
+
+Berechnen Sie die Masse m des Körpers mit einer 
+Dichte ρ von 2,7 kg/dm<sup>3</sup>. </strong> 
+
+<img src="Aufgabe43.jpg">
+
+<button  onclick="window.open('Volum_Aufgabe43.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 44-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 44
+
+Berechnen Sie die Masse m des Körpers mit einer 
+Dichte ρ von 7,8 g/cm<sup>3</sup>.    </strong>
+
+<img src="Aufgabe44.jpg">
+
+m = <input type="text" id="Eintrag44" maxlength="4" size="1" style= background-color:yellow ></input> g <button id="Pruef44" onclick="Aufgabe44()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe44() { 
+                                                
+                          if (Eintrag44.value=="56,7") {alert("Richtig"); document.getElementById("Pruef44").disabled= true;
+                          }  
+                           
+                          else if (Eintrag44.value!=="56,7" && Eintrag44.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag44").value="56,7"; window.open('Volum_Aufgabe44.html');           
+                          document.getElementById("Pruef44").disabled= true;}
+                               
+                          else if (Eintrag44.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+        <!--//Aufgabe 45--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 45
+
+Ein Zylinder hat einen Radius r von 4 cm und 
+eine Höhe h von 6 cm. 
+Wie groß ist seine Oberfläche O?  </strong> 
+
+<button  onclick="window.open('Volum_Aufgabe45.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 46-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 46
+
+Ein Zylinder hat ein Volumen V von 17 cm<sup>3</sup> und 
+einen Radius r von 2 cm. Wie groß sind seine 
+Oberfläche O und seine Mantelfläche M?    </strong>
+
+M = <input type="text" id="Eintrag46" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef46" onclick="Aufgabe46()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe46() { 
+                                                
+                          if (Eintrag46.value=="16,96") {alert("Richtig"); document.getElementById("Pruef46").disabled= true;
+                          }  
+                           
+                          else if (Eintrag46.value!=="16,96" && Eintrag46.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag46").value="16,96"; window.open('Volum_Aufgabe46.html');           
+                          document.getElementById("Pruef46").disabled= true;}
+                               
+                          else if (Eintrag46.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 47--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 47
+
+Ein Zylinder hat ein Volumen V von 70 cm<sup>3</sup> und 
+eine Höhe h von 5 cm. Wie groß sind seine 
+Oberfläche O und seine Mantelfläche M?   </strong> 
+
+<button  onclick="window.open('Volum_Aufgabe47.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 48-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 48
+
+Ein Zylinder hat eine Oberfläche O von 91 m<sup>2</sup> und 
+einen Radius r von 3 m. Wie groß sind seine 
+Mantelfläche M und sein Volumen V?  </strong>
+
+V = <input type="text" id="Eintrag48" maxlength="4" size="1" style= background-color:yellow ></input> m<sup>3</sup> <button id="Pruef48" onclick="Aufgabe48()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe48() { 
+                                                
+                          if (Eintrag48.value=="51,7") {alert("Richtig"); document.getElementById("Pruef48").disabled= true;
+                          }  
+                           
+                          else if (Eintrag48.value!=="51,7" && Eintrag48.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag48").value="51,7"; window.open('Volum_Aufgabe48.html');           
+                          document.getElementById("Pruef48").disabled= true;}
+                               
+                          else if (Eintrag48.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 49--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 49
+
+Berechnen Sie das Volumen V und die Oberfläche O 
+des dargestellten Körpers.  </strong> 
+
+<img src="Aufgabe49.jpg">
+
+<button  onclick="window.open('Volum_Aufgabe49.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 50-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 50
+
+Berechnen Sie das Volumen V und die Oberfläche O 
+des dargestellten Körpers.    </strong>
+
+<img src="Aufgabe50.jpg">
+
+O = <input type="text" id="Eintrag50" maxlength="6" size="2" style= background-color:yellow ></input> mm<sup>2</sup> <button id="Pruef50" onclick="Aufgabe50()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe50() { 
+                                                
+                          if (Eintrag50.value=="1430,8") {alert("Richtig"); document.getElementById("Pruef50").disabled= true;
+                          }  
+                           
+                          else if (Eintrag50.value!=="1430,8" && Eintrag50.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag50").value="1430,8"; window.open('Volum_Aufgabe50.html');           
+                          document.getElementById("Pruef50").disabled= true;}
+                               
+                          else if (Eintrag50.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 51--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 51
+
+Berechnen Sie das Volumen V eines Prismas mit einer 
+Höhe h von 5 cm und einem gleichseitigen Dreieck 
+mit einer Seitenlänge a von 4 cm als Grundfläche. </strong> 
+
+<button  onclick="window.open('Volum_Aufgabe51.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 52-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 52
+
+Berechnen Sie das Volumen V eines Prismas mit einer 
+Höhe h von 5 cm und einem regelmäßigen Sechseck mit 
+einer Seitenlänge a von 3 cm als Grundfläche.  </strong>
+
+V = <input type="text" id="Eintrag52" maxlength="3" size="1" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef52" onclick="Aufgabe52()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe52() { 
+                                                
+                          if (Eintrag52.value=="117") {alert("Richtig"); document.getElementById("Pruef52").disabled= true;
+                          }  
+                           
+                          else if (Eintrag52.value!=="117" && Eintrag52.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag52").value="117"; window.open('Volum_Aufgabe52.html');           
+                          document.getElementById("Pruef52").disabled= true;}
+                               
+                          else if (Eintrag52.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 53--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 53
+
+Berechnen Sie das Volumen V eines Prismas mit einer 
+Höhe h von 5 cm und einem regelmäßigen Achteck mit 
+einer Seitenlänge a von 2,5 cm als Grundfläche.  </strong> 
+
+<button  onclick="window.open('Volum_Aufgabe53.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 54-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 54
+
+Berechnen Sie das Volumen V eines Prismas mit einer 
+Höhe h von 5 cm und einem regelmäßigen Fünfeck mit 
+einer Seitenlänge a von 3,2 cm als Grundfläche.    </strong>
+
+V = <input type="text" id="Eintrag54" maxlength="2" size="1" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef54" onclick="Aufgabe54()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe54() { 
+                                                
+                          if (Eintrag54.value=="88") {alert("Richtig"); document.getElementById("Pruef54").disabled= true;
+                          }  
+                           
+                          else if (Eintrag54.value!=="88" && Eintrag54.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag54").value="88"; window.open('Volum_Aufgabe54.html');           
+                          document.getElementById("Pruef54").disabled= true;}
+                               
+                          else if (Eintrag54.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 55--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 55
+
+Berechnen Sie das Volumen V und die Oberfläche O 
+des dargestellten Prismas.   </strong> 
+
+<img src="Aufgabe55.jpg" >
+
+<button  onclick="window.open('Volum_Aufgabe55.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 56-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 56
+
+Berechnen Sie das Volumen V und die Oberfläche O 
+des dargestellten Körpers.  </strong>
+
+<img src="Aufgabe56.jpg" > 
+
+O = <input type="text" id="Eintrag56" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef56" onclick="Aufgabe56()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe56() { 
+                                                
+                          if (Eintrag56.value=="130,3") {alert("Richtig"); document.getElementById("Pruef56").disabled= true;
+                          }  
+                           
+                          else if (Eintrag56.value!=="130,3" && Eintrag56.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag56").value="130,3"; window.open('Volum_Aufgabe56.html');           
+                          document.getElementById("Pruef56").disabled= true;}
+                               
+                          else if (Eintrag56.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+ <!--//Aufgabe 57-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 57
+
+Ein Zylinder hat einen Umfang U von 46,8 cm und 
+eine Höheh von 12,3 cm. Wie groß sind seine 
+Oberfläche O und seine Mantelfläche M? </strong> 
+
+<button  onclick="window.open('Volum_Aufgabe57.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 58-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 58
+
+Ein Zylinder hat ein Volumen V von 15,7 dm<sup>3</sup>. 
+Seine Höhe h und der Radius r stehen im 
+Verhältnis 5 : 2. Wie groß sind seine 
+Höhe h und seine Oberfläche O?</strong>
+
+h = <input type="text" id="Eintrag58" maxlength="3" size="1" style= background-color:yellow ></input> dm <button id="Pruef58" onclick="Aufgabe58()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe58() { 
+                                                
+                          if (Eintrag58.value=="3,4") {alert("Richtig"); document.getElementById("Pruef58").disabled= true;
+                          }  
+                           
+                          else if (Eintrag58.value!=="3,4" && Eintrag58.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag58").value="3,4"; window.open('Volum_Aufgabe58.html');           
+                          document.getElementById("Pruef58").disabled= true;}
+                               
+                          else if (Eintrag58.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 59-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 59
+
+Ein Zylinder hat eine Oberfläche O von 356 cm<sup>3</sup>. 
+Seine Höhe h und der Radius r stehen im 
+Verhältnis 5 : 3. Wie groß ist sein Volumen V?  </strong> 
+
+<button  onclick="window.open('Volum_Aufgabe59.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 60-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 60
+
+Ein Würfel hat eine Masse von 655 g und eine 
+Dichte von 7,85 g/cm<sup>3</sup>. Wie groß ist eine Seite a? </strong>
+
+a = <input type="text" id="Eintrag60" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef60" onclick="Aufgabe60()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe60() { 
+                                                
+                          if (Eintrag60.value=="4,37") {alert("Richtig"); document.getElementById("Pruef60").disabled= true;
+                          }  
+                           
+                          else if (Eintrag60.value!=="4,37" && Eintrag60.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag60").value="4,37"; window.open('Volum_Aufgabe60.html');           
+                          document.getElementById("Pruef60").disabled= true;}
+                               
+                          else if (Eintrag60.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 61-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 61
+
+Wie groß ist die Masse m des dargestellten Körpers, 
+wenn seine Dichte 7,1 g/cm<sup>3</sup> beträgt?   </strong> 
+
+<img src="Aufgabe61.jpg" > 
+
+<button  onclick="window.open('Volum_Aufgabe61.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 62-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 62
+
+Berechnen Sie das Volumen V und die Oberfläche O des
+dargestellten symmetrischen Körpers. Alle Maße in mm.   </strong>
+
+<img src="Aufgabe62.jpg" > 
+
+O = <input type="text" id="Eintrag62" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef62" onclick="Aufgabe62()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe62() { 
+                                                
+                          if (Eintrag62.value=="108,6") {alert("Richtig"); document.getElementById("Pruef62").disabled= true;
+                          }  
+                           
+                          else if (Eintrag62.value!=="108,6" && Eintrag62.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag62").value="108,6"; window.open('Volum_Aufgabe62.html');           
+                          document.getElementById("Pruef62").disabled= true;}
+                               
+                          else if (Eintrag62.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 63-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 63
+
+Die Seiten eines Rechteckprismas (Quaders) verhalten 
+sichwie a : b : c = 1 : 3 : 5.. Wie groß sind sein 
+Volumen V und seine Oberfläche O, wenn b = 18 cm lang ist?   </strong> 
+
+<button  onclick="window.open('Volum_Aufgabe63.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 64-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 64
+
+Ein Quader hat eine Seite mit 5 cm und eine andere 
+mit 2 cm. Wie groß muss die dritte Seite c sein, 
+wenn die Oberfläche des Quaders gleich groß sein 
+soll wie die Oberfläche eines Würfels mit einer 
+Seitenlänge von 5 cm?   </strong>
+
+Sie muss <input type="text" id="Eintrag64" maxlength="3" size="1" style= background-color:yellow ></input> cm lang sein. <button id="Pruef64" onclick="Aufgabe64()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe64() { 
+                                                
+                          if (Eintrag64.value=="9,3(") {alert("Richtig"); document.getElementById("Pruef64").disabled= true;
+                          }  
+                           
+                          else if (Eintrag64.value!=="9,3" && Eintrag64.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag64").value="9,3"; window.open('Volum_Aufgabe64.html');           
+                          document.getElementById("Pruef64").disabled= true;}
+                               
+                          else if (Eintrag64.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 65-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 65
+
+Ein quadratisches Prisma hat eine Seite von 36 cm 
+und eine Länge von 62 cm. Ein Rechteckprisma soll 
+gleiches Volumen und gleiche Länge haben. Wie lang 
+ist die andere Rechteckseite, wenn die eine 5,5 cm 
+lang ist?   </strong> 
+
+<button  onclick="window.open('Volum_Aufgabe65.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 66-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 66
+
+Rechteckprisma hat die Maße 28 mm x 24 mm x 140 mm. 
+Ein quadratisches Prisma soll gleiches Volumen und 
+gleiche Länge haben. Wie lang ist eine Quadratseite?       </strong>
+
+Sie ist <input type="text" id="Eintrag66" maxlength="4" size="1" style= background-color:yellow ></input> cm lang. <button id="Pruef66" onclick="Aufgabe66()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe66() { 
+                                                
+                          if (Eintrag66.value=="25,9") {alert("Richtig"); document.getElementById("Pruef66").disabled= true;
+                          }  
+                           
+                          else if (Eintrag66.value!=="25,9" && Eintrag66.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag66").value="25,9"; window.open('Volum_Aufgabe66.html');           
+                          document.getElementById("Pruef66").disabled= true;}
+                               
+                          else if (Eintrag66.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 67-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 67
+
+Ein regelmäßiges dreiseitiges Prisma hat eine 
+Oberfläche O von 20 cm² und eine Seitenlänge a 
+von 2 cm. Wie groß ist seine Länge l?   </strong> 
+
+<button  onclick="window.open('Volum_Aufgabe67.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 68-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 68
+
+Ein Zylinder hat ein Volumen V von 100 cm³ und 
+eine Höhe h von 5 cm. 
+Wie groß ist sein Durchmesser d?  </strong>
+
+d = <input type="text" id="Eintrag68" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef68" onclick="Aufgabe68()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe68() { 
+                                                
+                          if (Eintrag68.value=="5,05") {alert("Richtig"); document.getElementById("Pruef68").disabled= true;
+                          }  
+                           
+                          else if (Eintrag68.value!=="5,05" && Eintrag68.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag68").value="5,05"; window.open('Volum_Aufgabe68.html');           
+                          document.getElementById("Pruef68").disabled= true;}
+                               
+                          else if (Eintrag68.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 69-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 69
+
+Ein Zylinder wird in der Mitte der Länge nach 
+durchgeschnitten. Die Schnittfläche ist ein 
+Quadrat mit der Seite a = 4 cm. 
+Wie groß sind das Volumen V und die Oberfläche O 
+des Zylinders?  </strong> 
+
+<button  onclick="window.open('Volum_Aufgabe69.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 70-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 70
+
+Der Radius r und die Höhe h eines Zylinders verhalten 
+sich wie 3 : 5. Wie groß sind das Volumen V und die 
+Mantelfläche M, wenn r = 2 cm?  </strong>
+
+M = <input type="text" id="Eintrag70" maxlength="4" size="1" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef70" onclick="Aufgabe70()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe70() { 
+                                                
+                          if (Eintrag70.value=="41,9") {alert("Richtig"); document.getElementById("Pruef70").disabled= true;
+                          }  
+                           
+                          else if (Eintrag70.value!=="41,9" && Eintrag70.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag70").value="41,9"; window.open('Volum_Aufgabe70.html');           
+                          document.getElementById("Pruef70").disabled= true;}
+                               
+                          else if (Eintrag70.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 71-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 71
+
+Wie groß ist das Volumen V eines Zylinders, 
+wenn seine Mantelfläche M = 100 cm<sup>2</sup> und seine 
+Höhe h = 10 cm betragen?    </strong> 
+
+<button  onclick="window.open('Volum_Aufgabe71.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 72-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 72
+
+Ein Zylinder hat einen Radius r₁ von 5 cm und eine 
+Höhe h<sub>1</sub> von 8 cm. Er soll einem zweiten volumengleich 
+sein, dessen Radius r<sub>2</sub> und Höhe h<sub>2</sub> sich wie 3 : 5 
+verhalten. Wie groß sind r<sub>2</sub> und h<sub>2</sub>?    </strong>
+
+h<sub>2</sub> = <input type="text" id="Eintrag72" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef72" onclick="Aufgabe72()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe72() { 
+                                                
+                          if (Eintrag72.value=="8,2") {alert("Richtig"); document.getElementById("Pruef72").disabled= true;
+                          }  
+                           
+                          else if (Eintrag72.value!=="8,2" && Eintrag72.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag72").value="8,2"; window.open('Volum_Aufgabe72.html');           
+                          document.getElementById("Pruef72").disabled= true;}
+                               
+                          else if (Eintrag72.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 73-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 73
+
+Das Volumen eines Hohlzylinders ist so groß wie 
+sein Innenvolumen. Drücken Sie den Außenradius r<sub>1</sub> 
+durch den Innenradius r<sub>2</sub> aus.    </strong> 
+
+<button  onclick="window.open('Volum_Aufgabe73.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 74-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 74
+
+Das Volumen eines Hohlzylinders ist so groß wie sein 
+Innenvolumen. Drücken Sie die Mantelfläche des 
+Hohlzylinders M<sub>1</sub> durch die Mantelfläche innen M<sub>2</sub> aus.   </strong>
+
+ M<sub>1</sub> = M<sub>2</sub> * (√2 + <input type="text" id="Eintrag74" maxlength="1" size="1" style= background-color:yellow ></input> ) <button id="Pruef74" onclick="Aufgabe74()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe74() { 
+                                                
+                          if (Eintrag74.value=="1") {alert("Richtig"); document.getElementById("Pruef74").disabled= true;
+                          }  
+                           
+                          else if (Eintrag74.value!=="1" && Eintrag74.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag74").value="1"; window.open('Volum_Aufgabe74.html');           
+                          document.getElementById("Pruef74").disabled= true;}
+                               
+                          else if (Eintrag74.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 75-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 75
+
+Ein Hohlzylinder hat ein Volumen V von 20 cm<sup>3</sup>, 
+eine Mantelfläche M von 40 cm<sup>2</sup>² und eine Höhe h 
+von 4 cm. Wie groß sind sein Außenradius r<sub>1</sub> und 
+sein Innenradius r<sub>2</sub>? </strong> 
+
+<button  onclick="window.open('Volum_Aufgabe75.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 76-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 76
+
+Ein Hohlzylinder hat einen Außenradius r<sub>1</sub> von 3 cm 
+und einen Innenradius r<sub>2</sub>₂ von 2 cm. Wie groß ist 
+der Radius r eines Zylinders mit gleichen Volumen und 
+gleicher Höhe? </strong>
+
+r = <input type="text" id="Eintrag76" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef76" onclick="Aufgabe76()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe76() { 
+                                                
+                          if (Eintrag76.value=="2,24") {alert("Richtig"); document.getElementById("Pruef76").disabled= true;
+                          }  
+                           
+                          else if (Eintrag76.value!=="2,24" && Eintrag76.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag76").value="2,24"; window.open('Volum_Aufgabe76.html');           
+                          document.getElementById("Pruef76").disabled= true;}
+                               
+                          else if (Eintrag76.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 77-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 77
+
+Die Radien r<sub>1</sub> und r<sub>2</sub> eines Hohlzylinders verhalten 
+sich wie 4 : 3. Wie groß sind sein Volumen V und die 
+Mantelfläche M, wenn r₁ = 4 cm und die Höhe h = 6 cm?  </strong> 
+
+<button  onclick="window.open('Volum_Aufgabe77.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 78-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 78
+
+Wie groß ist die Höhe h einer Raute, wenn ihre Seiten 8 cm
+lang sind und eine Diagonale 3 cm? </strong>
+
+h = <input type="text" id="Eintrag78" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef78" onclick="Aufgabe78()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe78() { 
+                                                
+                          if (Eintrag78.value=="2,95") {alert("Richtig"); document.getElementById("Pruef78").disabled= true;
+                          }  
+                           
+                          else if (Eintrag78.value!=="2,95" && Eintrag78.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag78").value="2,95"; window.open('Volum_Aufgabe78.html');           
+                          document.getElementById("Pruef78").disabled= true;}
+                               
+                          else if (Eintrag78.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 79-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 79
+
+Wie groß ist die Höhe h einer Raute, wenn ihre Fläche 16 cm²
+beträgt und ihre Seiten 6 cm?   </strong> <button  onclick="window.open('Volum_Aufgabe79.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 80-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 80
+
+Die Diagonalen eines rechteckigen Platzes sind 43 m lang 
+und schließen Winkel von 60° bzw. 120° ein. 
+Wie lang sind die Rechteckseiten?   </strong>
+
+Längere Seite = <input type="text" id="Eintrag80" maxlength="4" size="1" style= background-color:yellow ></input> m. <button id="Pruef80" onclick="Aufgabe80()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe80() { 
+                                                
+                          if (Eintrag80.value=="37,2") {alert("Richtig"); document.getElementById("Pruef80").disabled= true;
+                          }  
+                           
+                          else if (Eintrag80.value!=="37,2" && Eintrag80.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag80").value="37,2"; window.open('Volum_Aufgabe80.html');           
+                          document.getElementById("Pruef80").disabled= true;}
+                               
+                          else if (Eintrag80.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 81-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 81
+
+Wie groß ist die Fläche A des Profilstahls?  </strong> 
+
+<img src="Aufgabe81.jpg" > 
+
+<button  onclick="window.open('Volum_Aufgabe81.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 82-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 82
+
+Aus einem Baumstamm soll ein rechteckiges Kantholz mit den
+Maßen 5 cm und 12 cm hergestellt werden. 
+Welchen Durchmesser d muss der Stamm haben?    </strong>
+
+d = <input type="text" id="Eintrag82" maxlength="2" size="1" style= background-color:yellow ></input> cm <button id="Pruef82" onclick="Aufgabe82()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe82() { 
+                                                
+                          if (Eintrag82.value=="13") {alert("Richtig"); document.getElementById("Pruef82").disabled= true;
+                          }  
+                           
+                          else if (Eintrag82.value!=="13" && Eintrag82.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag82").value="13"; window.open('Volum_Aufgabe82.html');           
+                          document.getElementById("Pruef82").disabled= true;}
+                               
+                          else if (Eintrag82.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 83-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 83
+
+Wie groß ist der Inkreisradius einer Raute, 
+deren Diagonalen 52 mm und 88 mm lang sind?   </strong> <button  onclick="window.open('Volum_Aufgabe83.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 84-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 84
+
+Wie groß sind b, d, l, u und v?    </strong>
+
+<img src="Aufgabe84.jpg" > 
+
+l = <input type="text" id="Eintrag84" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef84" onclick="Aufgabe84()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe84() { 
+                                                
+                          if (Eintrag84.value=="10,7") {alert("Richtig"); document.getElementById("Pruef84").disabled= true;
+                          }  
+                           
+                          else if (Eintrag84.value!=="10,7" && Eintrag84.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag84").value="10,7"; window.open('Volum_Aufgabe84.html');           
+                          document.getElementById("Pruef84").disabled= true;}
+                               
+                          else if (Eintrag84.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 85-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 85</nobr>
+
+Die Basis eines gleichschenkligen Dreiecks ist 6 cm, ein 
+Schenkel 8 cm lang. Wie groß ist seine Fläche A, wenn ein 
+1 cm breiter Streifen parallel zu einem Schenkel 
+abgeschnitten wird?   </strong> <button  onclick="window.open('Volum_Aufgabe85.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 88-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 86
+
+Wie lang ist d?     </strong>
+
+<img src="Aufgabe86.jpg" align="middle"> d = <input type="text" id="Eintrag86" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef86" onclick="Aufgabe86()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe86() { 
+                                                
+                          if (Eintrag86.value=="1,25") {alert("Richtig"); document.getElementById("Pruef86").disabled= true;
+                          }  
+                           
+                          else if (Eintrag86.value!=="1,25" && Eintrag86.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag86").value="1,25"; window.open('Volum_Aufgabe86.html');           
+                          document.getElementById("Pruef86").disabled= true;}
+                               
+                          else if (Eintrag86.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 87-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 87
+
+Wie groß ist die Fläche A des Trapezes?   </strong> 
+
+<img src="Aufgabe87.jpg" align="middle"> <button  onclick="window.open('Volum_Aufgabe87.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 88-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 88
+
+Wie groß muss man h₁ machen, damit das gleichschenklige
+Dreieck halbiert wird?  </strong>
+
+<img src="Aufgabe88.jpg" align="middle"> h<sub>1</sub> = <input type="text" id="Eintrag88" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef88" onclick="Aufgabe88()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe88() { 
+                                                
+                          if (Eintrag88.value=="2,3") {alert("Richtig"); document.getElementById("Pruef88").disabled= true;
+                          }  
+                           
+                          else if (Eintrag88.value!=="2,3" && Eintrag88.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag88").value="2,3"; window.open('Volum_Aufgabe88.html');           
+                          document.getElementById("Pruef88").disabled= true;}
+                               
+                          else if (Eintrag88.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 89-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 89
+
+Wie groß ist die Fläche A des schraffierten gleichschenkligen 
+Trapezes, das in einem gleichseitigen Dreieck mit dem 
+Umkreisradius r = 6 cm liegt?    </strong> 
+
+<img src="Aufgabe89.jpg" align="middle"> <button  onclick="window.open('Volum_Aufgabe89.html');" >Lösung</button></p></pre>    
+
+<!--//Aufgabe 90-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 90
+
+Wie groß muss h sein, wenn sich die Fläche des Trapezes zur
+Fläche des darüberliegenden Dreiecks wie 3 : 2 verhält?  </strong>
+
+<img src="Aufgabe90.jpg" align="middle"> h = <input type="text" id="Eintrag90" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef90" onclick="Aufgabe90()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe90() { 
+                                                
+                          if (Eintrag90.value=="2,9") {alert("Richtig"); document.getElementById("Pruef90").disabled= true;
+                          }  
+                           
+                          else if (Eintrag90.value!=="2,9" && Eintrag90.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag90").value="2,9"; window.open('Volum_Aufgabe90.html');           
+                          document.getElementById("Pruef90").disabled= true;}
+                               
+                          else if (Eintrag90.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 91-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 91
+
+Wie groß sind g<sub>1</sub> und g<sub>2</sub> von dem gleichschenkligen Trapez?</strong> 
+
+<img src="Aufgabe91.jpg" align="middle"> <button  onclick="window.open('Volum_Aufgabe91.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 92-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 92
+
+Berechnen Sie die Höhe h, die Diagonale d und die Seite a 
+des gleichschenkligen Trapezes.   </strong>
+
+<img src="Aufgabe92.jpg" align="middle"> d = <input type="text" id="Eintrag92" maxlength="1" size="1" style= background-color:yellow ></input> cm <button id="Pruef92" onclick="Aufgabe92()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe92() { 
+                                                
+                          if (Eintrag92.value=="4") {alert("Richtig"); document.getElementById("Pruef92").disabled= true;
+                          }  
+                           
+                          else if (Eintrag92.value!=="4" && Eintrag92.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag92").value="4"; window.open('Volum_Aufgabe92.html');           
+                          document.getElementById("Pruef92").disabled= true;}
+                               
+                          else if (Eintrag92.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 93-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 93
+
+Ein Trapez mit einer Mittellinie von 6 cm und einer Höhe von 
+4 cm soll einem gleichseitigen Dreieck flächengleich sein. 
+Berechnen Sie die Länge a einer Dreieckseite und das 
+Verhältnis der beiden Höhen. </strong>   <button  onclick="window.open('Volum_Aufgabe93.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 94-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 94
+
+Berechnen Sie die Länge der Grundseite g₁ und der Seite b. </strong>
+
+<img src="Aufgabe94.jpg" align="middle"> b = <input type="text" id="Eintrag94" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef94" onclick="Aufgabe94()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe94() { 
+                                                
+                          if (Eintrag94.value=="4,5") {alert("Richtig"); document.getElementById("Pruef94").disabled= true;
+                          }  
+                           
+                          else if (Eintrag94.value!=="4,5" && Eintrag94.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag94").value="4,5"; window.open('Volum_Aufgabe94.html');           
+                          document.getElementById("Pruef94").disabled= true;}
+                               
+                          else if (Eintrag94.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+
+<!--//Aufgabe 95-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 95
+
+Ein gleichschenkliges Dreieck ist 12 cm hoch. Es soll durch 
+parallel verlaufende Teilstriche in 3 gleich große Flächen 
+unterteilt werden. In welchen Höhen verlaufen die Teilstriche? </strong> 
+
+<button  onclick="window.open('Volum_Aufgabe95.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 96-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 96
+
+Ein Rechteck ist 4 cm breit und 13 cm lang. Es soll so zerteilt 
+werden, dass zwei Trapeze entstehen, deren Grundseiten 4 cm
+und 9 cm lang sind. Wie lang ist die Schnittlinie l? </strong>
+
+l = <input type="text" id="Eintrag96" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef96" onclick="Aufgabe96()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe96() { 
+                                                
+                          if (Eintrag96.value=="6,4") {alert("Richtig"); document.getElementById("Pruef96").disabled= true;
+                          }  
+                           
+                          else if (Eintrag96.value!=="6,4" && Eintrag96.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag96").value="6,4"; window.open('Volum_Aufgabe96.html');           
+                          document.getElementById("Pruef96").disabled= true;}
+                               
+                          else if (Eintrag96.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>  
+
+<!--//Aufgabe 97-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 97
+
+Von einem gleichschenkligen Trapez sei die eine parallele 
+Seite zweimal und die andere dreimal so groß wie der 
+Schenkel mit 3 cm. Wie groß sind der Umfang U und die 
+Fläche A des Trapezes?     </strong>   <button  onclick="window.open('Volum_Aufgabe97.html');" >Lösung</button></p></pre>   
+
+
+
+	      <button type="button" class ="Aufgabe" onclick="window.open('index.html'); window.close('Flaeche1.html');">zurück...</button>                
+                    
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script><br>
+        
+         
+
+        </body></html>
+
+                      
+                    
