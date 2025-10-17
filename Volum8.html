@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de"><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volumen</title>
+  
+</head>
+<body style="background-color: #B9D1EA;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<p class="Text1">Volumen</p>  
+        
+
+ <!--//Aufgabe 338-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 338
+        
+Eine Kugel hat einen Radius von 5 cm. Wie hoch 
+ist der zu einem Kugelsektor gehörige Abschnitt, 
+wenn das Volumen des Sektors ein Viertel des 
+Kugelvolumens beträgt?   </strong> 
+
+<button  onclick="window.open('Volum_Aufgabe338.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 339-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 339
+
+Welches Volumen V hat ein Kugelabschnitt mit 
+einer Fläche von 40 cm<sup>2</sup> und einer Höhe von 1 cm?  </strong>
+
+V = <input type="text" id="Eintrag339" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef339" onclick="Aufgabe339()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe339() { 
+                                                
+                          if (Eintrag339.value=="18,96") {alert("Richtig"); document.getElementById("Pruef339").disabled= true;
+                          }  
+                           
+                          else if (Eintrag339.value!=="18,96" && Eintrag339.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag339").value="18,96"; window.open('Volum_Aufgabe339.html');           
+                          document.getElementById("Pruef339").disabled= true;}
+                               
+                          else if (Eintrag339.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                                  
+
+<button type="button" class ="Aufgabe" onclick="window.open('index.html'); window.close('Volum7.html');">zurück...</button>    
+	      
+          
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script><br>
+        
+         
+
+        </body></html> 
