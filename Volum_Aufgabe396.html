@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volumen</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><p class ="Aufgabe">Aufgabe 396
+
+Wie groß ist das Volumen V der Kugel nach dem Aufbohren? 
+
+<img src="Aufgabe396a.jpg">
+
+Strahlensatz:
+
+EC = 2 * 48 mm = 96 mm 
+
+MC = MB = 48 mm 
+
+EF = 70 mm/2 = 35 mm 
+
+ EF     MD     
+---- = ---- |*MC 
+ EC     MC 
+
+       EF * MC      35 mm * 48 mm   
+MD = ----------- = ---------------- = 17,5 mm = r<sub>1</sub> 
+          EC             96 mm 
+
+Satz von Pythagoras im Dreieck MBA: 
+
+MA = MC - CA = 48 mm - CA 
+
+MB² = MA² + AB² |-MA² 
+
+AB² = MB² - MA² = MB² - (48 - CA)² 
+ 
+AB² = 48² - (48² - 96 * CA + CA²) 
+ 
+AB² = 48² - 48² + 96 * CA - CA² 
+ 
+AB² = 96 * CA - CA²   (1) 
+ 
+Strahlensatz: 
+ 
+    AB        MD     
+---------- = ---- |*(EC - CA) 
+ EC - CA      ME 
+ 
+       MD * (EC - CA)       17,5 * (96 - CA) 
+AB = ------------------ = -------------------   
+              ME                   48 
+ 
+AB = 0,365 * (96 - CA)  (2) 
+ 
+AB² = 0,133 * (9 216 - 192 * CA + CA²) 
+ 
+AB² = 1 226 - 25,5 * CA + 0,133 * CA² 
+ 
+Eingesetzt in (1): 
+ 
+1 226 - 25,5 * CA + 0,133 * CA² = 96 * CA - CA² |+CA² 
+ 
+1 226 - 25,5 * CA  + 1,133 * CA² = 96 * CA |-96 * CA 
+ 
+1,133 * CA² - 121,5 * CA + 1 226 = 0 
+ 
+A, B, C - Formel:  
+ 
+A = 1,133 ; B = - 121,5, C = 1 226
+
+<img src="Aufgabe396b.jpg">
+
+          121,5 ± 95,95    
+C<sub>A1,2</sub> = ----------------- 
+               2,66            
+ 
+        217,45                   
+C<sub>A1</sub> = --------- = 81,7 mm > 48 mm --> keine Lösung 
+         2,66          
+       
+       25,55                             
+C<sub>A2</sub> = -------- = 9,6 mm = h<sub>Kugelabschnitt</sub>  
+        2,66         
+ 
+hKegelstumpf = MC - CA = 48 mm - 9,6 mm = 38,4 mm              
+ 
+CA eingesetzt in (2): 
+ 
+      17,5 * (96 - 9,6)   
+AB = -------------------- mm = 31,5 mm = r2 
+              48   
+ 
+V = V<sub>Kugel</sub> - 2 * V<sub>Kegelstumpf</sub> - 2 * V<sub>Kugelschicht</sub> 
+ 
+d<sub>Kugel</sub> = 2 * 48 mm = 96 mm 
+ 
+          d<sub>Kugel</sub>³ * л       96³ * mm³ * л  
+V<sub>Kugel</sub> = -------------- = ----------------- = 463 011 mm³ = 463 cm³ 
+               6                   6    
+ 
+              л    
+V<sub>Kegelstumpf</sub> = --- * h<sub>Kegelstumpf</sub> * (r<sub>1</sub>² + r<sub>1</sub> * r<sub>2</sub> + r<sub>2</sub>²) 
+              3        
+ 
+              л    
+V<sub>Kegelstumpf</sub> = --- * 38,4 * (17,5² + 17,5 * 31,5 + 31,5²)  mm³ 
+              3        
+ 
+V<sub>Kegelstumpf</sub> = 74 345 mm³ 
+ 
+2 * V<sub>Kegelstumpf</sub> = 2 * 74 345 mm³ = 148 690 mm³ = 148,7 cm³ 
+ 
+                     л  
+V<sub>Kugelabschnitt</sub> = --- * h<sub>Kugelabschnitt</sub>² * (3 * r<sub>Kugel</sub> - h<sub>Kugelabschnitt</sub>) 
+                     3    
+ 
+                 л  
+V<sub>Kugelabschnitt</sub> = --- * 9,6² * (3 * 48 - 9,6) mm³ = 12 964 mm³ 
+                 3       
+ 
+2 * V<sub>Kugelabschnitt</sub> = 2 * 12 964 mm³ = 25 928 mm³ = 25,9 cm³
+
+<span style="color:red;">V</span> = 463 cm³ - 148,7 cm³ - 25,9 cm³ <span style="color:red;">= 288,4 cm³</span>
+
+
+
+</p></pre>
