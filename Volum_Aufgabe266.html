@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volumen</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><p class ="Aufgabe">Aufgabe 266
+
+Wie groß ist 
+a) x, wenn r<sub>1</sub>, r<sub>2</sub> und h bekannt sind. 
+b) r<sub>2</sub>, wenn x, r₁ und h bekannt sind 
+c) x, wenn r<sub>1</sub> : r<sub>2</sub> und h bekannt sind 
+d) x, wenn die blaue Kreisringfläche so groß wie die 
+   Grundfläche des Zylinders ist und h bekannt ist 
+e) x, wenn der unter der gemeinsamen Schnittfläche liegende 
+   Zylinder das gleiche Volumen wie der darüberliegende Kegel 
+   hat und h bekannt ist 
+f) x, wenn der über der gemeinsamen Schnittfläche liegende 
+   Kegel das gleiche Volumen wie der darunter liegende 
+   Kegelstumpf minus Zylinder hat und r<sub>1</sub>, r<sub>2</sub> und h bekannt sind? 
+
+<img src="Aufgabe266a.jpg">
+
+a) Strahlensatz: 
+
+ r<sub>2</sub>     h - x   
+---- = ------- |*h 
+ r<sub>1</sub>       h 
+
+ r<sub>2</sub>  
+---- * h = h - x |+x 
+ r<sub>1</sub>  
+
+ r<sub>2</sub>                  r<sub>2</sub>   
+---- * h + x = h |- ---- * h 
+ r<sub>1</sub>                  r<sub>1</sub>   
+ 
+         r<sub>2</sub>         r<sub>1</sub> * h - r<sub>2</sub> * h     <span style="color:red;">(r<sub>1</sub> - r<sub>2</sub>) * h </span>
+<span style="color:red;">x</span> = h - ---- * h = ----------------- <span style="color:red;">= ---------------</span> 
+         r<sub>1</sub>                r<sub>1</sub>                <span style="color:red;">r<sub>1</sub></span>   
+  
+b)  
+ 
+ r<sub>2</sub>     h - x   
+---- = ------- |*r<sub>1</sub> 
+ r<sub>1</sub>       h   
+ 
+      <span style="color:red;">r<sub>1</sub> * (h - x)</span>   
+<span style="color:red;">r<sub>2</sub> = --------------</span> 
+           <span style="color:red;">h</span>       
+ 
+c)  
+ 
+ r<sub>1</sub>       h   
+---- = ------- |*(h - x) 
+ r<sub>2</sub>     h - x   
+ 
+ r<sub>1</sub> 
+---- * (h - x) = h 
+ r<sub>2</sub> 
+ 
+ r<sub>1</sub>         r<sub>1</sub>             r<sub>1</sub>   
+---- * h - ---- * x = h |+---- * x 
+ r<sub>2</sub>         r<sub>2</sub>             r<sub>2</sub>   
+ 
+ r<sub>1</sub>             r<sub>1</sub>   
+---- * h = h + ---- * x |-h 
+ r<sub>2</sub>             r<sub>2</sub>   
+ 
+ r<sub>1</sub>             r<sub>1</sub>   
+---- * h - h = ---- * x |* r<sub>2</sub> 
+ r<sub>2</sub>             r<sub>2</sub>   
+ 
+r<sub>1</sub> * h - r<sub>2</sub> * h = r<sub>1</sub> * x |:r<sub>1</sub> 
+ 
+         <span style="color:red;">r<sub>2</sub></span>        
+<span style="color:red;">x = h - ---- * h</span> 
+         <span style="color:red;">r<sub>1</sub></span>         
+ 
+d)  
+ 
+л * r<sub>2</sub>² = л * (r<sub>1</sub>² - r<sub>2</sub>²) 
+ 
+л * r<sub>2</sub>² = л * r<sub>1</sub>² - л * r<sub>2</sub>² | + л * r<sub>2</sub>² 
+ 
+2 * л * r<sub>2</sub>² = л * r<sub>1</sub>² | :л   
+ 
+2 * r<sub>2</sub>² = r<sub>1</sub>² | :2   
+ 
+       r<sub>1</sub>²       
+r<sub>2</sub>² = ----- |√ 
+        2    
+ 
+      r<sub>1</sub>         
+r<sub>2</sub> = ---- 
+      √2   
+ 
+ r<sub>2</sub>     h - x   
+---- = ------- |*r<sub>1</sub> 
+ r<sub>1</sub>       h   
+ 
+      r<sub>1</sub> * (h - x)      
+r<sub>2</sub> = -------------- 
+           h           
+ 
+ r<sub>1</sub>     r<sub>1</sub> * (h - x)    
+---- = -------------- |:r<sub>1</sub> 
+ √2          h         
+ 
+  1     (h - x)    
+---- = --------- |*h 
+ √2        h         
+ 
+ h           
+---- = h - x |+x 
+ √2               
+ 
+ h                h   
+---- +  x = h |- ---- 
+ √2               √2   
+ 
+         h   
+x = h - ---- 
+         √2   
+ 
+      √2 * h - h     √2      
+x = ------------- |*---- 
+          √2         √2 
+ 
+     2 * h - √2 * h      <span style="color:red;">h * (2 - √2)</span>   
+<span style="color:red;">x</span> = ----------------- <span style="color:red;">= --------------</span> 
+            2                  <span style="color:red;">2</span>     
+ 
+e)  
+ 
+               л * r<sub>2</sub>² * (h - x)      
+л * r<sub>2</sub>² * x = -------------------- |:л * r<sub>2</sub>² 
+                       3       
+     h - x    
+x = ------- |*3 
+       3     
+ 
+3 * x = h - x |+x 
+ 
+4 * x = h |:4 
+ 
+     <span style="color:red;">h</span>   
+<span style="color:red;">x = ----</span> 
+     <span style="color:red;">4</span>   
+  
+f) 
+ 
+ л * r<sub>2</sub>² * (h - x)     л * x    
+------------------- = ------- * (r<sub>1</sub>² + r<sub>1</sub> * r<sub>2</sub> + r<sub>2</sub>²) - л * r<sub>2</sub>² * x |:л 
+          3              3   
+ 
+ r<sub>2</sub>² * (h - x)      x    
+--------------- = ----- * (r<sub>1</sub>² + r<sub>1</sub> * r<sub>2</sub> + r<sub>2</sub>²) - r<sub>2</sub>² * x |*3 
+        3           3   
+  
+r<sub>2</sub>² * (h - x) = x * (r<sub>1</sub>² + r<sub>1</sub> * r<sub>2</sub> + r<sub>2</sub>²) - 3 * r<sub>2</sub>² * x  
+  
+r<sub>2</sub>² * h - r<sub>2</sub>² * x = x * (r<sub>1</sub>² + r<sub>1</sub> * r<sub>2</sub> + r<sub>2</sub>²) - 3 * r<sub>2</sub>² * x |+ r<sub>2</sub>² * x 
+ 
+r<sub>2</sub>² * h = x * (r<sub>1</sub>² + r<sub>1</sub> * r<sub>2</sub> + r<sub>2</sub>²) - 2 * r<sub>2</sub>² * x  
+ 
+r<sub>2</sub>² * h = x * (r<sub>1</sub>² + r<sub>1</sub> * r<sub>2</sub> - r<sub>2</sub>²)  |:(r<sub>1</sub>² + r<sub>1</sub> * r<sub>2</sub> - r<sub>2</sub>²) 
+ 
+          <span style="color:red;">r<sub>2</sub>² * h</span>   
+<span style="color:red;">x = --------------------- </span>
+     <span style="color:red;">r<sub>1</sub>² + r<sub>1</sub> * r<sub>2</sub> - r<sub>2</sub>²</span>
+
+
+</p></pre>
