@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volumen</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><p class ="Aufgabe">Aufgabe 279
+
+Welches Volumen V hat die dargestellte Aufnahmespitze?
+
+<img src="Aufgabe279a.jpg">
+
+V = Kegel K + Kegelstumpf K<sub>S</sub> + Zylinder: 
+ 
+Im Dreieck ABC gilt: 
+ 
+&ang;AB = 60°/2 = 30° 
+ 
+BC = 30 mm/2 = 15 mm 
+ 
+           BC    
+tan 30° = ----- |*AB 
+           AB     
+ 
+AB * tan 30° = BC |:tan 30° 
+ 
+         BC       15 mm   
+AB = --------- = --------- = 26 mm 
+      tan 30°     0,5774    
+ 
+     л * BC² * AB      л * 15² mm² * 26 mm 
+K = -------------- = ----------------------- = 6 123 mm³  
+           3                    3   
+ 
+r<sub>2</sub> = 26 mm/2 = 13 mm 
+ 
+      л * h   
+K<sub>S</sub> = -------- * (r<sub>1</sub>² + r<sub>1</sub> * r<sub>2</sub> + r<sub>2</sub>²) 
+        3   
+ 
+      л * 80   
+K<sub>S</sub> = -------- * (15² + 15 * 13 + 13²) cm³ 
+         3    
+ 
+      л * 80   
+K<sub>S</sub> = -------- * (225 + 15 * 13 + 169) cm³ 
+         3  
+
+K<sub>S</sub> = 49 319 mm³ 
+
+Z = л * r² * h  
+
+r = 20 mm/2 = 10 mm 
+
+Z = л * 10² mm² * 15 mm = 4 710 mm³ 
+
+V = K + K<sub>S</sub> + Z = 6 123 mm³ + 49 319 mm³ + 4 710 mm³ 
+
+<span style="color:red;">V</span> = 60 152 mm³ <span style="color:red;">= 60,15 cm³</span>
+
+</p></pre>
