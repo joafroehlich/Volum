@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volumen</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><p class ="Aufgabe">Aufgabe 319
+
+Einem Würfel mit der Seitenlänge a ist eine Kugel 
+ein- und eine umbeschrieben. In welchem Verhältnis 
+stehen ihre Volumina und ihre Oberflächen zueinander?
+
+<img src="Aufgabe319.jpg">
+
+Volumen: 
+ 
+Würfel: 
+ 
+V<sub>W</sub> = a³  
+        
+Innere Kugel: 
+ 
+d<sub>i</sub> = a 
+ 
+     d³ * л      a³ * л  
+Vi= --------- = --------- 
+        6           6    
+ 
+Äußere Kugel: 
+ 
+Satz von Pythagoras im Dreieck ABC: 
+ 
+AC² = AB² + BC² 
+ 
+AB = AC = a/2 
+ 
+                         a²     a²     2 * a²     a²   
+AC² = (a/2)² + (a/2)² = ---- + ---- = -------- = ---- |√ 
+                          4      4       4        2   
+      a   
+AC = ---- = r<sub>a</sub> 
+      √2    
+ 
+                2 * a  
+d<sub>a</sub> = 2 * r<sub>a</sub> =  ------- = √2 * a 
+                  √2    
+ 
+       л * d<sub>a</sub>³      л * (√2 * a)³       л * 2 * √2 * a³     л * √2 * a³  
+V<sub>a</sub> = ---------- = ----------------- = ------------------ = ------------- 
+          6               6                    6                3   
+ 
+ V<sub>W</sub>        a³          1                       л    
+---- = --------- =  ------ oder V<sub>W</sub> : V<sub>i</sub> = 1 : --- = 1 : 0,523 
+ V<sub>i</sub>      a³ * л        л                       6      
+        --------      ---   
+            6          6  
+ 
+ V<sub>W</sub>           a³                       1                  л * √2    
+---- = --------------- =  ---------- oder V<sub>W</sub> : V<sub>a</sub> = 1 : ---------- = 1 : 1,48 
+ V<sub>a</sub>     л * √2 * a³         л * √2                           3     
+       --------------      --------   
+              3               3  
+ 
+           a³ *  л      
+         ----------    
+ V<sub>i</sub>           6               1               
+---- = --------------- = --------- oder V<sub>i</sub> : V<sub>a</sub> = 1 : 2 * √2 = 1 : 2,828 
+ V<sub>a</sub>      л * √2 * a³       2 * √2  
+        ------------- 
+              3             
+ 
+V<sub>W</sub> : V<sub>i</sub> : V<sub>a</sub> = 1 : 0,523 : 1,48  
+ 
+Oberfläche: 
+ 
+Würfel: 
+ 
+O<sub>W</sub> = 6 * a² 
+ 
+Innere Kugel: 
+ 
+O<sub>i</sub> = л * d<sub>i</sub>² = л * a²  
+ 
+Äußere Kugel: 
+
+O<sub>a</sub> = л * da² = л * (√2 * a)² = л * 2 * a²  
+ 
+ 
+ O<sub>W</sub>     6 * a²     1                        
+                                           л    
+---- = -------- = ---  oder O<sub>W</sub> : O<sub>i</sub> = 1 : --- = 1 : 0,523 
+ O<sub>i</sub>     л * a²     л                       6             
+                  --- 
+                   6     
+                                               
+ O<sub>W</sub>        6 * a²      1                      л     
+---- = ------------ = --- oder O<sub>W</sub> : O<sub>a</sub> = 1 : --- = 1 : 1,047 
+ O<sub>a</sub>     л * 2 * a²     л                      3  
+                      ---                                    
+                       3   
+ 
+ O<sub>i</sub>       a²       1   
+---- = -------- = --- oder O<sub>i</sub> : O<sub>a</sub> = 1 : 2 
+ O<sub>a</sub>     2 * a²     2  
+ 
+<span style="color:red;">O<sub>W</sub> : O<sub>i</sub> : O<sub>a</sub> = 1 : 0,523 : 1,047</span>
+ 
+</p></pre>

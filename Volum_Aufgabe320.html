@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volumen</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><p class ="Aufgabe">Aufgabe 320
+
+Einem Zylinder mit dem Radius r und der Höhe 2r ist eine 
+Kugel ein- und eine umbeschrieben. In welchem Verhältnis 
+stehen ihre Volumina und ihre Oberflächen zueinander? 
+
+<img src="Aufgabe320.jpg">
+
+Volumen: 
+ 
+Zylinder 
+ 
+V<sub>Z</sub> = л * r² * h = л * r² * 2 * r = 2 * л * r³  
+        
+Innere Kugel: 
+ 
+      4 * r³ * л        
+V<sub>i</sub> = -------------  
+           3        
+ 
+Äußere Kugel: 
+ 
+Satz von Pythagoras im Dreieck ABC: 
+ 
+AC² = AB² + BC² 
+ 
+AB = AC = r 
+ 
+AC² = r² + r² = 2 * r²|√ 
+ 
+AC = r * √2 = r<sub>a</sub> 
+ 
+      4 * л * ra³    4 * л * (√2 * r)³      4 * л * 2 * √2 * r³    
+V<sub>a</sub> = ------------ = ------------------- = -----------------------  
+           3                 3                       3                    
+ 
+       8 * л * √2 * r³   
+V<sub>a</sub> = ------------------- 
+             3     
+ 
+ V<sub>Z</sub>      2 * л * r³      1                      2    
+---- = ------------- =  --- oder V<sub>Z</sub> : V<sub>i</sub> = 1 : --- = 1 : 0,67 
+ V<sub>i</sub>     4 * r³ * л       2                      3      
+       ------------     ---   
+             3           3  
+ 
+ V<sub>Z</sub>         2 * л * r³           1                          4 * √2    
+---- =  ----------------- =  ---------- oder V<sub>Z</sub> : V<sub>a</sub> = 1 : -------- = 1 : 1,886 
+ V<sub>a</sub>      8 * л * √2 * r³       4 * √2                          3     
+        -----------------     --------   
+                3                 3  
+ 
+           4 * r³ * л             
+          ------------    
+ V<sub>i</sub>             3               1               
+---- = ------------------ = --------- oder V<sub>i</sub> : V<sub>a</sub> = 1 : (2 * √2) = 1 : 2,828 
+ V<sub>a</sub>     8 * л * √2 * r³      2 * √2  
+       ----------------- 
+               3             
+ 
+V<sub>Z</sub> : V<sub>i</sub> : V<sub>a</sub> = 1 : 0,67 : 1,886  
+ 
+Oberfläche: 
+ 
+Zylinder: 
+ 
+O<sub>Z</sub> = 2 * л * r * h + 2 * л * r² = 2 * л * r * 2 * r + 2 * л * r² 
+ 
+O<sub>Z</sub> = 4 * л * r² + 2 * л * r² = 6 * л * r² 
+ 
+Innere Kugel: 
+ 
+O<sub>i</sub> = 4 * л * r²  
+ 
+Äu0ere Kugel: 
+ 
+O<sub>a</sub> = 4 * л * ra² = 4 * л * (√2 * r)² = 8 * л * r²  
+   
+ O<sub>Z</sub>    6 * л * r²      1                       2    
+---- = ------------ = ---  oder O<sub>Z</sub> : O<sub>i</sub> = 1 : --- = 1 : 0,67 
+ O<sub>i</sub>     4 * л * r²     2                       3             
+                      --- 
+                       3     
+                                               
+ O<sub>Z</sub>     6 * л * r²     1                      4     
+---- = ------------ = --- oder O<sub>Z</sub> : O<sub>a</sub> = 1 : --- = 1 : 1,33 
+ O<sub>a</sub>     8 * л * r²     4                      3  
+                      ---                                    
+                       3   
+ 
+ O<sub>i</sub>     4 * л * r²     1        
+---- = ------------ = --- oder O<sub>i</sub> : O<sub>a</sub> = 1 : 2  
+ O<sub>a</sub>     8 * л * r²     2  
+ 
+<span style="color:red;">O<sub>Z</sub> : O<sub>i</sub> : O<sub>a</sub> = 1 : 0,67 : 1,33</span>
+ 
+
+</p></pre>
