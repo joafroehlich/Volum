@@ -108,19 +108,20 @@ Radius von 10 cm herzustellen? </strong>
 
   <pre><p class ="Aufgabe" ><strong>Aufgabe 345
 
-Eine Discokugel mit einem Durchmesser von 40 cm hat 
-auf der Oberfläche kleine je 1 cm² große Spiegel. 
-Wie viele solcher Spiegel passen darauf?   </strong>
+Ein Tonquader hat eine Länge von 10 cm, 
+eine Breite von 12 cm und eine Höhe von 15 cm. 
+Wie viele Tonkugeln mit einem Durchmesser 
+von 3 mm kann man daraus formen?    </strong>
 
-n = <input type="text" id="Eintrag345" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef345" onclick="Aufgabe345()">Prüfen</button></p></pre>  
+n = <input type="text" id="Eintrag345" maxlength="6" size="2" style= background-color:yellow ></input> Kugeln <button id="Pruef345" onclick="Aufgabe345()">Prüfen</button></p></pre>  
 
                       <script>
                         function Aufgabe345() { 
                                                 
-                          if (Eintrag345.value=="5024") {alert("Richtig"); document.getElementById("Pruef345").disabled= true;
+                          if (Eintrag345.value=="127 660") {alert("Richtig"); document.getElementById("Pruef345").disabled= true;
                           }  
                            
-                          else if (Eintrag345.value!=="5024" && Eintrag345.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag345").value="5024"; window.open('Volum_Aufgabe345.html');           
+                          else if (Eintrag345.value!=="127 660" && Eintrag345.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag345").value="127 660"; window.open('Volum_Aufgabe345.html');           
                           document.getElementById("Pruef345").disabled= true;}
                                
                           else if (Eintrag345.value=="") {alert("Bitte eine Eingabe machen")}}
