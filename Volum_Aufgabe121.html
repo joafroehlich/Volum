@@ -5,6 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volumen</title>
+
+ <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
   
 </head>
 <body style="background-color:white;; margin-top: 1em; ">
@@ -12,38 +17,38 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre><p class ="Aufgabe">Aufgabe 121
+<pre><b><p class ="Aufgabe">Aufgabe 121
 
-Ein Silberdraht (Dichte 10,5 g/cm³) ist 10 m lang 
-und wiegt 78 g. Er soll mit 6 g Gold vergoldet werden. 
-Welchen Durchmesser d hat der 
-Silberdraht?  
+Ein Silberdraht (Dichte 10,5 g/cm<sup>3</sup>) ist 10 m lang 
+und wiegt 78 g. Er soll mit 6 g Gold vergoldet 
+werden. 
+Welchen Durchmesser d hat der Silberdraht?  
 Welche Dicke a hat die Vergoldung?  
  
 m<sub>Silber</sub> = V<sub>Silber</sub> * р<sub>Silber</sub> |: р 
  
            m<sub>Silber</sub>       - 78 g  
-V<sub>Silber</sub> = --------- = ------------ = 7,43 cm³  
-           р<sub>Silber</sub>     10,5 g/cm³  
+V<sub>Silber</sub> = --------- = ------------ = 7,43 cm<sup>3</sup>  
+           р<sub>Silber</sub>     10,5 g/cm<sup>3</sup>  
  
-V<sub>Silber</sub> = G * l  = π * r<sub>Silber</sub>² * l<sub>Silber</sub> |:π 
+V<sub>Silber</sub> = G * l  = π * r<sub>Silber</sub><sup>2</sup> * l<sub>Silber</sub> |:π 
  
  V  
---- = r<sub>Silber</sub>² * l<sub>Silber</sub> |:l<sub>Silber</sub> 
+--- = r<sub>Silber</sub><sup>2</sup> * l<sub>Silber</sub> |:l<sub>Silber</sub> 
  π 
  
   V<sub>Silber</sub>  
-------------- = r<sub>Silber</sub>² 
+------------- = r<sub>Silber</sub><sup>2</sup> 
  π * l<sub>Silber</sub> 
  
 10 m = 1 000 cm 
  
-               7,43 cm³   
-r<sub>Silber</sub>² = -------------- = 0,0024 cm² |√ 
+               7,43 cm<sup>3</sup>   
+r<sub>Silber</sub><sup>2</sup> = -------------- = 0,0024 cm<sup>2</sup> |√ 
             π * 1 000 cm      
  
 r<sub>Silber</sub> = 0,049 cm = 0,49 mm 
@@ -55,43 +60,61 @@ r<sub>Silber</sub> = 0,049 cm = 0,49 mm
 r<sub>Gold</sub> = r<sub>Silber</sub> + a 
 
                 m<sub>Gold</sub>          6 g   
-V<sub>Vergoldung</sub> = --------- = ------------ = 0,311 cm³ = 311 mm³ 
-                р<sub>Gold</sub>      19,3 g/cm³ 
+V<sub>Vergoldung</sub> = --------- = ------------ =  
+                р<sub>Gold</sub>      19,3 g/cm<sup>3</sup> 
+
+= 0,311 cm<sup>3</sup> = 311 mm<sup>3</sup>              
  
-V<sub>Vergoldung</sub> = (r<sub>Gold</sub>² - r<sub>Silber</sub>²) * π * l<sub>Silber</sub> 
+V<sub>Vergoldung</sub> = (r<sub>Gold</sub><sup>2</sup> - r<sub>Silber</sub><sup>2</sup>) * 
+
+* π * l<sub>Silber</sub> 
  
-V<sub>Vergoldung</sub> = [(r<sub>Silber</sub> + a)² - r<sub>Silber</sub>²] * π * l<sub>Silber</sub> 
+V<sub>Vergoldung</sub> = [(r<sub>Silber</sub> + a)<sup>2</sup> - r<sub>Silber</sub><sup>2</sup>] * 
+
+* π * l<sub>Silber</sub> 
  
-V<sub>Vergoldung</sub> = (r<sub>Silber</sub>² + 2 * r<sub>Silber</sub> * a + a² - r<sub>Silber</sub>²) * π * l<sub>Silber</sub> 
+V<sub>Vergoldung</sub> = (r<sub>Silber</sub><sup>2</sup> + 2 * r<sub>Silber</sub> * a + a<sup>2</sup> - 
+
+- r<sub>Silber</sub><sup>2</sup>) * π * l<sub>Silber</sub> 
  
-V<sub>Vergoldung</sub> = (2 * r<sub>Silber</sub> * a + a²) * π * l<sub>Silber</sub> |-V<sub>Vergoldung</sub> 
+V<sub>Vergoldung</sub> = (2 * r<sub>Silber</sub> * a + a<sup>2</sup>) * 
+
+* π * l<sub>Silber</sub> |-V<sub>Vergoldung</sub> 
  
-(a² + 2 * r<sub>Silber</sub> * a) * π * l<sub>Silber</sub>  - V<sub>Vergoldung</sub> = 0 
+(a<sup>2</sup> + 2 * r<sub>Silber</sub> * a) * π * l<sub>Silber</sub> 
+
+- - V<sub>Vergoldung</sub> = 0 
  
-(a² + 2 * 0,49 * a) * π * 10 000 - 311 = 0 | :10 000 
+(a<sup>2</sup> + 2 * 0,49 * a)*π * 10 000 - 311 = 0 |:10 000 
  
-(a² + 2 * 0,49 * a) * π - 0,0311 = 0  
+(a<sup>2</sup> + 2 * 0,49 * a) * π - 0,0311 = 0  
  
-a² * π + 2 * 0,49 * π * a - 0,0311 = 0 
+a<sup>2</sup> * π + 2 * 0,49 * π * a - 0,0311 = 0 
  
-a² * π + 3,077 * a - 0,0311 = 0 
+a<sup>2</sup> * π + 3,077 * a - 0,0311 = 0 
  
 A, B, C - Formel 
                           
 A = π ; B = 3,077; C = - 0,0311 
  
-<img src="Aufgabe121a.jpg"> 
+         -3,077 ± <math ><msqrt><mrow><msup><mfenced><mn>3,077</mn></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mo>&#xd7;</mo><mi mathvariant="normal">&#x3c0;</mi><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>0</mn><mo>,</mo><mn>0311</mn></mrow></mfenced></mrow></msqrt></math>                        
+a<sub>1,2</sub> = ----------------------------------------- 
+                          2 * π 
 
-        - 3,077 ± 3,14    
-a<sub>1,2</sub> = ----------------- 
-             6,28            
- 
+        -3,077 ± <math ><msqrt><mrow><mn>9,468</mn><mo>+</mo><mn>0</mn><mo>,</mo><mn>39</mn></mrow></msqrt></math>
+a<sub>1,2</sub> = -------------------------- 
+                   6,28
+
+        -3,077 ± <math ><msqrt><mn>9,858</mn></msqrt></math>
+a<sub>1,2</sub> = -------------------- 
+               6,28
+
        0,063                   
 <span style="color:red;">a<sub>1</sub></span> = --------- <span style="color:red;">= 0,01 mm</span>  
        6,28        
        
-      - 6,2                             
-a<sub>2</sub> = -------- = - 1  keine Lösung, negative Länge  
+      - 6,2     
+a<sub>2</sub> = -------- = -1  keine Lösung, negative Länge  
        6,28                      
  
-</p></pre>
+</p></b></pre>
