@@ -5,6 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volumen</title>
+
+ <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
   
 </head>
 <body style="background-color:white;; margin-top: 1em; ">
@@ -12,17 +17,17 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre><p class ="Aufgabe">Aufgabe 244
+<pre><b><p class ="Aufgabe">Aufgabe 244
 
 Der Achsenschnitt eines kegelförmigen Messbechers 
-ist ein gleichseitiges Dreieck mit einer Seitenlänge 
-von 10 cm. In welcher Höhe von der Spitze aus muss 
-die Markierung angebracht werden, die eine Füllung 
-von 60 cm³ anzeigt?
+ist ein gleichseitiges Dreieck mit einer Seiten-
+länge von 10 cm. In welcher Höhe von der Spitze 
+aus muss die Markierung angebracht werden, die 
+eine Füllung von 60 cm<sup>3</sup> anzeigt?
 
 <img src="Aufgabe244_L.jpg">
 
@@ -34,12 +39,14 @@ BE = 2 * r wegen gleichseitigem Dreieck
  
 Satz von Pythagoras im Dreieck BED: 
  
-BE² = DE² + h²|-DE² 
+BE<sup>2</sup> = DE<sup>2</sup> + h<sup>2</sup>|-DE<sup>2</sup> 
  
-h² = BE² - DE² = (2 * r)² - r² = 4 * r² - r² = 3 * r² |:3 
+h<sup>2</sup> = BE<sup>2</sup> - DE<sup>2</sup> = (2 * r)<sup>2</sup> - r<sup>2</sup> = 
+
+= 4 * r<sup>2</sup> - r<sup>2</sup> = 3 * r<sup>2</sup> |:3 
  
-      h² 
-r² = ---- |√ 
+      h<sup>2</sup> 
+r<sup>2</sup> = ---- |√ 
       3 
  
       h 
@@ -47,22 +54,22 @@ r = ----
       √3 
  
                             h 
-                     л * (-----)² * h 
-     л * r² * h             √3 
+                     л * (-----)<sup>2</sup> * h 
+     л * r<sup>2</sup> * h             √3 
 V = ------------- = -------------------     
          3                  3 
  
-     л * h² * h 
+     л * h<sup>2</sup> * h 
 V = ------------- |*9 
          9 
  
-9 * V = л * h³ |:л 
+9 * V = л * h<sup>3</sup> |:л 
  
       9 * V 
-h³ = ------- 
+h<sup>3</sup> = ------- 
         л 
- 
-<img src="Aufgabe244_L1.jpg">
+
+h = <math ><mroot><mfrac><mrow><mn>9</mn><mo>&#xd7;</mo><mn>60</mn><mo>&#xA0;</mo><msup><mi mathvariant="normal">cm</mi><mn>3</mn></msup></mrow><mi mathvariant="normal">&#x3c0;</mi></mfrac><mn>3</mn></mroot></math> = 5,56 cm        
  
       5,56 cm   
 r = ---------- = 3,21 cm 
@@ -72,4 +79,4 @@ r = ---------- = 3,21 cm
 
 
 
-</p></pre>
+</p></b></pre>
