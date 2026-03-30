@@ -5,6 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volumen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>      
   
 </head>
 <body style="background-color:white;; margin-top: 1em; ">
@@ -12,16 +16,16 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre><p class ="Aufgabe">Aufgabe 255
+<pre><b><p class ="Aufgabe">Aufgabe 255
 
 Wie groß sind das Volumen V und die Mantelfläche M 
-des  Pyramidenstumpfes mit gleichseitigen Dreiecken 
-als Grund- und Deckfläche, deren Mittelpunkte 
-senkrecht übereinander liegen? 
+des  Pyramidenstumpfes mit gleichseitigen 
+Dreiecken als Grund- und Deckfläche, deren Mittel-
+punkte senkrecht übereinander liegen? 
 
 <img src="Aufgabe255a.jpg">
 
@@ -31,14 +35,14 @@ AC = AB = 8 cm
 
 AD = AB/2 = 8 cm/2 = 4 cm 
 
-AC² = AD² + DC² | - AD²  
+AC<sup>2</sup> = AD<sup>2</sup> + DC<sup>2</sup> | - AD<sup>2</sup>  
 
-DC² = AC² - AD² = 8² cm² - 4² cm² = 48 cm² |√ 
+DC<sup>2</sup> = AC<sup>2</sup> - AD<sup>2</sup> = 8<sup>2</sup> cm<sup>2</sup> - 4<sup>2</sup> cm<sup>2</sup> = 48 cm<sup>2</sup> |√ 
 
 DC = 6,93 cm 
 
       AB * DC     8 cm * 6,93 cm      
-G<sub>1</sub> = --------- = ---------------- = 27,7 cm² 
+G<sub>1</sub> = --------- = ---------------- = 27,7 cm<sup>2</sup> 
          2              2
          
 Satz von Pythagoras im Dreieck EFG: 
@@ -47,25 +51,31 @@ EF = EG = 5 cm
 
 EH = EF/2 = 5 cm/2 = 2,5 cm 
  
-EG² = EH² + GH² | - EH²  
+EG<sup>2</sup> = EH<sup>2</sup> + GH<sup>2</sup> | - EH<sup>2</sup>  
  
-GH² = EG² - EH² = 5² cm² - 2,5² cm² = 18,75 cm² |√ 
+GH<sup>2</sup> = EG<sup>2</sup> - EH<sup>2</sup> = 5<sup>2</sup> cm<sup>2</sup> - 2,5<sup>2</sup> cm<sup>2</sup> = 18,75cm<sup>2</sup> |√ 
  
 GH = 4,33 cm  
  
-          EF * GH         5 cm * 4,33 cm      
-G2 = 6 * --------- = 6 * ----------------- = 10,8 cm² 
-             2                  2   
+          EF * GH               
+G2 = 6 * --------- = 
+             2                  
+             
+       5 cm * 4,33 cm      
+= 6 * ---------------- = 10,8 cm<sup>2</sup>              
+             2   
  
 Pyramidenstumpf:
- 
-<img src="Aufgabe255b.jpg">
+
+V = <math ><mfrac><mi mathvariant="normal">MN</mi><mn>3</mn></mfrac><mo>&#xd7;</mo><mfenced><mrow><msub><mi mathvariant="normal">G</mi><mn>1</mn></msub><mo>+</mo><msqrt><mrow><msup><msub><mi mathvariant="normal">G</mi><mn>1</mn></msub><mrow><mn>2</mn><mo>&#xa0;</mo></mrow></msup><mo>&#xd7;</mo><mo>&#xa0;</mo><msup><msub><mi mathvariant="normal">G</mi><mn>2</mn></msub><mn>2</mn></msup></mrow></msqrt><mo>+</mo><msub><mi>G</mi><mn>2</mn></msub></mrow></mfenced></math> 
+
+V = <math ><mfrac><mn>4</mn><mn>3</mn></mfrac><mo>&#xd7;</mo><mfenced><mrow><mn>27</mn><mo>,</mo><msup><mn>7</mn><mn>2</mn></msup><mo>+</mo><msqrt><mrow><mn>27</mn><mo>,</mo><msup><mn>7</mn><mn>2</mn></msup><mo>&#xd7;</mo><mo>&#xa0;</mo><mn>10</mn><mo>,</mo><msup><mn>8</mn><mn>2</mn></msup></mrow></msqrt><mo>+</mo><mn>10</mn><mo>,</mo><msup><mn>8</mn><mn>2</mn></msup></mrow></mfenced></math>
 
      4   
-V = --- * (27,7 + 17,3 + 10,8) cm³ 
+V = --- * (27,7 + 17,3 + 10,8) cm<sup>3</sup> 
      3     
  
-<span style="color:red;">V = 74,4 cm³</span>
+<span style="color:red;">V = 74,4 cm<sup>3</sup></span>
 
 <img src="Aufgabe255c.jpg">
 
@@ -75,13 +85,14 @@ Satz von Pythagoras im Dreieck DBC:
  
 DB = 8 cm/2 = 4 cm  
  
-BC² = DB² + DC² |- DB²  
+BC<sup>2</sup> = DB<sup>2</sup> + DC<sup>2</sup> |- DB<sup>2</sup>  
  
-DC² = BC² - DB² = 8² cm² - 4² cm² = 48 |√ 
+DC<sup>2</sup> = BC<sup>2</sup> - DB<sup>2</sup> = 8<sup>2</sup> cm<sup>2</sup> - 4<sup>2</sup> cm<sup>2</sup> = 48 |√ 
  
 DC = 6,93 = h  
  
-Die Höhe h wird durch M im Verhältnis 1 : 2 geteilt. 
+Die Höhe h wird durch M im Verhältnis 1 : 2 
+geteilt. 
  
       6,93   
 DM = ------ cm = 2,31 cm 
@@ -91,13 +102,14 @@ Satz von Pythagoras im Dreieck KAE:
  
 KA = 5 cm/2 = 2,5 cm  
  
-AE² = KA² + KE² |-KA²  
+AE<sup>2</sup> = KA<sup>2</sup> + KE<sup>2</sup> |-KA<sup>2</sup>  
  
-KE² = AE² - KA² = 5² cm² - 2,5² cm² = 18,75 |√ 
+KE<sup>2</sup> = AE<sup>2</sup> - KA<sup>2</sup> = 5<sup>2</sup> cm<sup>2</sup> - 2,5<sup>2</sup> cm<sup>2</sup> = 18,75 |√ 
  
 KE = 4,33 = h<sub>1</sub>  
  
-Die Höhe h<sub>1</sub> wird durch M im Verhältnis 1 : 2 geteilt. 
+Die Höhe h<sub>1</sub> wird durch M im Verhältnis 1 : 2 
+geteilt. 
  
       4,33   
 KM = ------ cm = 1,44 cm 
@@ -111,15 +123,21 @@ Satz von Pythagoras im Dreieck DKH:
  
 KH = 4 cm 
  
-DH² = DK² + KH² = 0,87² cm² + 4² cm² = 16,76 cm² |√ 
+DH<sup>2</sup> = DK<sup>2</sup> + KH<sup>2</sup> = 
+
+= 0,87<sup>2</sup> cm<sup>2</sup> + 4<sup>2</sup> cm<sup>2</sup> = 16,76 cm<sup>2</sup> |√ 
  
 DH = h<sub>T</sub> = 4,09 cm 
  
-         AB + EF              8 cm + 5 cm     
-M = 3 * --------- * DH = 3 * -------------- * 4,09 cm  
-            2                      2     
+         AB + EF                   
+M = 3 * --------- * DH =  
+            2                      
+            
+       8 cm + 5 cm     
+= 3 * ------------- * 4,09 cm             
+            2     
  
-<span style="color:red;">M = 79,8 cm²</span>
+<span style="color:red;">M = 79,8 cm<sup>2</sup></span>
 
 
-</p></pre>
+</p></b></pre>
