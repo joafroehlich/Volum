@@ -5,6 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volumen</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>     
   
 </head>
 <body style="background-color:white;; margin-top: 1em; ">
@@ -12,24 +16,25 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre><p class ="Aufgabe">Aufgabe 278
+<pre><b><p class ="Aufgabe">Aufgabe 278
 
-Ein Kunststoffhalbzeug in der Form eines sechseckigen 
-Pyramidenstumpfes mit der Grundkante a = 4 cm, der 
-Deckkante  b = 3 cm und der Höhe h = 5 cm wird in einen 
-gleich hohen Stumpf mit der Grundkante c = 5 cm umgepresst. 
+Ein Kunststoffhalbzeug in der Form eines sechs-
+eckigen Pyramidenstumpfes mit der Grundkante 
+a = 4 cm, der Deckkante  b = 3 cm und der Höhe 
+h = 5 cm wird in einen gleich hohen Stumpf mit 
+der Grundkante c = 5 cm umgepresst. 
 Welche Seitenlänge d hat die neue Deckkante? 
 
-Alle Winkel in dem gleichseitigen Teildreieck eines 
-regelmäßigen Sechsecks sind gleich 60°. 
+Alle Winkel in dem gleichseitigen Teildreieck 
+eines regelmäßigen Sechsecks sind gleich 60°. 
 
 Teildreieck der Grundfläche:
 
-<img src="Aufgabe278a.jpg">
+     <img src="Aufgabe278a.jpg">
 
 Im Dreieck DBC gilt: 
 
@@ -49,48 +54,71 @@ Für Höhe h<sub>Sneu</sub> in der neuen Grundfläche gilt:
 
 hh<sub>Sneu</sub> = 2,5 cm * tan 60° = 4,33 cm  
 
-Für die Höhe h<sub>S1neu</sub> in der neuen Deckfläche gilt: 
+Für die Höhe h<sub>S1neu</sub> in der neuen Deckfläche 
+gilt: 
 
 h<sub>S1neu</sub> = e/2 cm * tan 60° = e * 0,866 cm  
  
 Grundfläche G<sub>1</sub>: 
  
-          AB * DC         4 cm * 3,464 cm       
-G<sub>1</sub> = 6 * --------- = 6 * ------------------ = 41,6 cm² 
-             2                    2       
+          AB * DC                
+G<sub>1</sub> = 6 * --------- =  
+             2                    
+             
+       4 cm * 3,464 cm      
+= 6 * ----------------- = 41,6 cm<sup>2</sup>             
+             2       
  
 Deckfläche G<sub>2</sub>: 
  
           3 cm * 2,165 cm                  
-G<sub>2</sub> = 6 * ------------------ = 23,4 cm² 
+G<sub>2</sub> = 6 * ------------------ = 23,4 cm<sup>2</sup> 
                   2                           
  
                            5 cm * 4,33 cm   
-Grundfläche G<sub>1neu</sub> = 6 *  ------------------ = 64,95 cm² 
-                                  2   
+Grundfläche G<sub>1neu</sub> = 6 *  ------------------ =  
+                                  2 
+                                  
+= 64,95 cm<sup>2</sup>                                  
  
                         d cm * d * 0,866 cm  
-Deckfläche G<sub>2neu</sub> = 6 * ---------------------- = 2,6 * d² cm² 
-                                 2          
+Deckfläche G<sub>2neu</sub> = 6 * ---------------------- =  
+                                 2
+                                 
+= 2,6 * d<sup>2</sup> cm<sup>2</sup>                                 
  
 Ursprüngliches Pyramidenstumpfvolumen V<sub>1</sub>:
 
-<img src="Aufgabe278b.jpg">
- 
+V<sub>1</sub> = <math ><mfrac><mi mathvariant="normal">5</mi><mn>3</mn></mfrac><mo>&#xd7;</mo><mfenced><mrow><msub><mi mathvariant="normal">G</mi><mn>1</mn></msub><mo>+</mo><msqrt><mrow><msup><msub><mi mathvariant="normal">G</mi><mn>1</mn></msub><mrow><mn>2</mn><mo>&#xa0;</mo></mrow></msup><mo>&#xd7;</mo><mo>&#xa0;</mo><msup><msub><mi mathvariant="normal">G</mi><mn>2</mn></msub><mn>2</mn></msup></mrow></msqrt><mo>+</mo><msub><mi mathvariant="normal" >G</mi><mn>2</mn></msub></mrow></mfenced></math> cm<sup>3</sup>
+
+V<sub>1</sub> = <math ><mo>&#xA0;</mo><mfrac><mn>5</mn><mn>3</mn></mfrac><mo>&#xd7;</mo><mo>(</mo><mn>41</mn><mo>,</mo><mn>6</mn><mo>+</mo><msqrt><mrow><mn>41</mn><mo>,</mo><mn>6</mn><mo>&#xd7;</mo><mn>23</mn><mo>,</mo><mn>4</mn></mrow></msqrt><mo>+</mo><mn>23</mn><mo>,</mo><mn>4</mn><mo>)</mo></math> cm<sup>3</sup>
+
+      5 
+V<sub>1</sub> = --- * (41,6 + 31,2 + 23,4) m<sup>3</sup> = 160,3 cm<sup>3</sup>
+      3  
+
+V<sub>1</sub> = V<sub>2</sub>
+
+V<sub>2</sub> = <math ><mfrac><mn>5</mn><mn>3</mn></mfrac><mo>&#xd7;</mo><mfenced ><mrow><mn>64</mn><mo>,</mo><mn>95</mn><mo>+</mo><msqrt><mrow><mn>64</mn><mo>,</mo><mn>95</mn><mo>&#xd7;</mo><mn>2</mn><mo>,</mo><mn>6</mn><mo>&#xd7;</mo><msup><mi mathvariant="normal">d</mi><mn>2</mn></msup></mrow></msqrt><mo>+</mo><mn>2</mn><mo>,</mo><mn>6</mn><mo>&#xd7;</mo><msup><mi mathvariant="normal">d</mi><mn>2</mn></msup></mrow></mfenced></math> cm<sup>3</sup>
+
          5   
-160,3 = --- * (64,95 + 13 * d + 2,6 * d²) cm³ 
+160,3 = --- * (64,95 + 13 * d + 2,6 * d<sup>2</sup>) cm<sup>3</sup> 
          3    
  
-160,3 = 108,25 + 21,7 * d + 4,33 * d² |-160,3 
+160,3 = 108,25 + 21,7 * d + 4,33 * d<sup>2</sup> |-160,3 
  
-4,33 * d²  + 21,7 * d - 52,05 = 0 |:4,33 
+4,33 * d<sup>2</sup>  + 21,7 * d - 52,05 = 0 |:4,33 
  
-d² + 5 * d - 12 = 0 
+d<sup>2</sup> + 5 * d - 12 = 0 
  
-p = 5 ; q = - 12
+p = 5 ; q = -12
 
-<img src="Aufgabe278c.jpg">
+d<sub>1,2</sub> = <math ><mo>&#xA0;</mo><mfrac><mrow><mo>-</mo><mn>5</mn></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mn>5</mn><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>12</mn></mrow></mfenced></mrow></msqrt></math>  
 
+d<sub>1,2</sub> = -2,5 ±<math ><mo>&#xA0;</mo><msqrt><mrow><mn>6</mn><mo>,</mo><mn>25</mn><mo>+</mo><mn>12</mn></mrow></msqrt></math>   
+
+d<sub>1,2</sub> = -2,5 ± <math ><mo>&#xA0;</mo><msqrt><mrow><mn>18</mn><mo>,</mo><mn>25</mn></mrow></msqrt></math>  
+                                                   
 d<sub>1,2</sub> = - 2,5 ± 4,27 
  
 <span style="color:red;">d<sub>1</sub></span> = - 2,5 + 4,27 <span style="color:red;">= 1,77 cm</span> 
@@ -98,4 +126,4 @@ d<sub>1,2</sub> = - 2,5 ± 4,27
 d<sub>2</sub> = - 2,5 - 4,77 = - 7,27  keine Lösung, negative Länge
 
 
-</p></pre>
+</p></b></pre>

@@ -5,6 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volumen</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>   
   
 </head>
 <body style="background-color:white;; margin-top: 1em; ">
@@ -12,21 +16,21 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre><p class ="Aufgabe">Aufgabe 276
+<pre><b><p class ="Aufgabe">Aufgabe 276
 
 Ein 55 cm langer Dreikantstahl hat die Form 
 eines Pyramidenstumpfes mit gleichseitigen 
 Dreiecken als Grund- und Deckfläche. 
-Seitenlänge unten  20 cm, oben 5 cm. 
+Seitenlänge unten 20 cm, oben 5 cm. 
 Wie groß ist der Abfall A, wenn der Stumpf zu 
 einer geraden Pyramide mit gleicher Grundfläche 
 abgeschliffen wird?  
 
-A = Pyramidenstumpfvolumen V<sub>PS</sub> - Pyramidenvolumen V<sub>P</sub> 
+A = PStumpfvolumen V<sub>PS</sub> - Pyramidenvolumen V<sub>P</sub> 
 
 Höhe der Grundfläche: 
 
@@ -38,18 +42,41 @@ BC = AB = AC = 20 cm
 
 DB = AB/2 = 20 cm/2 = 10 cm 
 
-BC² = DB² + DC² | - DB² 
+BC<sup>2</sup> = DB<sup>2</sup> + DC<sup>2</sup> | - DB<sup>2</sup> 
 
-DC² = BC² - DB² = 20² cm² - 10² cm² = 300 cm² |√ 
+DC<sup>2</sup> = BC<sup>2</sup> - DB<sup>2</sup> = 20<sup>2</sup> cm<sup>2</sup> - 10<sup>2</sup> cm<sup>2</sup> = 300 cm<sup>2</sup> |√ 
 
 DC = 17,32 cm = h 
 
 Höhe der Deckfläche: 
 
-h<sub>D</sub>² = 5² cm² - 2,5² cm² = 18,75 cm² |√ 
+h<sub>D</sub><sup>2</sup> = 5<sup>2</sup> cm<sup>2</sup> - 2,5<sup>2</sup> cm<sup>2</sup> = 18,75 cm<sup>2</sup> |√ 
 
 h<sub>D</sub> = 4,33 cm  
 
-<img src="Aufgabe276b.jpg">
- 
-</p></pre>
+V = <math ><mfrac><mi mathvariant="normal">h</mi><mn>3</mn></mfrac><mo>&#xd7;</mo><mfenced><mrow><msub><mi mathvariant="normal">G</mi><mn>1</mn></msub><mo>+</mo><msqrt><mrow><msup><msub><mi mathvariant="normal">G</mi><mn>1</mn></msub><mrow><mn>2</mn><mo>&#xa0;</mo></mrow></msup><mo>&#xd7;</mo><mo>&#xa0;</mo><msup><msub><mi mathvariant="normal">G</mi><mn>2</mn></msub><mn>2</mn></msup></mrow></msqrt><mo>+</mo><msub><mi>G</mi><mn>2</mn></msub></mrow></mfenced></math>
+
+       20 cm * 17,32 cm    
+G<sub>1</sub> = -------------------- = 173,2 cm<sup>2</sup> 
+             2   
+
+      5 cm * 4,33 cm    
+G<sub>2</sub> = ----------------- = 10,8 cm<sup>2</sup> 
+           2   
+
+V<sub>PS</sub> = <math ><mo>&#xA0;</mo><mfrac><mn>55</mn><mn>3</mn></mfrac><mo>&#xd7;</mo><mo>(</mo><mn>173</mn><mo>,</mo><mn>2</mn><mo>+</mo><msqrt><mrow><mn>173</mn><mo>,</mo><mn>2</mn><mo>&#xd7;</mo><mn>10</mn><mo>,</mo><mn>8</mn></mrow></msqrt><mo>+</mo><mn>10</mn><mo>,</mo><mn>8</mn><mo>)</mo></math>cm<sup>3</sup>
+
+       55 
+V<sub>PS</sub> = ---- * (173,2 + 43,2 + 10,8) cm<sup>3</sup>
+        3  
+
+V<sub>PS</sub> = 4 165 cm<sup>3</sup>
+
+      G<sub>1</sub> * h<sub>P</sub>      173,2 cm<sup>2</sup> * 55 cm   
+V<sub>P</sub> = ---------- = -------------------- = 3 175 cm<sup>3</sup>
+         3                 3  
+
+<span style="color:red;">A</span> = 4 165 cm<sup>3</sup> - 3 175 cm<sup>3</sup> <span style="color:red;">= 990 cm<sup>3</sup></span>
+
+
+</p></b></pre>
