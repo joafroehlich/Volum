@@ -5,6 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volumen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
   
 </head>
 <body style="background-color:white;; margin-top: 1em; ">
@@ -12,17 +16,17 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre><p class ="Aufgabe">Aufgabe 327
+<pre><b><p class ="Aufgabe">Aufgabe 327
 
-Eine Hohlkugel hat ein Volumen von 40 cm³ und 
+Eine Hohlkugel hat ein Volumen von 40 cm<sup>3</sup> und 
 eine Wandstärke s von 1 cm. 
 Wie groß sind die Radien r<sub>i</sub> und r<sub>a</sub>?  
 
-     d<sub>a</sub>³ * л     d<sub>i</sub>³ * л 
+     d<sub>a</sub><sup>3</sup> * л     d<sub>i</sub><sup>3</sup> * л 
 V = --------- - --------- 
         6           6    
  
@@ -33,38 +37,47 @@ d<sub>a</sub> = d<sub>i</sub> + 2
 Eingesetzt: 
  
       л   
-40 = --- * [(d<sub>i</sub> + 2)³ - d<sub>i</sub>³] |*6 
+40 = --- * [(d<sub>i</sub> + 2)<sup>3</sup> - d<sub>i</sub><sup>3</sup>] |*6 
       6   
  
-240 = л * [(d<sub>i</sub> + 2)³ - d<sub>i</sub>³] |:л 
+240 = л * [(d<sub>i</sub> + 2)<sup>3</sup> - d<sub>i</sub><sup>3</sup>] |:л 
  
  240 
------ = [(d<sub>i</sub> + 2)³ - d<sub>i</sub>³ 
+----- = [(d<sub>i</sub> + 2)<sup>3</sup> - d<sub>i</sub><sup>3</sup> 
   л 
  
-Unter Anwendung des Pascalschen Dreiecks für (d<sub>i</sub> + 2)³: 
+Unter Anwendung des Pascalschen Dreiecks für 
+(d<sub>i</sub> + 2)<sup>3</sup>: 
  
  240 
------ = d<sub>i</sub>³ + 3 * d<sub>i</sub>² * 2 + 3 * d<sub>i</sub> * 2² + 2³ - d<sub>i</sub>³ 
+----- = d<sub>i</sub><sup>3</sup> + 3 * d<sub>i</sub><sup>2</sup> * 2 + 3 * d<sub>i</sub> * 2<sup>2</sup> + 2<sup>3</sup> - d<sub>i</sub><sup>3</sup> 
   л 
  
-76,4 = 6 * d<sub>i</sub>² + 12 * d<sub>i</sub> + 8 |-76,4 
+76,4 = 6 * d<sub>i</sub><sup>2</sup> + 12 * d<sub>i</sub> + 8 |-76,4 
  
-6 * d<sub>i</sub>² + 12 * d<sub>i</sub> - 68,4 = 0 | :6 
+6 * d<sub>i</sub><sup>2</sup> + 12 * d<sub>i</sub> - 68,4 = 0 | :6 
  
-d<sub>i</sub>² + 2 * d<sub>i</sub> - 11,4 = 0  
+d<sub>i</sub><sup>2</sup> + 2 * d<sub>i</sub> - 11,4 = 0  
  
 p = 2 ; q = - 11,4
 
-<img src="Aufgabe327.jpg">
+d<sub>i1,2</sub> = <math ><mfrac><mrow><mo>-</mo><mn>2</mn></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mn>2</mn><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>11</mn><mo>,</mo><mn>4</mn></mrow></mfenced></mrow></msqrt></math>
+
+d<sub>i1,2</sub> = -1 ± <math ><msqrt><mrow><mn>1</mn><mo>+</mo><mn>11</mn><mo>,</mo><mn>4</mn></mrow></msqrt></math>
+
+d<sub>i1,2</sub> = -1 ± <math ><msqrt><mrow><mn>12</mn><mo>,</mo><mn>4</mn></mrow></msqrt></math>
 
 d<sub>i1,2</sub> = - 1 ± 3,52 
 
-d<sub>i1</sub> = - 1 + 3,52 = 2,52 cm --> <span style="color:red;">r<sub>i</sub></span> = d<sub>i</sub>/2 cm = 2,52 cm/2 <span style="color:red;">= 1,26 cm</span> 
+d<sub>i1</sub> = - 1 + 3,52 = 2,52 cm --> 
 
-d<sub>i2</sub> = - 1 - 3,52 = - 4,52 keine Lösung, negative Länge 
+<span style="color:red;">r<sub>i</sub></span> = d<sub>i</sub>/2 cm = 2,52 cm/2 <span style="color:red;">= 1,26 cm</span> 
+
+d<sub>i2</sub> = - 1 - 3,52 = -4,52 
+
+keine Lösung, negative Länge 
 
 <span style="color:red;">r<sub>a</sub></span> = r<sub>i</sub> + s = 1,26 cm + 1 cm <span style="color:red;">= 2,26 cm</span>
  
 
-</p></pre>
+</p></b></pre>
