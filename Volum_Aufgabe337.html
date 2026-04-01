@@ -5,6 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volumen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
   
 </head>
 <body style="background-color:white;; margin-top: 1em; ">
@@ -12,22 +16,52 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre><p class ="Aufgabe">Aufgabe 337
+<pre><b><p class ="Aufgabe">Aufgabe 337
 
 Wie hoch muss der zu einem Kugelsektor gehörige 
 Abschnitt sein, wenn er die gleiche Fläche wie 
 der dazugehörige Kegelmantel hat und der 
 Kugelradius 15 cm beträgt? 
 
-<img src="Aufgabe337.jpg">
+     <img src="Aufgabe337.jpg">
 
-<img src="Aufgabe337a.jpg">
+Satz von Pythagoras im Dreieck MAB:
 
-4 * h² = 2 * r * h - h² |h 
+MB = r - h
+
+AB = r1 = Grundkreisradius des Kegels
+
+r<sup>2</sup> = (r - h)<sup>2</sup> + r<sub>1</sub><sup>2</sup> | - (r - h)<sup>2</sup>
+
+r<sub>1</sub><sup>2</sup> = r<sup>2</sup> - (r - h)<sup>2</sup> = 
+
+= r<sup>2</sup> - (r<sup>2</sup> - 2 * r * h + h<sup>2</sup>) = 2 * r * h - h<sup>2</sup> |√
+
+r<sub>1</sub> = <math ><msqrt><mrow><mn>2</mn><mi mathvariant="normal">rh</mi><mo>&#x2212;</mo><msup><mi mathvariant="normal">h</mi><mn>2</mn></msup></mrow></msqrt></math>  
+
+Fläche Kugelabschnitt:
+
+A = 2 * л * r * h 
+
+Mantelfläche Kegel:
+
+M = л * r<sub>1</sub> * r
+
+r<sub>1</sub> eingesetzt:
+
+M = л * <math ><msqrt><mrow><mn>2</mn><mi mathvariant="normal">rh</mi><mo>&#x2212;</mo><msup><mi mathvariant="normal">h</mi><mn>2</mn></msup></mrow></msqrt></math>  * r
+
+A = M 
+
+2 * л * r * h = л *   * r | : л * r
+
+2 * h = <math ><msqrt><mrow><mn>2</mn><mi mathvariant="normal">rh</mi><mo>&#x2212;</mo><msup><mi mathvariant="normal">h</mi><mn>2</mn></msup></mrow></msqrt></math>    |<sup>2</sup>
+
+4 * h<sup>2</sup> = 2 * r * h - h<sup>2</sup> |h 
 
 4 * h = 2 * r - h |+h 
 
@@ -36,4 +70,4 @@ Kugelradius 15 cm beträgt?
 <span style="color:red;">h</span> = 0,4 * r = 0,4 * 15 cm <span style="color:red;">= 6 cm</span>
 
 
-</p></pre>
+</p></b></pre>
