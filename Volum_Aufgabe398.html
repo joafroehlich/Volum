@@ -5,6 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volumen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>   
   
 </head>
 <body style="background-color:white;; margin-top: 1em; ">
@@ -12,13 +16,111 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre><p class ="Aufgabe">Aufgabe 398
+<pre><b><p class ="Aufgabe">Aufgabe 398
 
-<img src="Aufgabe398.jpg">
-<img src="Aufgabe398a.jpg">
+Eine Hohlkugel besteht aus 80 cm<sup>3</sup> Schokolade und 
+hat einen Umfang von 40 cm. Welche Dicke s hat 
+die Schicht? Welchen Durchmesser d hätte eine mit 
+einer Schichtdicke von 3 mm bei gleicher Menge? 
 
-</p></pre>
+Außendurchmesser der Hohlkugel:
+
+U = d<sub>außen</sub> * л | : л 
+
+          U      40 cm
+d<sub>außen</sub> = --- = --------- = 12,74 cm
+          л         л      
+
+              d<sub>außen</sub><sup>3</sup> * л     d<sub>innen</sub><sup>3</sup> * л       
+V<sub>Hohlkugel</sub> = ------------- - ------------- = 
+                   6                6         
+                   
+   л                 
+= --- * (d<sub>außen</sub><sup>3</sup> - d<sub>innen</sub><sup>3</sup>) | *6                   
+   6      
+
+V<sub>Hohlkugel</sub> * 6 = л * (d<sub>außen</sub><sup>3</sup> - d<sub>innen</sub><sup>3</sup>) |:л
+
+                     V<sub>Hohlkugel</sub> * 6   
+d<sub>außen</sub><sup>3</sup> - d<sub>innen</sub><sup>3</sup> = ---------------- |-daußen<sup>3</sup>
+                            л    
+
+             V<sub>Hohlkugel</sub> * 6   
+- d<sub>innen</sub><sup>3</sup> = ---------------- - d<sub>außen</sub><sup>3</sup> | *(-1)
+                      л       
+
+                     V<sub>Hohlkugel</sub> * 6   
+d<sub>innen</sub><sup>3</sup> = d<sub>außen</sub><sup>3</sup> - ---------------- |&#8731;  
+                           л       
+
+d<sub>innen</sub> = <math ><mroot><mrow><msup><msub><mi mathvariant="normal">d</mi><mrow><mi mathvariant="normal">au</mi><mi mathvariant="normal">&#xdf;</mi><mi mathvariant="normal">en</mi></mrow></msub><mn>3</mn></msup><mo>&#x2212;</mo><mfrac><mrow><msub><mi mathvariant="normal">V</mi><mi mathvariant="normal">Hohlkugel</mi></msub><mo>&#xd7;</mo><mn>6</mn></mrow><mi mathvariant="normal">&#x3c0;</mi></mfrac></mrow><mn>3</mn></mroot></math>=
+
+= <math ><mroot><mrow><mn>12</mn><mo>,</mo><msup><mn>74</mn><mn>3</mn></msup><mo>&#x2212;</mo><mfrac><mrow><mn>80</mn><msup><mi mathvariant="normal">cm</mi><mn>3</mn></msup><mo>&#xd7;</mo><mn>6</mn></mrow><mi mathvariant="normal">&#x3c0;</mi></mfrac></mrow><mn>3</mn></mroot></math> = 12,42 cm
+
+     d<sub>außen</sub> - d       
+s = ------------------ = 
+            2                   
+            
+   12,74 cm - 12,42 cm          
+= --------------------- = 0,16 cm            
+            2   
+
+              л  
+V<sub>Hohlkugel</sub> = --- * (d<sub>außenneu</sub><sup>3</sup> - d<sub>innenneu</sub><sup>3</sup>) 
+              6      
+
+Dicke s = 3 mm = 0,3 cm
+
+d<sub>innenneu</sub> = d - 2 * s
+
+d<sub>innenneu</sub> = d - 2 * 0,3 cm = d - 0,6 cm
+                 л  
+V<sub>Hohlkugel</sub> = --- * [d<sup>3</sup> - (d - 0,6)<sup>3</sup>] | *6
+                 6      
+
+6 * 80 = л * [d<sup>3</sup> - (d - 0,6)<sup>3</sup>] | : л 
+                       
+6 * 80 
+------- = d<sup>3</sup> - (d<sup>3</sup> - 3*d<sup>2</sup>*0,6 + 3*d*0,6<sup>2</sup> - 0,6<sup>3</sup>)
+   л     
+
+152,9 = d<sup>3</sup> - d<sup>3</sup> + 3 * d<sup>2</sup> * 0,6 - 3*d*0,6<sup>2</sup> + 0,6<sup>3</sup>
+
+152,9 = 1,8 * d<sup>2</sup> - 1,08 * d + 0,216 | -152,9
+   
+1,8 * d<sup>2</sup> - 1,08 * d - 152,68 = 0
+
+A, B, C - Formel: 
+
+A = 1,8 ; B = -1,08, C = -152,68
+
+        -(-1,08) ± <math ><msqrt><mrow><msup><mfenced><mrow><mo>-</mo><mn>1</mn><mo>,</mo><mn>08</mn></mrow></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mo>&#xd7;</mo><mn>1</mn><mo>,</mo><mn>8</mn><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>152</mn><mo>,</mo><mn>68</mn></mrow></mfenced></mrow></msqrt></math>
+d<sub>1,2</sub> = ---------------------------------------------- 
+                        2 * 1,8
+
+       1,08 ± <math ><msqrt><mrow><mn>1</mn><mo>,</mo><mn>17</mn><mo>+</mo><mn>1100</mn></mrow></msqrt></math>
+d<sub>1,2</sub>= ----------------------- 
+                3,6
+
+        1,08 ± <math ><msqrt><mrow><mn>1101</mn><mo>,</mo><mn>17</mn></mrow></msqrt></math>
+d<sub>1,2</sub> = -------------------- 
+              3,6
+
+          1,08 ± 33,18   
+d<sub>1,2</sub> = ------------------
+               3,6           
+
+      34,26                  
+d<sub>1</sub> = ------- = 9,52 cm 
+       3,6         
+      
+     -32,1                  
+d<sub>2</sub> = ------ < 0 --> keine Lösung, negative Länge
+      3,6         
+
+
+</p></b></pre>

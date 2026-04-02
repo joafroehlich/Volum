@@ -5,6 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volumen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
   
 </head>
 <body style="background-color:white;; margin-top: 1em; ">
@@ -12,15 +17,16 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre><p class ="Aufgabe">Aufgabe 396
+<pre><b><p class ="Aufgabe">Aufgabe 396
 
-Wie groß ist das Volumen V der Kugel nach dem Aufbohren? 
+Wie groß ist das Volumen V der Kugel nach dem 
+Aufbohren? 
 
-<img src="Aufgabe396a.jpg">
+     <img src="Aufgabe396a.jpg">
 
 Strahlensatz:
 
@@ -34,23 +40,23 @@ EF = 70 mm/2 = 35 mm
 ---- = ---- |*MC 
  EC     MC 
 
-       EF * MC      35 mm * 48 mm   
-MD = ----------- = ---------------- = 17,5 mm = r<sub>1</sub> 
-          EC             96 mm 
+      EF * MC     35 mm * 48 mm   
+MD = --------- = ---------------- = 17,5 mm = r<sub>1</sub> 
+         EC            96 mm 
 
 Satz von Pythagoras im Dreieck MBA: 
 
 MA = MC - CA = 48 mm - CA 
 
-MB² = MA² + AB² |-MA² 
+MB<sup>2</sup> = MA<sup>2</sup> + AB<sup>2</sup> |-MA<sup>2</sup> 
 
-AB² = MB² - MA² = MB² - (48 - CA)² 
+AB<sup>2</sup> = MB<sup>2</sup> - MA<sup>2</sup> = MB<sup>2</sup> - (48 - CA)<sup>2</sup> 
  
-AB² = 48² - (48² - 96 * CA + CA²) 
+AB<sup>2</sup> = 48<sup>2</sup> - (48<sup>2</sup> - 96 * CA + CA<sup>2</sup>) 
  
-AB² = 48² - 48² + 96 * CA - CA² 
+AB<sup>2</sup> = 48<sup>2</sup> - 48<sup>2</sup> + 96 * CA - CA<sup>2</sup> 
  
-AB² = 96 * CA - CA²   (1) 
+AB<sup>2</sup> = 96 * CA - CA<sup>2</sup>   (1) 
  
 Strahlensatz: 
  
@@ -64,23 +70,37 @@ AB = ------------------ = -------------------
  
 AB = 0,365 * (96 - CA)  (2) 
  
-AB² = 0,133 * (9 216 - 192 * CA + CA²) 
+AB<sup>2</sup> = 0,133 * (9 216 - 192 * CA + CA<sup>2</sup>) 
  
-AB² = 1 226 - 25,5 * CA + 0,133 * CA² 
+AB<sup>2</sup> = 1 226 - 25,5 * CA + 0,133 * CA<sup>2</sup> 
  
 Eingesetzt in (1): 
  
-1 226 - 25,5 * CA + 0,133 * CA² = 96 * CA - CA² |+CA² 
+1 226 - 25,5 * CA + 0,133 * CA<sup>2</sup> = 
+
+= 96 * CA - CA<sup>2</sup> |+CA<sup>2</sup> 
  
-1 226 - 25,5 * CA  + 1,133 * CA² = 96 * CA |-96 * CA 
+1 226 - 25,5 * CA  + 1,133 * CA<sup>2</sup> = 
+
+= 96 * CA |-96 * CA 
  
-1,133 * CA² - 121,5 * CA + 1 226 = 0 
+1,133 * CA<sup>2</sup> - 121,5 * CA + 1 226 = 0 
  
 A, B, C - Formel:  
  
-A = 1,133 ; B = - 121,5, C = 1 226
+A = 1,133 ; B = -121,5, C = 1 226
 
-<img src="Aufgabe396b.jpg">
+          -(-121,5) ± <math ><msqrt><mrow><msup><mfenced><mrow><mo>-</mo><mn>121</mn><mo>,</mo><mn>5</mn></mrow></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mo>&#xd7;</mo><mn>1,133</mn><mo>&#xd7;</mo><mn>1226</mn></mrow></msqrt></math>
+C<sub>A1,2</sub> = --------------------------------------------- 
+                          2 * 1,133
+
+          121,5 ± <math ><msqrt><mrow><mn>14762</mn><mo>&#x2212;</mo><mn>5556</mn></mrow></msqrt></math>
+C<sub>A1,2</sub> = -------------------------- 
+                    2,266
+
+         121,5 ± <math ><msqrt><mn>9206</mn></msqrt></math>
+C<sub>A1,2</sub> = ------------------ 
+                 2,266
 
           121,5 ± 95,95    
 C<sub>A1,2</sub> = ----------------- 
@@ -106,33 +126,47 @@ V = V<sub>Kugel</sub> - 2 * V<sub>Kegelstumpf</sub> - 2 * V<sub>Kugelschicht</su
  
 d<sub>Kugel</sub> = 2 * 48 mm = 96 mm 
  
-          d<sub>Kugel</sub>³ * л       96³ * mm³ * л  
-V<sub>Kugel</sub> = -------------- = ----------------- = 463 011 mm³ = 463 cm³ 
-               6                   6    
+          d<sub>Kugel</sub><sup>3</sup> * л       96<sup>3</sup> * mm<sup>3</sup> * л  
+V<sub>Kugel</sub> = -------------- = ----------------- = 
+               6                   6 
+
+= 463 011 mm<sup>3</sup> = 463 cm<sup>3</sup>                
  
               л    
-V<sub>Kegelstumpf</sub> = --- * h<sub>Kegelstumpf</sub> * (r<sub>1</sub>² + r<sub>1</sub> * r<sub>2</sub> + r<sub>2</sub>²) 
-              3        
+V<sub>Kegelstumpf</sub> = --- * h<sub>Kegelstumpf</sub> *  
+              3 
+              
+* (r<sub>1</sub><sup>2</sup> + r<sub>1</sub> * r<sub>2</sub> + r<sub>2</sub><sup>2</sup>)              
  
               л    
-V<sub>Kegelstumpf</sub> = --- * 38,4 * (17,5² + 17,5 * 31,5 + 31,5²)  mm³ 
-              3        
+V<sub>Kegelstumpf</sub> = --- *  
+              3 
+              
+* 38,4 * (17,5<sup>2</sup> + 17,5 * 31,5 + 31,5<sup>2</sup>)  mm<sup>3</sup>              
  
-V<sub>Kegelstumpf</sub> = 74 345 mm³ 
+V<sub>Kegelstumpf</sub> = 74 345 mm<sup>3</sup> 
  
-2 * V<sub>Kegelstumpf</sub> = 2 * 74 345 mm³ = 148 690 mm³ = 148,7 cm³ 
+2 * V<sub>Kegelstumpf</sub> = 2 * 74 345 mm<sup>3</sup> = 
+
+= 148 690 mm<sup>3</sup> = 148,7 cm<sup>3</sup> 
  
                      л  
-V<sub>Kugelabschnitt</sub> = --- * h<sub>Kugelabschnitt</sub>² * (3 * r<sub>Kugel</sub> - h<sub>Kugelabschnitt</sub>) 
-                     3    
+V<sub>Kugelabschnitt</sub> = --- * h<sub>Kugelabschnitt</sub><sup>2</sup> *  
+                     3
+                     
+* (3 * r<sub>Kugel</sub> - h<sub>Kugelabschnitt</sub>)                     
  
-                 л  
-V<sub>Kugelabschnitt</sub> = --- * 9,6² * (3 * 48 - 9,6) mm³ = 12 964 mm³ 
-                 3       
+V<sub>Kugelabschnitt</sub> =  
+                 
+   л  
+= --- * 9,6<sup>2</sup> * (3 * 48 - 9,6) mm<sup>3</sup> = 12 964 mm<sup>3</sup>
+   3       
  
-2 * V<sub>Kugelabschnitt</sub> = 2 * 12 964 mm³ = 25 928 mm³ = 25,9 cm³
+2 * V<sub>Kugelabschnitt</sub> = 2 * 12 964 mm<sup>3</sup> = 
 
-<span style="color:red;">V</span> = 463 cm³ - 148,7 cm³ - 25,9 cm³ <span style="color:red;">= 288,4 cm³</span>
+= 25 928 mm<sup>3</sup> = 25,9 cm<sup>3</sup>
+
+<span style="color:red;">V</span> = 463 cm<sup>3</sup> - 148,7 cm<sup>3</sup> - 25,9 cm<sup>3</sup> <span style="color:red;">= 288,4 cm<sup>3</sup></span>
 
 
 
