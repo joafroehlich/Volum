@@ -6,19 +6,75 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volumen</title>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
   
 </head>
 <body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button { font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+
+        img {
+               max-width: 100%;
+               height: auto;
+               display: block;
+            }    
+        
     </style>
+
+    <main>
 
 <p class="Text1">Wie löse ich Matheaufgaben?</p>
 <p class="Text1">Volumen</p>  
@@ -26,26 +82,27 @@
 <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
 <p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
         
+<div class="check">
+
 <!--//Aufgabe 1-->
 
-<pre><b><p class="Aufgabe">Aufgabe 1
+  <h2>Aufgabe 1</h2><p>
 
 Welches Volumen V und welche Oberfläche O hat 
-ein Würfel mit der Seitenlänge a = 3 cm? 
+ein Würfel mit der Seitenlänge a = 3 cm?</p> 
 
-<button  onclick="window.open('Volum_Aufgabe1.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe1.html');" >Lösung</button></p>
 
 
 <!--//Aufgabe 2-->
 
-<pre><p class ="Aufgabe" >Aufgabe 2
+<h2>Aufgabe 1</h2><p>
 
-Welche Seitenlänge a hat ein Würfel 
-a) mit dem Volumen V = 64 cm<sup>3</sup>?
-b) mit der Oberfläche = 150 cm<sup>2</sup>?  
+Welche Seitenlänge a hat ein Würfel </p>
+a) mit dem Volumen V = 64 cm<sup>3</sup>?</p>
+b) mit der Oberfläche = 150 cm<sup>2</sup>?</p>  
 
-b) a = <input type="text" id="Eintrag2" maxlength="1" size="1" style= background-color:yellow ></input> cm <button id="Pruef2" onclick="Aufgabe2()">Prüfen</button></p></pre>
- 
+b) a = <input type="text" id="Eintrag2" maxlength="1"  ></input> cm <button id="Pruef2" onclick="Aufgabe2()">Prüfen</button></p>
                       <script>
                         function Aufgabe2() { 
                                                 
@@ -62,27 +119,26 @@ b) a = <input type="text" id="Eintrag2" maxlength="1" size="1" style= background
 
         <!--//Aufgabe 3-->                  
 
-  <pre><p class="Aufgabe">Aufgabe 3
+  <h2>Aufgabe 3</h2><p>
 
 Ein Prisma hat einen Umfang U der Grundfläche von 
 56,8 dm,eine Höhe h von 9,5 dm und eine Grundf-
 läche G von 94,5 dm<sup>2</sup>.
 Wie groß sind die Mantelfläche M und die 
-Oberfläche O? 
+Oberfläche O?</p> 
 
-<button  onclick="window.open('Volum_Aufgabe3.html');">Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe3.html');">Lösung</button></p>
 
 <!--//Aufgabe 4-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 4
+  <h2>Aufgabe 4</h2><p>
 
 Ein Prisma hat eine Grundfläche G von 63,8 cm<sup>2</sup>, 
 eine Höhe h von 22,5 cm und eine Mantelfläche M 
 von 518,75 cm<sup>2</sup>. Wie groß sind die 
-Oberfläche O und der Umfang U der Grundfläche?   
+Oberfläche O und der Umfang U der Grundfläche?</p>   
 
-U = <input type="text" id="Eintrag4" maxlength="5" size="2" style= background-color:yellow ></input> cm <button id="Pruef4" onclick="Aufgabe4()">Prüfen</button></p><nobr>
-</pre>
+U = <input type="text" id="Eintrag4" maxlength="5"  ></input> cm <button id="Pruef4" onclick="Aufgabe4()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe4() { 
@@ -99,26 +155,25 @@ U = <input type="text" id="Eintrag4" maxlength="5" size="2" style= background-co
 
  <!--//Aufgabe 5-->  
 
-  <pre><p class="Aufgabe">Aufgabe 5
+  <h2>Aufgabe 5</h2><p>
 
 Ein Prisma hat eine Oberfläche O von 54,63 cm<sup>2</sup>, 
 eine Mantelfläche M von 36,83 cm<sup>2</sup> und einen 
 Umfang U der Grundfläche von 6,35 cm. 
-Wie groß sind die Grundläche G und die Höhe h?     
+Wie groß sind die Grundläche G und die Höhe h?</p>     
 
-<button  onclick="window.open('Volum_Aufgabe5.html');">Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe5.html');">Lösung</button></p>
 
 <!--//Aufgabe 6-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 6
+  <h2>Aufgabe 6</h2><p>
 
 Ein Prisma hat eine Oberfläche O von 1225 cm<sup>2</sup>, 
 eine Höhe h von 23 cm und einen Umfang U der 
 Grundfläche von 42 cm. Wie groß sind die 
-Grundläche G und die Mantelfläche M?   
+Grundläche G und die Mantelfläche M?</p>   
 
-M = <input type="text" id="Eintrag6" maxlength="3" size="1" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef6" onclick="Aufgabe6()">Prüfen</button>
-    </p></pre>
+M = <input type="text" id="Eintrag6" maxlength="3"  ></input> cm<sup>2</sup> <button id="Pruef6" onclick="Aufgabe6()">Prüfen</button>    </p>
  
                       <script>
                         function Aufgabe6() { 
@@ -135,25 +190,25 @@ M = <input type="text" id="Eintrag6" maxlength="3" size="1" style= background-co
                       
   <!--//Aufgabe 7-->   
 
-  <pre><p class="Aufgabe">Aufgabe 7</nobr>
+  <h2>Aufgabe 7</h2><p>
 
 Berechnen Sie das Volumen V des dargestellten 
-Prismas.  
+Prismas.</p>  
 
-<img src="Aufgabe7.jpg" >
+<img src="Aufgabe7.jpg" ></p>
 
-<button  onclick="window.open('Volum_Aufgabe7.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe7.html');" >Lösung</button></p>
 
 <!--//Aufgabe 8-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 8
+  <h2>Aufgabe 8</h2><p>
 
 Berechnen Sie das Volumen V des dargestellten 
-Prismas. 
+Prismas.</p> 
 
-<img src="Aufgabe8.jpg" >
+<img src="Aufgabe8.jpg" ></p>
 
-V = <input type="text" id="Eintrag8" maxlength="4" size="1" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef8" onclick="Aufgabe8()">Prüfen</button></p></pre>
+V = <input type="text" id="Eintrag8" maxlength="4"  ></input> cm<sup>3</sup> <button id="Pruef8" onclick="Aufgabe8()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe8() { 
@@ -170,23 +225,23 @@ V = <input type="text" id="Eintrag8" maxlength="4" size="1" style= background-co
                       
   <!--//Aufgabe 9-->   
 
-  <pre><p class="Aufgabe">Aufgabe 9
+  <h2>Aufgabe 9</h2><p>
 
 Berechnen Sie die Höhe h eines Prismas mit dem 
 Volumen V = 180,7 dm<sup>3</sup> und einer Grundfläche 
-G = 27,8 dm<sup>2</sup>.  
+G = 27,8 dm<sup>2</sup>.</p>  
 
-<button  onclick="window.open('Volum_Aufgabe9.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe9.html');" >Lösung</button></p>
 
 <!--//Aufgabe 10-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 10
+  <h2>Aufgabe 10</h2><p>
 
 Berechnen Sie das Volumen V eines Prismas 
-(Quaders) mit der Länge a = 4 cm, der Breite 
-b = 3 cm und der Höhe h = 70 mm. 
+(Quaders) mit der Länge <br class="br-desk">a = 4 cm, der Breite 
+b = 3 cm und der Höhe h = 70 mm.</p> 
 
-V = <input type="text" id="Eintrag10" maxlength="2" size="1" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef10" onclick="Aufgabe10()">Prüfen</button></p></pre>
+V = <input type="text" id="Eintrag10" maxlength="2"  ></input> cm<sup>3</sup> <button id="Pruef10" onclick="Aufgabe10()">Prüfen</button></p>
    
                       <script>
                         function Aufgabe10() { 
@@ -203,23 +258,23 @@ V = <input type="text" id="Eintrag10" maxlength="2" size="1" style= background-c
 
  <!--//Aufgabe 11-->   
 
-  <pre><p class="Aufgabe">Aufgabe 11
+  <h2>Aufgabe 11</h2><p>
 
 Berechnen Sie das Volumen V eines Prismas 
-(Quaders) mit der Länge a = 15 cm, der Breite 
-b = 85 cm und der Höhe h = 9 dm. 
+(Quaders) mit der Länge <br class="br-desk">a = 15 cm, der Breite 
+b = 85 cm und der Höhe h = 9 dm.</p> 
 
-<button  onclick="window.open('Volum_Aufgabe11.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe11.html');" >Lösung</button></p>
 
 <!--//Aufgabe 12-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 12
+  <h2>Aufgabe 12</h2><p>
 
 Berechnen Sie das Volumen V eines Prismas 
-(Quaders)mit der Länge a = 2,7 dm, der Breite 
-b = 9,3 cm und der Höhe h = 85 mm.    
+(Quaders)mit der Länge <br class="br-desk">a = 2,7 dm, der Breite 
+b = 9,3 cm und der Höhe h = 85 mm.</p>    
 
-V = <input type="text" id="Eintrag12" maxlength="7" size="3" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef12" onclick="Aufgabe12()">Prüfen</button></p></pre>
+V = <input type="text" id="Eintrag12" maxlength="7"  ></input> cm<sup>3</sup> <button id="Pruef12" onclick="Aufgabe12()">Prüfen</button></p>
     
                       <script>
                         function Aufgabe12() { 
@@ -236,24 +291,24 @@ V = <input type="text" id="Eintrag12" maxlength="7" size="3" style= background-c
               
     <!--//Aufgabe 13--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 13</nobr>
+    <h2>Aufgabe 13</h2><p>
 
 Berechnen Sie das Volumen V eines Dreieckprismas 
-mit der Gesamtlänge l = 5,3 cm, der Grundseite 
+mit der Gesamtlänge <br class="br-desk">l = 5,3 cm, der Grundseite 
 des Dreiecks a = 60 mm und der Höhe des Dreiecks 
-h = 1,7 cm.  
+h = 1,7 cm.</p>  
 
-<button  onclick="window.open('Volum_Aufgabe13.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe13.html');" >Lösung</button></p>
 
 <!--//Aufgabe 14-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 14
+  <h2>Aufgabe 14</h2><p>
 
 Berechnen Sie das Volumen V eines rechtwinkligen 
 Dreieckprismas mit der Gesamtlänge l = 5,3 cm und 
-der Länge der Katheten a = 45 mm und b = 2,5 cm.  
+der Länge der Katheten a = 45 mm und <br class="br-desk">b = 2,5 cm.</p>  
 
-V = <input type="text" id="Eintrag14" maxlength="6" size="2" style= background-color:yellow ></input> dm<sup>3</sup> <button id="Pruef14" onclick="Aufgabe14()">Prüfen</button></p></pre>
+V = <input type="text" id="Eintrag14" maxlength="6"  ></input> dm<sup>3</sup> <button id="Pruef14" onclick="Aufgabe14()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe14() { 
@@ -270,24 +325,24 @@ V = <input type="text" id="Eintrag14" maxlength="6" size="2" style= background-c
                       
      <!--//Aufgabe 15--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 15
+    <h2>Aufgabe 15</h2><p>
 
 Berechnen Sie die Oberfläche O eines rechtwink-
 ligen Dreieckprismas mit der Gesamtlänge l = 4 cm 
-und der Länge der Katheten a und b = 2,5 cm.  
+und der Länge der Katheten a und b = 2,5 cm.</p>
 
-<button  onclick="window.open('Volum_Aufgabe15.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe15.html');" >Lösung</button></p>
 
 <!--//Aufgabe 16-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 16
+ <h2>Aufgabe 16</h2><p>
 
 Berechnen Sie das Volumen V des dargestellten 
-Körpers.  
+Körpers.</p>  
 
-<img src="Aufgabe16.jpg" > 
+<img src="Aufgabe16.jpg" ></p> 
 
-V = <input type="text" id="Eintrag16" maxlength="3" size="1" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef16" onclick="Aufgabe16()">Prüfen</button></p></pre>
+V = <input type="text" id="Eintrag16" maxlength="3"  ></input> cm<sup>3</sup> <button id="Pruef16" onclick="Aufgabe16()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe16() { 
@@ -304,25 +359,25 @@ V = <input type="text" id="Eintrag16" maxlength="3" size="1" style= background-c
                       
        <!--//Aufgabe 17--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 17
+   <h2>Aufgabe 17</h2><p>
 
 Berechnen Sie das Volumen V des dargestellten 
-Körpers.  
+Körpers.</p>  
 
-<img src="Aufgabe17.jpg" > 
+<img src="Aufgabe17.jpg" ></p> 
 
-<button  onclick="window.open('Volum_Aufgabe17.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe17.html');" >Lösung</button></p>
 
 <!--//Aufgabe 18-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 18
+  <h2>Aufgabe 18</h2><p>
 
 Berechnen Sie das Volumen V des dargestellten 
-Körpers.  
+Körpers.  </p>
 
-<img src="Aufgabe18.jpg" > 
+<img src="Aufgabe18.jpg" ></p> 
 
-V = <input type="text" id="Eintrag18" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef18" onclick="Aufgabe18()">Prüfen</button></p></pre>
+V = <input type="text" id="Eintrag18" maxlength="5"  ></input> cm<sup>3</sup> <button id="Pruef18" onclick="Aufgabe18()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe18() { 
@@ -339,25 +394,25 @@ V = <input type="text" id="Eintrag18" maxlength="5" size="2" style= background-c
                       
        <!--//Aufgabe 19--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 19
+    <h2>Aufgabe 19</h2><p>
 
 Berechnen Sie das Volumen V des dargestellten 
-Körpers.     
+Körpers.</p>     
 
-<img src="Aufgabe19.jpg" > 
+<img src="Aufgabe19.jpg" ></p> 
 
-<button  onclick="window.open('Volum_Aufgabe19.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe19.html');" >Lösung</button></p>
 
 <!--//Aufgabe 20-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 20
+  <h2>Aufgabe 20</h2><p>
 
 Berechnen Sie das Volumen V des dargestellten 
-Körpers.  
+Körpers.</p>  
 
-<img src="Aufgabe20.jpg" > 
+<img src="Aufgabe20.jpg" ></p> 
 
-V = <input type="text" id="Eintrag20" maxlength="4" size="1" style= background-color:yellow ></input> dm<sup>3</sup> <button id="Pruef20" onclick="Aufgabe20()">Prüfen</button></p></pre>
+V = <input type="text" id="Eintrag20" maxlength="4"  ></input> dm<sup>3</sup> <button id="Pruef20" onclick="Aufgabe20()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe20() { 
@@ -390,7 +445,7 @@ Körpers.
 Ein Zylinder hat einen Radius r von 2 m und eine 
 Höhe h von 3 cm. Wie groß ist sein Volumen V?  
 
-V = <input type="text" id="Eintrag22" maxlength="6" size="2" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef22" onclick="Aufgabe22()">Prüfen</button></p></pre>
+V = <input type="text" id="Eintrag22" maxlength="6"  ></input> cm<sup>3</sup> <button id="Pruef22" onclick="Aufgabe22()">Prüfen</button></p></pre>
  
                       <script>
                         function Aufgabe22() { 
@@ -424,7 +479,7 @@ und eine Höhe h von 8 cm. Wie groß ist
 a) sein Durchmesser d, 
 b) sein Volumen V? 
 
-d = <input type="text" id="Eintrag24" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef24" onclick="Aufgabe24()">Prüfen</button></p></pre>
+d = <input type="text" id="Eintrag24" maxlength="3"  ></input> cm <button id="Pruef24" onclick="Aufgabe24()">Prüfen</button></p></pre>
  
                       <script>
                         function Aufgabe24() { 
@@ -459,7 +514,7 @@ Körpers.
 
 <img src="Aufgabe26.jpg" >
 
-V = <input type="text" id="Eintrag26" maxlength="6" size="2" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef26" onclick="Aufgabe26()">Prüfen</button></p></pre>
+V = <input type="text" id="Eintrag26" maxlength="6"  ></input> cm<sup>3</sup> <button id="Pruef26" onclick="Aufgabe26()">Prüfen</button></p></pre>
  
                       <script>
                         function Aufgabe26() { 
@@ -494,7 +549,7 @@ Körpers.
 
 <img src="Aufgabe28.jpg">
 
-V = <input type="text" id="Eintrag28" maxlength="6" size="2" style= background-color:yellow ></input> mm<sup>3</sup> <button id="Pruef28" onclick="Aufgabe28()">Prüfen</button></p></pre>
+V = <input type="text" id="Eintrag28" maxlength="6"  ></input> mm<sup>3</sup> <button id="Pruef28" onclick="Aufgabe28()">Prüfen</button></p></pre>
  
                       <script>
                         function Aufgabe28() { 
@@ -528,7 +583,7 @@ Ein Würfel hat eine Gesamtseitenlänge L von
 Wie groß sind sein Volumen V und seine 
 Oberfläche O? 
 
-V = <input type="text" id="Eintrag30" maxlength="3" size="1" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef30" onclick="Aufgabe30()">Prüfen</button></p></pre>
+V = <input type="text" id="Eintrag30" maxlength="3"  ></input> cm<sup>3</sup> <button id="Pruef30" onclick="Aufgabe30()">Prüfen</button></p></pre>
  
                       <script>
                         function Aufgabe30() { 
@@ -561,7 +616,7 @@ Oberfläche O?
 Berechnen Sie die Masse m eines Zylinders mit 
 r = 2 cm,h = 15 cm und ρ = 7,85 g/cm<sup>3</sup>.       
 
-m = <input type="text" id="Eintrag32" maxlength="6" size="2" style= background-color:yellow ></input> g <button id="Pruef32" onclick="Aufgabe32()">Prüfen</button></p></pre>
+m = <input type="text" id="Eintrag32" maxlength="6"  ></input> g <button id="Pruef32" onclick="Aufgabe32()">Prüfen</button></p></pre>
  
                       <script>
                         function Aufgabe32() { 
@@ -592,7 +647,7 @@ r = 7,5 cm, h = 65 cm und ρ = 2,7 kg/dm<sup>3</sup>.
 Berechnen Sie die Masse m eines Zylinders mit 
 d = 12 mm,h = 27 mm und ρ = 10,5 kg/dm<sup>3</sup>.         
 
-m = <input type="text" id="Eintrag34" maxlength="5" size="2" style= background-color:yellow ></input> kg <button id="Pruef34" onclick="Aufgabe34()">Prüfen</button></p></pre>
+m = <input type="text" id="Eintrag34" maxlength="5"  ></input> kg <button id="Pruef34" onclick="Aufgabe34()">Prüfen</button></p></pre>
  
                       <script>
                         function Aufgabe34() { 
@@ -623,7 +678,7 @@ d = 1,4 m,h = 8,6 m und ρ = 2,4 t/m<sup>3</sup>.
 Ein Zylinder hat ein Volumen V von 200 cm<sup>3</sup> und 
 eine Höhe h von 5 cm. Wie groß ist sein Radius r?   
 
-r = <input type="text" id="Eintrag36" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef36" onclick="Aufgabe36()">Prüfen</button></p></pre>
+r = <input type="text" id="Eintrag36" maxlength="4"  ></input> cm <button id="Pruef36" onclick="Aufgabe36()">Prüfen</button></p></pre>
  
                       <script>
                         function Aufgabe36() { 
@@ -656,7 +711,7 @@ Ein Zylinder hat eine Mantelfläche M von
 83,9 cm<sup>2</sup> und einen Radius r von 3,8 cm. 
 Wie groß sind seine Höhe h und sein Volumen V?  
 
-h = <input type="text" id="Eintrag38" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef38" onclick="Aufgabe38()">Prüfen</button></p></pre>
+h = <input type="text" id="Eintrag38" maxlength="3"  ></input> cm <button id="Pruef38" onclick="Aufgabe38()">Prüfen</button></p></pre>
  
                       <script>
                         function Aufgabe38() { 
@@ -691,7 +746,7 @@ des dargestellten Körpers.
 
 <img src="Aufgabe40.jpg">
 
-V = <input type="text" id="Eintrag40" maxlength="6" size="2" style= background-color:yellow ></input> mm<sup>3</sup> <button id="Pruef40" onclick="Aufgabe40()">Prüfen</button></p></pre>
+V = <input type="text" id="Eintrag40" maxlength="6"  ></input> mm<sup>3</sup> <button id="Pruef40" onclick="Aufgabe40()">Prüfen</button></p></pre>
  
                       <script>
                         function Aufgabe40() { 
@@ -726,7 +781,7 @@ Dichte ρ von 8,9 g/cm<sup>3</sup>.
 
 <img src="Aufgabe42.jpg">
 
-m = <input type="text" id="Eintrag42" maxlength="5" size="2" style= background-color:yellow > g <button id="Pruef42" onclick="Aufgabe42()">Prüfen</button></p></pre> 
+m = <input type="text" id="Eintrag42" maxlength="5"  > g <button id="Pruef42" onclick="Aufgabe42()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -762,7 +817,7 @@ Dichte ρ von 7,8 g/cm<sup>3</sup>.
 
 <img src="Aufgabe44.jpg">
 
-m = <input type="text" id="Eintrag44" maxlength="4" size="1" style= background-color:yellow ></input> g <button id="Pruef44" onclick="Aufgabe44()">Prüfen</button></p></pre> 
+m = <input type="text" id="Eintrag44" maxlength="4"  ></input> g <button id="Pruef44" onclick="Aufgabe44()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -796,7 +851,7 @@ Ein Zylinder hat ein Volumen V von 17 cm<sup>3</sup> und
 einen Radius r von 2 cm. Wie groß sind seine 
 Oberfläche O und seine Mantelfläche M?    
 
-M = <input type="text" id="Eintrag46" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef46" onclick="Aufgabe46()">Prüfen</button></p></pre> 
+M = <input type="text" id="Eintrag46" maxlength="5"  ></input> cm<sup>2</sup> <button id="Pruef46" onclick="Aufgabe46()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -830,7 +885,7 @@ Ein Zylinder hat eine Oberfläche O von 91 m<sup>2</sup> und
 einen Radius r von 3 m. Wie groß sind seine 
 Mantelfläche M und sein Volumen V?  
 
-V = <input type="text" id="Eintrag48" maxlength="4" size="1" style= background-color:yellow ></input> m<sup>3</sup> <button id="Pruef48" onclick="Aufgabe48()">Prüfen</button></p></pre> 
+V = <input type="text" id="Eintrag48" maxlength="4"  ></input> m<sup>3</sup> <button id="Pruef48" onclick="Aufgabe48()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -866,7 +921,7 @@ des dargestellten Körpers.
 
 <img src="Aufgabe50.jpg">
 
-O = <input type="text" id="Eintrag50" maxlength="6" size="2" style= background-color:yellow ></input> mm<sup>2</sup> <button id="Pruef50" onclick="Aufgabe50()">Prüfen</button></p></pre> 
+O = <input type="text" id="Eintrag50" maxlength="6"  ></input> mm<sup>2</sup> <button id="Pruef50" onclick="Aufgabe50()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -902,7 +957,7 @@ einer Höhe h von 5 cm und einem regelmäßigen
 Sechseck mit einer Seitenlänge a von 3 cm als 
 Grundfläche.  
 
-V = <input type="text" id="Eintrag52" maxlength="3" size="1" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef52" onclick="Aufgabe52()">Prüfen</button></p></pre> 
+V = <input type="text" id="Eintrag52" maxlength="3"  ></input> cm<sup>3</sup> <button id="Pruef52" onclick="Aufgabe52()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -938,7 +993,7 @@ einer Höhe h von 5 cm und einem regelmäßigen
 Fünfeck mit einer Seitenlänge a von 3,2 cm als 
 Grundfläche.    
 
-V = <input type="text" id="Eintrag54" maxlength="2" size="1" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef54" onclick="Aufgabe54()">Prüfen</button></p></pre> 
+V = <input type="text" id="Eintrag54" maxlength="2"  ></input> cm<sup>3</sup> <button id="Pruef54" onclick="Aufgabe54()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -974,7 +1029,7 @@ des dargestellten Körpers.
 
 <img src="Aufgabe56.jpg" > 
 
-O = <input type="text" id="Eintrag56" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef56" onclick="Aufgabe56()">Prüfen</button></p></pre> 
+O = <input type="text" id="Eintrag56" maxlength="5"  ></input> cm<sup>2</sup> <button id="Pruef56" onclick="Aufgabe56()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1009,7 +1064,7 @@ Seine Höhe h und der Radius r stehen im
 Verhältnis 5 : 2. Wie groß sind seine 
 Höhe h und seine Oberfläche O?
 
-h = <input type="text" id="Eintrag58" maxlength="3" size="1" style= background-color:yellow ></input> dm <button id="Pruef58" onclick="Aufgabe58()">Prüfen</button></p></pre> 
+h = <input type="text" id="Eintrag58" maxlength="3"  ></input> dm <button id="Pruef58" onclick="Aufgabe58()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1043,7 +1098,7 @@ Ein Würfel hat eine Masse von 655 g und eine
 Dichte von 7,85 g/cm<sup>3</sup>. 
 Wie groß ist eine Seite a? 
 
-a = <input type="text" id="Eintrag60" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef60" onclick="Aufgabe60()">Prüfen</button></p></pre> 
+a = <input type="text" id="Eintrag60" maxlength="4"  ></input> cm <button id="Pruef60" onclick="Aufgabe60()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1080,7 +1135,7 @@ Alle Maße in mm.
 
 <img src="Aufgabe62.jpg" > 
 
-O = <input type="text" id="Eintrag62" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef62" onclick="Aufgabe62()">Prüfen</button></p></pre> 
+O = <input type="text" id="Eintrag62" maxlength="5"  ></input> cm<sup>2</sup> <button id="Pruef62" onclick="Aufgabe62()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1117,7 +1172,7 @@ sein, wenn die Oberfläche des Quaders gleich groß
 sein soll wie die Oberfläche eines Würfels mit 
 einer Seitenlänge von 5 cm?   
 
-Sie muss <input type="text" id="Eintrag64" maxlength="3" size="1" style= background-color:yellow ></input> cm lang sein. <button id="Pruef64" onclick="Aufgabe64()">Prüfen</button></p></pre> 
+Sie muss <input type="text" id="Eintrag64" maxlength="3"  ></input> cm lang sein. <button id="Pruef64" onclick="Aufgabe64()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1154,7 +1209,7 @@ Ein quadratisches Prisma soll gleiches Volumen
 und gleiche Länge haben. 
 Wie lang ist eine Quadratseite?       
 
-Sie ist <input type="text" id="Eintrag66" maxlength="4" size="1" style= background-color:yellow ></input> mm lang. <button id="Pruef66" onclick="Aufgabe66()">Prüfen</button></p></pre> 
+Sie ist <input type="text" id="Eintrag66" maxlength="4"  ></input> mm lang. <button id="Pruef66" onclick="Aufgabe66()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1188,7 +1243,7 @@ Ein Zylinder hat ein Volumen V von 100 cm<sup>3</sup> und
 eine Höhe h von 5 cm. 
 Wie groß ist sein Durchmesser d?  
 
-d = <input type="text" id="Eintrag68" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef68" onclick="Aufgabe68()">Prüfen</button></p></pre> 
+d = <input type="text" id="Eintrag68" maxlength="4"  ></input> cm <button id="Pruef68" onclick="Aufgabe68()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1224,7 +1279,7 @@ Der Radius r und die Höhe h eines Zylinders
 verhalten sich wie 3 : 5. Wie groß sind das 
 Volumen V und die Mantelfläche M, wenn r = 2 cm?  
 
-M = <input type="text" id="Eintrag70" maxlength="4" size="1" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef70" onclick="Aufgabe70()">Prüfen</button></p></pre> 
+M = <input type="text" id="Eintrag70" maxlength="4"  ></input> cm<sup>2</sup> <button id="Pruef70" onclick="Aufgabe70()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1260,7 +1315,7 @@ Er soll einem zweiten volumengleich sein, dessen
 Radius r<sub>2</sub> und Höhe h<sub>2</sub> sich wie 3 : 5 
 verhalten. Wie groß sind r<sub>2</sub> und h<sub>2</sub>?    
 
-h<sub>2</sub> = <input type="text" id="Eintrag72" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef72" onclick="Aufgabe72()">Prüfen</button></p></pre> 
+h<sub>2</sub> = <input type="text" id="Eintrag72" maxlength="3"  ></input> cm <button id="Pruef72" onclick="Aufgabe72()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1295,7 +1350,7 @@ sein Innenvolumen. Drücken Sie die Mantelfläche
 des Hohlzylinders M<sub>1</sub> durch die Mantelfläche 
 innen M<sub>2</sub> aus.   
 
- M<sub>1</sub> = M<sub>2</sub> * (√2 + <input type="text" id="Eintrag74" maxlength="1" size="1" style= background-color:yellow ></input> ) <button id="Pruef74" onclick="Aufgabe74()">Prüfen</button></p></pre> 
+ M<sub>1</sub> = M<sub>2</sub> * (√2 + <input type="text" id="Eintrag74" maxlength="1"  ></input> ) <button id="Pruef74" onclick="Aufgabe74()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1331,7 +1386,7 @@ Ein Hohlzylinder hat einen Außenradius r<sub>1</sub> von
 Wie groß ist der Radius r eines Zylinders mit 
 gleichen Volumen und gleicher Höhe? 
 
-r = <input type="text" id="Eintrag76" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef76" onclick="Aufgabe76()">Prüfen</button></p></pre> 
+r = <input type="text" id="Eintrag76" maxlength="4"  ></input> cm <button id="Pruef76" onclick="Aufgabe76()">Prüfen</button></p></pre> 
     
  
                       <script>
