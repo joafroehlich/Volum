@@ -7,37 +7,95 @@
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volumen</title>
   
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
+  
 </head>
 <body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button { font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+
+        img {
+               max-width: 100%;
+               height: auto;
+               display: block;
+            }    
+        
     </style>
 
+    <main>
 <p class="Text1">Wie löse ich Matheaufgaben?</p>
 <p class="Text1">Volumen</p> 
 
 <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
 <p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
         
+<div class="check">
+
 <!--//Aufgabe 78-->
 
-  <pre><b><p class ="Aufgabe" >Aufgabe 78
+  <h2>Aufgabe 78</h2><p>
 
 Ein Geschenkkarton aus Pappe hat die dargestellte 
 Form eines Hauses. Wie viel Pappe braucht man für 
 ein Haus, wenn 18% Abfall entstehen? 
-Alle Maße in cm.  
+Alle Maße in cm.</p>  
 
-<img src="Aufgabe78.jpg" >
+<img src="Aufgabe78.jpg" ></p>
 
-Man braucht <input type="text" id="Eintrag78" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef78" onclick="Aufgabe78()">Prüfen</button></p></pre> 
+Man braucht <input type="text" id="Eintrag78" maxlength="5"  ></input> cm<sup>2</sup> <button id="Pruef78" onclick="Aufgabe78()">Prüfen</button></p>
     
  
                       <script>
@@ -55,29 +113,29 @@ Man braucht <input type="text" id="Eintrag78" maxlength="5" size="2" style= back
                       
 <!--//Aufgabe 79-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 79
+    <h2>Aufgabe 79</h2><p>
 
 Wie groß ist das Füllvolumen V des dargestellten 
 oben offenen Containers, wenn die Wände 5 cm dick 
-sind? Wie groß ist der Schutzanstrich S außen?   
+sind? Wie groß ist der Schutzanstrich S außen?</p>   
 
-<img src="Aufgabe79.jpg" >
+<img src="Aufgabe79.jpg" ></p>
 
-<button  onclick="window.open('Volum_Aufgabe79.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe79.html');" >Lösung</button></p>
 
 <!--//Aufgabe 80-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 80
+  <h2>Aufgabe 80</h2><p>
 
 Wieviel l Wasser passen in das Schwimmbecken, 
 bis es randvoll ist? Das Becken wird innen 
 gefliest. Welche Kosten entstehen, wenn 1 m<sup>2</sup> 
-Fliesen 45 € kostet?    
+Fliesen 45 € kostet?</p>    
 
-<img src="Aufgabe80.jpg" >
+<img src="Aufgabe80.jpg" ></p>
 
 
-Füllmenge = <input type="text" id="Eintrag80" maxlength="6" size="2" style= background-color:yellow ></input> l <button id="Pruef80" onclick="Aufgabe80()">Prüfen</button></p></pre> 
+Füllmenge = <input type="text" id="Eintrag80" maxlength="6"  ></input> l <button id="Pruef80" onclick="Aufgabe80()">Prüfen</button></p>
     
  
                       <script>
@@ -95,25 +153,25 @@ Füllmenge = <input type="text" id="Eintrag80" maxlength="6" size="2" style= bac
                       
 <!--//Aufgabe 81-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 81
+    <h2>Aufgabe 81</h2><p>
 
 75 ml Eau de Toilette sind in einem Karton mit 
-den Maßen 5,8 cm x 5 cm x 15,9 cm verpackt. 
+den Maßen <br class="br-desk">5,8 cm x 5 cm x 15,9 cm verpackt. 
 Um wieviel Prozent ist das Verpackungsvolumen 
-größer als das Flaschenvolumen?   
+größer als das Flaschenvolumen?</p>   
 
-<button  onclick="window.open('Volum_Aufgabe81.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe81.html');" >Lösung</button></p>
 
 <!--//Aufgabe 82-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 82
+  <h2>Aufgabe 82</h2><p>
 
 Ein Schwimmbecken mit den Maßen 50 x 15 x 1,80 m 
 ist mit 480 m<sup>2</sup> Wasser gefüllt. Wie hoch steht es? 
 Wieviel muss nachgefüllt werden, bis es randvoll 
-ist?    
+ist?</p>    
 
-Höhe = <input type="text" id="Eintrag82" maxlength="2" size="1" style= background-color:yellow ></input> cm <button id="Pruef82" onclick="Aufgabe82()">Prüfen</button></p></pre> 
+Höhe = <input type="text" id="Eintrag82" maxlength="2"  ></input> cm <button id="Pruef82" onclick="Aufgabe82()">Prüfen</button></p>
     
  
                       <script>
@@ -131,34 +189,34 @@ Höhe = <input type="text" id="Eintrag82" maxlength="2" size="1" style= backgrou
                       
 <!--//Aufgabe 83-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 83
+    <h2>Aufgabe 83</h2><p>
 
 100 Holzstämme sind, wie dargestellt, in 10 Reihen 
 zu je 10 Stämmen gestapelt. Die Stämme sind 10 cm 
 im Durchmesser und 1 m lang. Wie viel Holz und 
 Luft enthält der Stapel? Wie schwer ist der 
 Stapel, wenn er aus Buche mit einer Dichte von 
-0,7 g/cm<sup>3</sup> besteht?     
+0,7 g/cm<sup>3</sup> besteht?</p>     
 
-<img src="Aufgabe83.jpg" >
+<img src="Aufgabe83.jpg" ></p>
 
-<button  onclick="window.open('Volum_Aufgabe83.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe83.html');" >Lösung</button></p>
 
 <!--//Aufgabe 84-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 84
+  <h2>Aufgabe 84</h2><p>
 
-<img src="Aufgabe84.jpg" >
+<img src="Aufgabe84.jpg" ></p>
 
 Das Gewächshaus besteht aus Glas. 
 (Alle Maße in m).
-Wie groß ist die Glasfläche? 
+Wie groß ist die Glasfläche?</p> 
 
-Es sind <input type="text" id="Eintrag84" maxlength="5" size="2" style= background-color:yellow ></input> m<sup>2</sup> <button id="Pruef84" onclick="Aufgabe84()">Prüfen</button> 
+Es sind <input type="text" id="Eintrag84" maxlength="5"  ></input> m<sup>2</sup> <button id="Pruef84" onclick="Aufgabe84()">Prüfen</button></p> 
 
 Der Boden soll mit Platten 40 * 40 cm ausgelegt 
 werden. Wie viel Platten werden benötigt? 
-Wie groß ist das Innenvolumen des Gewächshauses?      </p></pre> 
+Wie groß ist das Innenvolumen des Gewächshauses?      </p>
     
  
                       <script>
@@ -176,7 +234,7 @@ Wie groß ist das Innenvolumen des Gewächshauses?      </p></pre>
                       
 <!--//Aufgabe 85-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 85
+    <h2>Aufgabe 85</h2><p>
 
 Auf einem Kinderfest können die Kinder durch 
 einen, mit Ringen verstärkten, zylindrischen 
@@ -184,21 +242,20 @@ Tunnel kriechen. Der Tunnel ist 2,8 m lang und
 hat einen Durchmesser von 53 cm. Welche Breite 
 muss eine Plane haben, um daraus den Tunnel zu 
 bilden? Wie viel Ringe braucht man bei einem 
-Abstand von 20 cm zueinander?    
+Abstand von 20 cm zueinander?</p>    
 
-<button  onclick="window.open('Volum_Aufgabe85.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe85.html');" >Lösung</button></p>
 
-<!--//Aufgabe 88-->
+<!--//Aufgabe 86-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 86
+  <h2>Aufgabe 86</h2><p>
 
 Wie viel Hubraumsteuer muss man für einen 
 Vierzylinder-Dieselmotor mit einem Zylinderdurch-
 messer von 82 mm und einem Hub von 90 mm bezahlen? 
-Jede angefangenen 100 cm<sup>3</sup> kosten 11,50 €.    
+Jede angefangenen 100 cm<sup>3</sup> kosten 11,50 €.</p>    
 
-Steuer = <input type="text" id="Eintrag86" maxlength="6" size="2" style= background-color:yellow ></input> € <button id="Pruef86" onclick="Aufgabe86()">Prüfen</button></p></pre> 
-    
+Steuer = <input type="text" id="Eintrag86" maxlength="6"  ></input> € <button id="Pruef86" onclick="Aufgabe86()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe86() { 
@@ -215,24 +272,24 @@ Steuer = <input type="text" id="Eintrag86" maxlength="6" size="2" style= backgro
                       
 <!--//Aufgabe 87-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 87
+    <h2>Aufgabe 87</h2><p>
 
 Wie oft muss man mit einer Fahrradpumpe pumpen,
 (Durchmesser 2,6 cm, Hub 28 cm), wenn 2 l Luft 
-in den Schlauch kommen sollen?  
+in den Schlauch kommen sollen?</p>  
 
-<button  onclick="window.open('Volum_Aufgabe87.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe87.html');" >Lösung</button></p>
 
 <!--//Aufgabe 88-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 88
+  <h2>Aufgabe 88</h2><p>
 
 Ein Getreidesilo ist 18 m hoch und hat einen 
 Innendurchmesser von 7,5 m. 
 Wie groß ist seine Innenwandfläche?
-Wie viel m<sup>3</sup> Getreide können dort gelagert werden?   
+Wie viel m<sup>3</sup> Getreide können dort gelagert werden?</p>   
 
-Es sind <input type="text" id="Eintrag88" maxlength="5" size="2" style= background-color:yellow ></input> m<sup>3</sup> <button id="Pruef88" onclick="Aufgabe88()">Prüfen</button></p></pre> 
+Es sind <input type="text" id="Eintrag88" maxlength="5"  ></input> m<sup>3</sup> <button id="Pruef88" onclick="Aufgabe88()">Prüfen</button></p>
     
  
                       <script>
@@ -250,24 +307,24 @@ Es sind <input type="text" id="Eintrag88" maxlength="5" size="2" style= backgrou
                       
 <!--//Aufgabe 89-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 89
+    <h2>Aufgabe 80</h2><p>
 
 Ein Schwimmbecken ist 6 m lang, 4 m breit und 
 1,50 m hoch. 
-Wie viel l Wasser sind in dem vollen Becken?    
+Wie viel l Wasser sind in dem vollen Becken?</p>    
 
-<button  onclick="window.open('Volum_Aufgabe89.html');" >Lösung</button></p></pre>    
+<button  onclick="window.open('Volum_Aufgabe89.html');" >Lösung</button></p>
 
 <!--//Aufgabe 90-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 90
+  <h2>Aufgabe 90</h2><p>
 
 Orangensaft wird in Pappkartons mit einer 
 quadratischen 5 cm x 5 cm Grundfläche und 
 einem Inhalt von 750 cm<sup>3</sup> angeboten. 
-Wie groß sind seine Höhe h und seine Oberfläche O?   
+Wie groß sind seine Höhe h und seine Oberfläche O?</p>   
 
-h = <input type="text" id="Eintrag90" maxlength="2" size="1" style= background-color:yellow ></input> cm <button id="Pruef90" onclick="Aufgabe90()">Prüfen</button></p></pre> 
+h = <input type="text" id="Eintrag90" maxlength="2"  ></input> cm <button id="Pruef90" onclick="Aufgabe90()">Prüfen</button></p>
     
  
                       <script>
@@ -285,24 +342,24 @@ h = <input type="text" id="Eintrag90" maxlength="2" size="1" style= background-c
                       
 <!--//Aufgabe 91-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 91
+    <h2>Aufgabe 91</h2><p>
 
 Ein rechteckiger Kasten mit einem 65 cm langen 
 und 38 cm breiten Boden schwimmt auf dem Wasser 
 und verdrängt dabei 12 l Flüssigkeit. 
-Welche Höhe h hat der Kasten?  
+Welche Höhe h hat der Kasten?</p>  
 
-<button  onclick="window.open('Volum_Aufgabe91.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe91.html');" >Lösung</button></p>
 
 <!--//Aufgabe 92-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 92
+  <h2>Aufgabe 92</h2><p>
 
 Wie hoch stehen 18 l einer Flüssigkeit in einem 
 würfelförmigen Gefäß mit einer Seitenlänge von 
-50 cm?   
+50 cm? </p>  
 
-h = <input type="text" id="Eintrag92" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef92" onclick="Aufgabe92()">Prüfen</button></p></pre> 
+h = <input type="text" id="Eintrag92" maxlength="3"  ></input> cm <button id="Pruef92" onclick="Aufgabe92()">Prüfen</button></p>
     
  
                       <script>
@@ -320,25 +377,25 @@ h = <input type="text" id="Eintrag92" maxlength="3" size="1" style= background-c
                       
 <!--//Aufgabe 93-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 93
+    <h2>Aufgabe 93</h2><p>
 
 Ein quadratischer Holzbalken ist 6 m lang, hat 
 eine Masse von 38 kg und eine Dichte von 
-0,65 g/cm<sup>2</sup>. Wie lang ist eine Quadratseite a?     
+0,65 g/cm<sup>2</sup>. Wie lang ist eine Quadratseite a?</p>     
 
-<button  onclick="window.open('Volum_Aufgabe93.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe93.html');" >Lösung</button></p>
 
 <!--//Aufgabe 94-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 94
+  <h2>Aufgabe 94</h2><p>
 
 Aus einem 18 cm langen Rundstahl mit einem 
 Durchmesser von 7 cm soll der größtmögliche 
 quadratische Vierkant ausgefräst werden? 
 Wie groß sind die Anstelltiefe a des Fräsers und 
-das Volumen V des fertigen Vierkants?  
+das Volumen V des fertigen Vierkants?</p>  
 
-V = <input type="text" id="Eintrag94" maxlength="3" size="1" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef94" onclick="Aufgabe94()">Prüfen</button></p></pre> 
+V = <input type="text" id="Eintrag94" maxlength="3"  ></input> cm<sup>3</sup> <button id="Pruef94" onclick="Aufgabe94()">Prüfen</button></p>
     
  
                       <script>
@@ -356,26 +413,26 @@ V = <input type="text" id="Eintrag94" maxlength="3" size="1" style= background-c
 
 <!--//Aufgabe 95-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 95
+    <h2>Aufgabe 95</h2><p>
 
-Wie viel laufenden Meter Leisten entspricht 1 m<sup>2</sup>?   
+Wie viel laufenden Meter Leisten entspricht 1 m<sup>2</sup>?</p>   
 
-<img src="Aufgabe95A.jpg">
+<img src="Aufgabe95A.jpg"></p>
 
-<button  onclick="window.open('Volum_Aufgabe95.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe95.html');" >Lösung</button></p>
 
 <!--//Aufgabe 96-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 96
+  <h2>Aufgabe 96</h2><p>
 
 Eine quadratische Stahlstange ist 65 cm lang mit 
-einer Quadratseite von 8 cm. Sie wird so 
+einer Quadratseite von <br class="br-desk">8 cm. Sie wird so 
 bearbeitet, dass aus dem Quadrat ein regelmäßiges 
 Achteck wird. 
 Wie groß ist der Materialverlust m bei einer 
-Dichte von 7,2 g/cm<sup>3</sup>? 
+Dichte von <br class="br-desk">7,2 g/cm<sup>3</sup>?</p> 
 
-m = <input type="text" id="Eintrag96" maxlength="4" size="1" style= background-color:yellow ></input> kg <button id="Pruef96" onclick="Aufgabe96()">Prüfen</button></p></pre> 
+m = <input type="text" id="Eintrag96" maxlength="4"  ></input> kg <button id="Pruef96" onclick="Aufgabe96()">Prüfen</button></p>
     
  
                       <script>
@@ -393,25 +450,25 @@ m = <input type="text" id="Eintrag96" maxlength="4" size="1" style= background-c
 
 <!--//Aufgabe 97-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 97
+    <h2>Aufgabe 97</h2><p>
 
 Welche Masse m haben 100 der dargestellten 
-Stahlspachteln mit einer Dichte von 7,85 g/cm<sup>3</sup>?   
+Stahlspachteln mit einer Dichte von 7,85 g/cm<sup>3</sup>?</p>   
 
-<img src="Aufgabe97A.jpg">
+<img src="Aufgabe97A.jpg"></p>
 
-<button  onclick="window.open('Volum_Aufgabe97.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Volum_Aufgabe97.html');" >Lösung</button></p>
 
 <!--//Aufgabe 98-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 98
+  <h2>Aufgabe 98</h2><p>
 
 Eine 1,5 m lange Schiene hat als Querschnitt ein 
 gleichschenkliges Trapez nit den parallelen 
 Seiten 4 cm und 5 cm. Welche Höhe h hat die 
-Schiene, wenn ihr Volumen 3,5 dm<sup>3</sup> beträgt? 
+Schiene, wenn ihr Volumen 3,5 dm<sup>3</sup> beträgt?</p> 
 
-h = <input type="text" id="Eintrag98" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef98" onclick="Aufgabe98()">Prüfen</button></p></pre> 
+h = <input type="text" id="Eintrag98" maxlength="3"  ></input> cm <button id="Pruef98" onclick="Aufgabe98()">Prüfen</button></p>
     
  
                       <script>
@@ -429,26 +486,26 @@ h = <input type="text" id="Eintrag98" maxlength="3" size="1" style= background-c
                       
 <!--//Aufgabe 99-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 99
+    <h2>Aufgabe 99</h2><p>
 
 Eine Schneide einer Balkenwaage hat die Form 
 eines gleichschenkligen Dreiecks mit der Basis 
 6 mm und der Länge eines Schenkels von 14 mm. 
 Welche Masse m hat die Schneide, wenn sie 20 mm 
-dick ist bei einer Dichte von 7,85 g/cm<sup>3</sup>?     
+dick ist bei einer Dichte von 7,85 g/cm<sup>3</sup>?</p>     
 
-<button  onclick="window.open('Volum_Aufgabe99.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe99.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 100-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 100
+  <h2>Aufgabe 100</h2><p>
 
 Wie groß ist das Volumen V des 178 mm langen 
-Profilstahls? 
+Profilstahls?</p> 
 
-<img src="Aufgabe100A.jpg" >
+<img src="Aufgabe100A.jpg" ></p>
 
-V = <input type="text" id="Eintrag100" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef100" onclick="Aufgabe100()">Prüfen</button></p></pre> 
+V = <input type="text" id="Eintrag100" maxlength="5"  ></input> cm<sup>3</sup> <button id="Pruef100" onclick="Aufgabe100()">Prüfen</button></p>
     
  
                       <script>
@@ -466,27 +523,27 @@ V = <input type="text" id="Eintrag100" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 101-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 101
+    <h2>Aufgabe 101</h2><p>
 
 Ein 32 cm langer gusseiserner Stab hat als 
 Querschnitt eine Raute mit den Diagonalen 14 mm 
 und 22 mm. Welche Masse m haben 50 Stück bei 
-einer Dichte von 7,2 g/cm<sup>3</sup>?     
+einer Dichte von 7,2 g/cm<sup>3</sup>?</p>     
 
-<button  onclick="window.open('Volum_Aufgabe101.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe101.html');" >Lösung</button></p>
 
 <!--//Aufgabe 102-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 102
+  <h2>Aufgabe 102</h2><p>
 
 Die Stirnwand eines Anbaus soll eine 1,5 cm dicke 
 Putzschicht erhalten. Der Putz ist aus Kalk und 
 Sand im Verhältnis 1 : 4. gemischt. 
-Wie viel m<sup>3</sup> Kalk und Sand benötigt man?    
+Wie viel m<sup>3</sup> Kalk und Sand benötigt man?</p>    
 
-<img src="Aufgabe102A.jpg" > 
+<img src="Aufgabe102A.jpg" ></p> 
 
-Kalk <input type="text" id="Eintrag102" maxlength="5" size="2" style= background-color:yellow ></input> m<sup>3</sup> <button id="Pruef102" onclick="Aufgabe102()">Prüfen</button></p></pre> 
+Kalk <input type="text" id="Eintrag102" maxlength="5"  ></input> m<sup>3</sup> <button id="Pruef102" onclick="Aufgabe102()">Prüfen</button></p>
     
  
                       <script>
@@ -504,27 +561,27 @@ Kalk <input type="text" id="Eintrag102" maxlength="5" size="2" style= background
                       
 <!--//Aufgabe 103-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 103
+    <h2>Aufgabe 103</h2><p>
 
 Aus 350 cm<sup>3</sup> Kunststoff soll ein 
 regelmäßiges sechseckiges Formteil gepresst 
 werden, das 6 cm dick ist. Wie groß ist
-die Seite a des Sechsecks?    
+die Seite a des Sechsecks?</p>
 
-<button  onclick="window.open('Volum_Aufgabe103.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe103.html');" >Lösung</button></p>
 
 <!--//Aufgabe 104-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 104
+  <h2>Aufgabe 104</h2><p>
 
 Ein Dreikantstahl hat als Grundfläche ein 
 gleichseitiges Dreieck mit einer Seitenlänge von 
 4 cm und ein Volumen von 700 cm<sup>2</sup>. Durch Auswalzen 
 soll eine Seitenlänge auf 2,8 cm erzielt werden. 
 Wie lang ist der Stahl vor und nach dem 
-Auswalzen?
+Auswalzen?</p>
 
-Danach <input type="text" id="Eintrag104" maxlength="5" size="2" style= background-color:yellow ></input> cm <button id="Pruef104" onclick="Aufgabe104()">Prüfen</button></p></pre> 
+Danach <input type="text" id="Eintrag104" maxlength="5"  ></input> cm <button id="Pruef104" onclick="Aufgabe104()">Prüfen</button></p>
     
  
                       <script>
@@ -542,26 +599,26 @@ Danach <input type="text" id="Eintrag104" maxlength="5" size="2" style= backgrou
                       
 <!--//Aufgabe 105-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 105
+    <h2>Aufgabe 105</h2><p>
 
 Eine 1,2 m lange Stahlschiene (Dichte 7,85 g/cm<sup>3</sup>) 
 hat als Grundfläche ein Parallelogramm dessen 
 lange Seite 47 mm misst und mit der kurzen Seite 
 von 25 mm einen Winkel von 60° einschließt. 
-Wie groß ist ihre Masse m?    
+Wie groß ist ihre Masse m?</p>    
 
-<button  onclick="window.open('Volum_Aufgabe105.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe105.html');" >Lösung</button></p>
 
 <!--//Aufgabe 106-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 106
+  <h2>Aufgabe 106</h2><p>
 
 Wie groß ist das Volumen V  des größeren Teils 
-des Profilstahls nach dem Trennen? ? 
+des Profilstahls nach dem Trennen? </p> 
 
-<img src="Aufgabe106A.jpg" >
+<img src="Aufgabe106A.jpg" ></p>
 
-V = <input type="text" id="Eintrag106" maxlength="4" size="1" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef106" onclick="Aufgabe106()">Prüfen</button></p></pre> 
+V = <input type="text" id="Eintrag106" maxlength="4"  ></input> cm<sup>3</sup> <button id="Pruef106" onclick="Aufgabe106()">Prüfen</button></p>
     
  
                       <script>
@@ -579,27 +636,27 @@ V = <input type="text" id="Eintrag106" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 107-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 107
-g
+    <h2>Aufgabe 107</h2><p>
+
 Welche Masse m haben 100 der dargestellten 
 Messinglagerbuchsen bei einer Dichte von 
-8,5 g/cm<sup>3</sup>?     
+8,5 g/cm<sup>3</sup>?</p>     
 
-<img src="Aufgabe107A.jpg" > 
+<img src="Aufgabe107A.jpg" ></p> 
 
-<button  onclick="window.open('Volum_Aufgabe107.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe107.html');" >Lösung</button></p>
 
 <!--//Aufgabe 108-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 108
+  <h2>Aufgabe 108</h2><p>
 
 Wie groß ist der von der Schutzhaube umschlossene 
 Raum V, und wie viel Blech M ist zur Herstellung 
 nötig?    
 
-<img src="Aufgabe108A.jpg" > 
+<img src="Aufgabe108A.jpg" ></p>
 
-V = <input type="text" id="Eintrag108" maxlength="5" size="2" style= background-color:yellow ></input> dm<sup>3</sup> <button id="Pruef108" onclick="Aufgabe108()">Prüfen</button></p></pre> 
+V = <input type="text" id="Eintrag108" maxlength="5"  ></input> dm<sup>3</sup> <button id="Pruef108" onclick="Aufgabe108()">Prüfen</button></p>
     
  
                       <script>
@@ -617,23 +674,23 @@ V = <input type="text" id="Eintrag108" maxlength="5" size="2" style= background-
 
 <!--//Aufgabe 109-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 109
+    <h2>Aufgabe 109</h2><p>
 
 Welche Länge l hat ein Kupferdraht mit einem 
 Durchmesser von 3 mm, einer Dichte von 8,9 g/cm<sup>3</sup> 
-und einer Masse von 8,4 kg?     
+und einer Masse von 8,4 kg?</p>     
 
-<button  onclick="window.open('Volum_Aufgabe109.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe109.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 110-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 110
+  <h2>Aufgabe 110</h2><p>
 
 Ein Rundsockel ist 60 cm hoch und besteht aus 
 1,4 m<sup>3</sup> Beton. 
-Wie groß ist sein Durchmesser d?   
+Wie groß ist sein Durchmesser d?</p>   
 
-d = <input type="text" id="Eintrag110" maxlength="4" size="1" style= background-color:yellow ></input> m <button id="Pruef110" onclick="Aufgabe110()">Prüfen</button></p></pre> 
+d = <input type="text" id="Eintrag110" maxlength="4"  ></input> m <button id="Pruef110" onclick="Aufgabe110()">Prüfen</button></p>
     
  
                       <script>
@@ -651,26 +708,25 @@ d = <input type="text" id="Eintrag110" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 111-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 111
+    <h2>Aufgabe 111</h2><p>
 
 Ein Bleiring ist 15 mm hoch, hat einen 
 Innendurchmesser von38 mm und einen außen von 
-62 mm. Er wird so ausgewalzt, dass sein Innen-
-durchmesser 45 mm bei gleicher Höhe beträgt. 
-Wie groß ist der neue Außendurchmesser d?   
+62 mm. Er wird so ausgewalzt, dass sein Innendurchmesser 45 mm bei gleicher Höhe beträgt. 
+Wie groß ist der neue Außendurchmesser d?</p>   
 
-<button  onclick="window.open('Volum_Aufgabe111.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe111.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 112-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 112
+  <h2>Aufgabe 112</h2><p>
 
 Eine Leitung vom Warmwasserboiler bis zum Wasser-
 hahn ist 8,2 m lang und hat einen Innendurchmesser 
 von 21 mm. Wie viel Wasser muss am Hahn abfließen, 
-bevor das erste Warmwasser kommt?   
+bevor das erste Warmwasser kommt?</p>   
 
-<input type="text" id="Eintrag112" maxlength="4" size="1" style= background-color:yellow ></input> l <button id="Pruef112" onclick="Aufgabe112()">Prüfen</button></p></pre> 
+<input type="text" id="Eintrag112" maxlength="4"  ></input> l <button id="Pruef112" onclick="Aufgabe112()">Prüfen</button></p>
     
  
                       <script>
@@ -688,26 +744,29 @@ bevor das erste Warmwasser kommt?
                       
 <!--//Aufgabe 113-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 113
+    <h2>Aufgabe 113</h2><p>
 
 Eine Fabrik stellt täglich 10 000 Dosen mit einem 
 Durchmesser von 8 cm und einer Höhe von 12 cm her. 
 Wie groß ist der Materialbedarf für eine Dose? 
 Wie groß ist er für die tägliche Produktion, 
-wenn mit 6% Verschnitt gerechnet wird?    
+wenn mit 6% Verschnitt gerechnet wird?</p>    
 
-<button  onclick="window.open('Volum_Aufgabe113.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe113.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 114-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 114
+  <h2>Aufgabe 114</h2><p>
 
 Ein Abwasserrohr aus Beton (Dichte 2,4 t/m<sup>3</sup>) hat 
 einen Außendurchmesser von 90 cm, eine Wanddicke 
 von 10 cm und ist 2,5 m lang.  
-Wie viel wiegt ein Rohr? <input type="text" id="Eintrag114" maxlength="3" size="1" style= background-color:yellow ></input> t <button id="Pruef114" onclick="Aufgabe114()">Prüfen</button>
+Wie viel wiegt ein Rohr?</p>
+
+Es wiegt <input type="text" id="Eintrag114" maxlength="3"  ></input> t <button id="Pruef114" onclick="Aufgabe114()">Prüfen</button></p>
+
 Wie viele Rohre können auf einen 20 t Lkw geladen 
-werden?  </p></pre> 
+werden?  </p>
     
  
                       <script>
@@ -725,26 +784,27 @@ werden?  </p></pre>
                       
 <!--//Aufgabe 115-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 115
+    <h2>Aufgabe 115</h2><p>
 
 Der gemauerte Rand eines runden Beckens ist 38 cm 
 stark und 1,5 m hoch. Wie viel Material benötigt 
 man für die Mauer, wenn der Innendurchmesser des 
-Beckens 8,5 m beträgt? 
+Beckens 8,5 m beträgt?</p> 
 
-<button  onclick="window.open('Volum_Aufgabe115.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe115.html');" >Lösung</button></p>
 
 <!--//Aufgabe 116-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 116
+  <h2>Aufgabe 116</h2><p>
 
 Ein Stahlrohr mit einem Außendurchmesser von 
 18 cm und einer Wandstärke von 1 cm ist 4,85 m 
 lang und führt Wasser. Nach wie viel Sekunden ist 
-das Rohr durchflossen, wenn die Fließgeschwindig-
-keit 10 dm<sup>3</sup>/s beträgt?. <input type="text" id="Eintrag116" maxlength="4" size="1" style= background-color:yellow ></input> s <button id="Pruef116" onclick="Aufgabe116()">Prüfen</button>
-Wie viel m<sup>2</sup> Rostschutz müssen außen aufgetragen 
-werden?  </p></pre> 
+das Rohr durchflossen, wenn die Fließgeschwindigkeit <br class="br-desk">10 dm<sup>3</sup>/s beträgt?.</p> 
+
+Nach <input type="text" id="Eintrag116" maxlength="4"  ></input> s <button id="Pruef116" onclick="Aufgabe116()">Prüfen</button></p>
+
+Wie viel m<sup>2</sup> Rostschutz müssen außen aufgetragen werden?  </p>
     
  
                       <script>
@@ -762,30 +822,30 @@ werden?  </p></pre>
                       
 <!--//Aufgabe 117-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 117
+    <h2>Aufgabe 117</h2><p>
 
 Ein 870 m langer Tunnel mit dem dargestellten 
 Profil soll innen gestrichen werden. Wie groß ist 
 die zu streichende Fläche? Wie groß ist das 
 Luftvolumen, das im Tunnel ausgetauscht werden 
-soll?  
+soll?</p>  
 
-<img src="Aufgabe94.jpg" >
+<img src="Aufgabe94.jpg" ></p>
 
-<button  onclick="window.open('Volum_Aufgabe117.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe117.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 118-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 118
+  <h2>Aufgabe 118</h2><p>
 
 Der Belag der 4,75 m tiefen Skateboardanlage wird 
 erneuert. Welche Fläche nimmt er ein? Wie schwer 
 ist er, wenn er 5 mm dick ist und eine Dichte 
-von 7,9 g/cm<sup>3</sup> hat? 
+von 7,9 g/cm<sup>3</sup> hat?</p> 
 
-<img src="Aufgabe95.jpg" >
+<img src="Aufgabe95.jpg" ></p>
 
-<input type="text" id="Eintrag118" maxlength="4" size="1" style= background-color:yellow ></input> kg <button id="Pruef118" onclick="Aufgabe118()">Prüfen</button></p></pre> 
+<input type="text" id="Eintrag118" maxlength="4"  ></input> kg <button id="Pruef118" onclick="Aufgabe118()">Prüfen</button></p>
     
  
                       <script>
@@ -803,13 +863,13 @@ von 7,9 g/cm<sup>3</sup> hat?
                       
 <!--//Aufgabe 119-->                     
                       
-  <pre><p class ="Aufgabe" >Aufgabe 119
+  <h2>Aufgabe 119</h2><p>
 
 Eine Rolle Blumendraht (Dichte 7,8 kg/dm<sup>3</sup>) hat 
 eine Masse von 13,5 kg. Wie lang ist der Draht, 
-wenn er einen Durchmesser von 2,4 mm hat?  
+wenn er einen Durchmesser von 2,4 mm hat?</p>  
 
-Es sind <input type="text" id="Eintrag119" maxlength="5" size="2" style= background-color:yellow ></input> m <button id="Pruef119" onclick="Aufgabe119()">Prüfen</button></p></pre> 
+Es sind <input type="text" id="Eintrag119" maxlength="5"  ></input> m <button id="Pruef119" onclick="Aufgabe119()">Prüfen</button></p> 
     
  
                       <script>
@@ -827,24 +887,26 @@ Es sind <input type="text" id="Eintrag119" maxlength="5" size="2" style= backgro
                       
 <!--//Aufgabe 120-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 120
+    <h2>Aufgabe 120</h2><p>
 
 Ein Kupferdraht (Dichte 8,8 g/cm<sup>3</sup>) ist 100 m 
 lang und wiegt 1,75 kg. 
-Wie groß ist sein Durchmesser d?    
+Wie groß ist sein Durchmesser d? </p>   
 
-<button  onclick="window.open('Volum_Aufgabe120.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe120.html');" >Lösung</button></p>
 
 <!--//Aufgabe 121-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 121
+  <h2>Aufgabe 121</h2><p>
 
 Ein Silberdraht (Dichte 10,5 g/cm<sup>2</sup>) ist 10 m lang 
 und wiegt 78 g. Er soll mit 6 g Gold (Dichte 
 19,3 g/cm<sup>3</sup>) vergoldet werden. 
-Welchen Durchmesser d hat der Silberdraht? 
-d = <input type="text" id="Eintrag121" maxlength="4" size="1" style= background-color:yellow ></input> mm <button id="Pruef121" onclick="Aufgabe121()">Prüfen</button>
-Welche Dicke a hat die Vergoldung?   </p></pre> 
+Welchen Durchmesser d hat der Silberdraht?</p>
+
+d = <input type="text" id="Eintrag121" maxlength="4"  ></input> mm <button id="Pruef121" onclick="Aufgabe121()">Prüfen</button></p>
+
+Welche Dicke a hat die Vergoldung?   </p>
     
  
                       <script>
@@ -862,7 +924,7 @@ Welche Dicke a hat die Vergoldung?   </p></pre>
                       
 <!--//Aufgabe 122-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 122
+    <h2>Aufgabe 122</h2><p>
 
 Eine Straßenwalze ist 1,5 m breit und hat einen 
 Durchmesser von 1,1 m. Welche Fläche A kann sie 
@@ -870,11 +932,11 @@ bei einer Umdrehung walzen? Welche Fläche B walzt
 sie, wenn sie 1 Stunde mit einer Geschwindigkeit 
 von 5 km/h fährt?      
 
-<button  onclick="window.open('Volum_Aufgabe122.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe122.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 123-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 123
+  <h2>Aufgabe 123</h2><p>
 
 Auf Flugplätzen verwendet man zylindrische 
 Erdtanks mit einem Durchmesser von 2,2 m und 
@@ -882,9 +944,9 @@ einem Fassungsvermögen von 20 000 l. Wie viele
 solcher Tanks lassen sich auf einer 
 quadratischen Fläche von 900 m<sup>2</sup> in 2 Etagen 
 unterbringen? 
-Wie hoch sind die beiden Etagen?     ?  
+Wie hoch sind die beiden Etagen?</p>
 
-Sie sind <input type="text" id="Eintrag123" maxlength="5" size="2" style= background-color:yellow ></input> m hoch. <button id="Pruef123" onclick="Aufgabe123()">Prüfen</button></p></pre> 
+Sie sind <input type="text" id="Eintrag123" maxlength="5"  ></input> m hoch. <button id="Pruef123" onclick="Aufgabe123()">Prüfen</button></p>
     
  
                       <script>
@@ -902,7 +964,7 @@ Sie sind <input type="text" id="Eintrag123" maxlength="5" size="2" style= backgr
                       
 <!--//Aufgabe 124-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 124
+    <h2>Aufgabe 124</h2><p>
 
 Ein Flugzeug hat ein rechteckiges Prisma als 
 Rumpftank mit den Abmessungen 
@@ -911,23 +973,23 @@ trapezförmige Prismen als Flächentanks, siehe
 Abbildung. 
 Wie viel Liter Kraftstoff kann es tanken?
 Wie groß ist sein Aktionsradius bei einem 
-Verbrauch von 4,4 l/km?   
+Verbrauch von 4,4 l/km?</p>   
 
-<img src="Aufgabe109.jpg" >  
+<img src="Aufgabe109.jpg" ></p>  
 
-<button  onclick="window.open('Volum_Aufgabe124.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe124.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 125-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 125
+  <h2>Aufgabe 125</h2><p>
 
 a) Wie schwer ist ein 200 m langer Kupferdraht 
 (Dichte 8,9 g/cm<sup>3</sup>) mit einem 
-Durchmesser von 2 mm? 
+Durchmesser von 2 mm?</p> 
 b) Wie schwer ist die 1 mm dicke Isolierung 
-(Dichte 1,5 g/cm<sup>3</sup>)?  
+(Dichte 1,5 g/cm<sup>3</sup>)?</p>  
 
-b) <input type="text" id="Eintrag125" maxlength="4" size="1" style= background-color:yellow ></input> g <button id="Pruef125" onclick="Aufgabe125()">Prüfen</button></p></pre> 
+b) <input type="text" id="Eintrag125" maxlength="4"  ></input> g <button id="Pruef125" onclick="Aufgabe125()">Prüfen</button></p>
     
  
                       <script>
@@ -945,25 +1007,25 @@ b) <input type="text" id="Eintrag125" maxlength="4" size="1" style= background-c
                       
  <!--//Aufgabe 126-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 126
+    <h2>Aufgabe 126</h2><p>
 
 Ein Holzstab (Dichte 0,7 g/cm<sup>2</sup>) mit einer 3 mm 
 dicken Kupferummantelung (Dichte 8,9 g/cm<sup>2</sup>) hat 
 einen Außendurchmesser von 12 cm und eine Länge 
-von 20 cm. Wie viel wiegt der ummantelte Stab?      
+von 20 cm. Wie viel wiegt der ummantelte Stab?</p>      
 
-<button  onclick="window.open('Volum_Aufgabe126.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe126.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 127-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 127
+  <h2>Aufgabe 127</h2><p>
 
 Ein Aluminiumwürfel Seitenlänge 8 cm, Dichte 
 2,7 g/cm<sup>2</sup>, bekommt 4 Bohrungen mit 8 mm 
 Durchmesser und 6 cm tief. 
-Wie schwer ist der fertige Würfel?    
+Wie schwer ist der fertige Würfel?</p>    
 
-<input type="text" id="Eintrag127" maxlength="4" size="1" style= background-color:yellow ></input> kg <button id="Pruef127" onclick="Aufgabe127()">Prüfen</button></p></pre> 
+<input type="text" id="Eintrag127" maxlength="4"  ></input> kg <button id="Pruef127" onclick="Aufgabe127()">Prüfen</button></p>
     
  
                       <script>
@@ -981,23 +1043,23 @@ Wie schwer ist der fertige Würfel?
                       
 <!--//Aufgabe 128-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 128
+    <h2>Aufgabe 128</h2><p>
 
 Ein zylindrisches Glas für Coca-Cola hat einen 
 Durchmesser von 5,4 cm. In welcher Höhe muss ein 
-Eichstrich für 0,2 l angebracht werden?      
+Eichstrich für 0,2 l angebracht werden?</p>      
 
-<button  onclick="window.open('Volum_Aufgabe128.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe128.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 129-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 129
+  <h2>Aufgabe 129</h2><p>
 
 Eine Litfasssäule hat einen Umfang von 3,5 m und 
 ist 3,2 m hoch. 
-Welche Fläche steht für Reklame zur Verfügung?     
+Welche Fläche steht für Reklame zur Verfügung?</p>     
 
-Es sind <input type="text" id="Eintrag129" maxlength="4" size="1" style= background-color:yellow ></input> m<sup>2</sup> <button id="Pruef129" onclick="Aufgabe129()">Prüfen</button></p></pre> 
+Es sind <input type="text" id="Eintrag129" maxlength="4"  ></input> m<sup>2</sup> <button id="Pruef129" onclick="Aufgabe129()">Prüfen</button></p>
     
  
                       <script>
@@ -1015,13 +1077,13 @@ Es sind <input type="text" id="Eintrag129" maxlength="4" size="1" style= backgro
                       
 <!--//Aufgabe 130-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 130
+    <h2>Aufgabe 130</h2><p>
 
 Ein Messzylinder mit einem Durchmesser von 3,2 cm 
 soll Teilstriche für je 5 cm<sup>2</sup> bekommen. Wie groß 
-ist der Abstand von Teilstrich zu Teilstrich?      
+ist der Abstand von Teilstrich zu Teilstrich?</p>      
 
-<button  onclick="window.open('Volum_Aufgabe130.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe130.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 131-->
 
@@ -1031,7 +1093,7 @@ Ein Messzylinder soll Teilstriche für 5 cm<sup>3</sup> im
 Abstand von 5 mm bekommen. 
 Wie groß muss sein Durchmesser d sein?   
 
-d = <input type="text" id="Eintrag131" maxlength="4" size="1" style= background-color:yellow ></input> mm <button id="Pruef131" onclick="Aufgabe131()">Prüfen</button></p></pre> 
+d = <input type="text" id="Eintrag131" maxlength="4"  ></input> mm <button id="Pruef131" onclick="Aufgabe131()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1082,7 +1144,7 @@ und eine Innenhöhe von 80 cm und wiegt leer 28 kg.
 Wie schwer ist das gefüllte Fass, wenn das Öl 
 eine Dichte von 0,94 kg/dm<sup>3</sup> hat? 
 
-Es wiegt <input type="text" id="Eintrag134" maxlength="5" size="2" style= background-color:yellow ></input> kg. <button id="Pruef134" onclick="Aufgabe134()">Prüfen</button></p></pre> 
+Es wiegt <input type="text" id="Eintrag134" maxlength="5"  ></input> kg. <button id="Pruef134" onclick="Aufgabe134()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1120,7 +1182,7 @@ abgegraben. Wie tief ist die Grube?
 Wie viel Erdreich muss noch abgegraben werden, 
 damit eine Tiefe von 4,3 m erreicht ist?  
 
-<input type="text" id="Eintrag136" maxlength="2" size="1" style= background-color:yellow ></input> m<sup>3</sup> <button id="Pruef136" onclick="Aufgabe136()">Prüfen</button></p></pre> 
+<input type="text" id="Eintrag136" maxlength="2"  ></input> m<sup>3</sup> <button id="Pruef136" onclick="Aufgabe136()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1159,7 +1221,7 @@ Wie viel wiegen diese Teile insgesamt, wenn die
 Dichte 7,85 kg/dm<sup>3</sup> beträgt und der Sägeschnitt 
 1,8 mm breit ist? 
 
-<input type="text" id="Eintrag138" maxlength="4" size="1" style= background-color:yellow ></input> kg <button id="Pruef138" onclick="Aufgabe138()">Prüfen</button></p></pre> 
+<input type="text" id="Eintrag138" maxlength="4"  ></input> kg <button id="Pruef138" onclick="Aufgabe138()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1195,7 +1257,7 @@ Ein Baustellenfahrzeug hat eine Ladefläche von
 beträgt 1,13 t. Um wie viel t ist sie 
 überschritten, wenn es mit Sand (Dichte 1,6 t/m<sup>2</sup>) 
 voll beladen wird? 
-Um <input type="text" id="Eintrag140" maxlength="4" size="1" style= background-color:yellow ></input> t <button id="Pruef140" onclick="Aufgabe140()">Prüfen</button>
+Um <input type="text" id="Eintrag140" maxlength="4"  ></input> t <button id="Pruef140" onclick="Aufgabe140()">Prüfen</button>
 Wie hoch dürfte es nur beladen werden, damit sie 
 nicht überschritten wird?   </p></pre> 
     
@@ -1240,7 +1302,7 @@ die gemessene Dosenhöhe 19 cm.
 Wie viel Prozent des Dosenvolumens beträgt der 
 Nettoinhalt?   
 
-<input type="text" id="Eintrag142" maxlength="4" size="1" style= background-color:yellow ></input> % <button id="Pruef142" onclick="Aufgabe142()">Prüfen</button></p></pre> 
+<input type="text" id="Eintrag142" maxlength="4"  ></input> % <button id="Pruef142" onclick="Aufgabe142()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1275,7 +1337,7 @@ Eine zylindrische Farbdose enthält 3/4 l Farbe,
 das sind 79,6% des Doseninhalts. Die Dose hat 
 einen Durchmesser von 10 cm. Wie hoch ist sie?   
 
-h = <input type="text" id="Eintrag144" maxlength="2" size="1" style= background-color:yellow ></input> cm <button id="Pruef144" onclick="Aufgabe144()">Prüfen</button></p></pre> 
+h = <input type="text" id="Eintrag144" maxlength="2"  ></input> cm <button id="Pruef144" onclick="Aufgabe144()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1313,7 +1375,7 @@ Berücksichtigung der Streben?
 
 <img src="Aufgabe116.jpg" > 
 
-A = <input type="text" id="Eintrag146" maxlength="2" size="1" style= background-color:yellow ></input> m<sup>2</sup> <button id="Pruef146" onclick="Aufgabe146()">Prüfen</button></p></pre> 
+A = <input type="text" id="Eintrag146" maxlength="2"  ></input> m<sup>2</sup> <button id="Pruef146" onclick="Aufgabe146()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1352,7 +1414,7 @@ Wie viel m<sup>3</sup>  Erdreich müssen für den
 
 <img src="Aufgabe131.jpg" > 
 
-<input type="text" id="Eintrag148" maxlength="4" size="1" style= background-color:yellow ></input> m<sup>3</sup> <button id="Pruef148" onclick="Aufgabe148()">Prüfen</button></p></pre> 
+<input type="text" id="Eintrag148" maxlength="4"  ></input> m<sup>3</sup> <button id="Pruef148" onclick="Aufgabe148()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1390,7 +1452,7 @@ Ein Stahlblock hat die Maße 20 cm x 30 cm x 1 m.
 Wie viel laufende Meter Rundstahl mit 30 mm 
 Durchmesser entstehen beim Auswalzen?  
 
-<input type="text" id="Eintrag150" maxlength="5" size="2" style= background-color:yellow ></input> m <button id="Pruef150" onclick="Aufgabe150()">Prüfen</button></p></pre> 
+<input type="text" id="Eintrag150" maxlength="5"  ></input> m <button id="Pruef150" onclick="Aufgabe150()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1425,7 +1487,7 @@ Welche Seitenlänge a hat ein Würfel, der aus
 2 Bleiwalzen mit 34 mm Durchmesser und einer 
 Höhe von 48 mm hergestellt wird?  
 
-a = <input type="text" id="Eintrag152" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef152" onclick="Aufgabe152()">Prüfen</button></p></pre> 
+a = <input type="text" id="Eintrag152" maxlength="4"  ></input> cm <button id="Pruef152" onclick="Aufgabe152()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1460,7 +1522,7 @@ Eine Dose, deren Durchmesser d doppelt so groß
 wie die Höhe h ist, fasst 1 dm<sup>3</sup>. 
 Wie groß ist h?    
 
-h = <input type="text" id="Eintrag154" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef154" onclick="Aufgabe154()">Prüfen</button></p></pre> 
+h = <input type="text" id="Eintrag154" maxlength="4"  ></input> cm <button id="Pruef154" onclick="Aufgabe154()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1500,7 +1562,7 @@ durch eine quadratische Aluminiumschiene (Dichte
 gleicher Länge ersetzt werden. 
 Welche Gewichtseinsparung m ergibt sich?  
 
-m = <input type="text" id="Eintrag156" maxlength="4" size="1" style= background-color:yellow ></input> kg <button id="Pruef156" onclick="Aufgabe156()">Prüfen</button></p></pre> 
+m = <input type="text" id="Eintrag156" maxlength="4"  ></input> kg <button id="Pruef156" onclick="Aufgabe156()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1536,7 +1598,7 @@ und 86 cm hoch. Wie viel m<sup>3</sup> Holz braucht man für
 30 rundum geschlossene Kästen, wenn die Wände 
 26 mm dick sind und 12% Schnittverlust entsteht?  
 
-<input type="text" id="Eintrag158" maxlength="5" size="2" style= background-color:yellow ></input> m<sup>3</sup> <button id="Pruef158" onclick="Aufgabe158()">Prüfen</button></p></pre> 
+<input type="text" id="Eintrag158" maxlength="5"  ></input> m<sup>3</sup> <button id="Pruef158" onclick="Aufgabe158()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1578,7 +1640,7 @@ von 30°, soll so aufgeschüttet werden, dass eine
 entstehen. 
 Wie viel m<sup>2</sup> Erde müssen dafür bewegt werden?    
 
-Es sind <input type="text" id="Eintrag160" maxlength="6" size="2" style= background-color:yellow ></input> m<sup>3</sup> <button id="Pruef160" onclick="Aufgabe160()">Prüfen</button></p></pre> 
+Es sind <input type="text" id="Eintrag160" maxlength="6"  ></input> m<sup>3</sup> <button id="Pruef160" onclick="Aufgabe160()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1615,7 +1677,7 @@ mit 18 mm Durchmesser und einer Länge von 58 mm
 angedreht. Wie viel wiegen 100 Bauteile?
 Wie hoch ist der gesamte Abfall M?  
 
-M = <input type="text" id="Eintrag162" maxlength="4" size="1" style= background-color:yellow ></input> kg <button id="Pruef162" onclick="Aufgabe162()">Prüfen</button></p></pre> 
+M = <input type="text" id="Eintrag162" maxlength="4"  ></input> kg <button id="Pruef162" onclick="Aufgabe162()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1653,7 +1715,7 @@ Tiefziehen Becher mit einem Innendurchmeser von
 34 mm und einer Bodendicke von 1 mm hergestellt 
 werden. Wie hoch ist ein Becher?    
 
-<input type="text" id="Eintrag164" maxlength="5" size="2" style= background-color:yellow ></input> cm <button id="Pruef164" onclick="Aufgabe164()">Prüfen</button></p></pre> 
+<input type="text" id="Eintrag164" maxlength="5"  ></input> cm <button id="Pruef164" onclick="Aufgabe164()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1692,7 +1754,7 @@ Der Geberzylinder hat einen Durchmesser von
 Um welchen Betrag h verschiebt sich der Kolben im 
 Nehmerzylinder, wenn der Kolben im Geberzylinder 
 um 7,5 cm verschoben wird? 
-Um <input type="text" id="Eintrag166" maxlength="5" size="2" style= background-color:yellow ></input> cm <button id="Pruef166" onclick="Aufgabe166()">Prüfen</button>
+Um <input type="text" id="Eintrag166" maxlength="5"  ></input> cm <button id="Pruef166" onclick="Aufgabe166()">Prüfen</button>
 Wie viel Hübe im Geberzylinder braucht man, wenn 
 sich der Kolben im Nehmerzylinder um 64 cm 
 verschieben soll?   </p></pre> 
@@ -1719,7 +1781,6 @@ Ein Kolben mit einem Durchmesser von 65 mm bewegt
 sich in einem Zylinder auf und ab. Das größte 
 entstehende Volumen beträgt 1,5 dm<sup>3</sup>, das kleinste 
 0,11 dm<sup>3</sup>. Wie groß ist der Kolbenhub? 
-Wie groß ist die Fläche A?   
 
 <button  onclick="window.open('Volum_Aufgabe167.html');" >Lösung</button></p></pre> 
 
@@ -1732,7 +1793,7 @@ Dichte 7,85 g/cm<sup>3</sup>?
 
 <img src="Aufgabe145.jpg" >
 
-<input type="text" id="Eintrag168" maxlength="4" size="1" style= background-color:yellow ></input> g <button id="Pruef168" onclick="Aufgabe168()">Prüfen</button></p></pre> 
+<input type="text" id="Eintrag168" maxlength="4"  ></input> g <button id="Pruef168" onclick="Aufgabe168()">Prüfen</button></p></pre> 
     
  
                       <script>
@@ -1769,7 +1830,7 @@ Wie schwer ist der Stab nach dem Ausfräsen?
 
 <img src="Aufgabe147.jpg" > 
 
-<input type="text" id="Eintrag170" maxlength="5" size="2" style= background-color:yellow ></input> kg <button id="Pruef170" onclick="Aufgabe170()">Prüfen</button></p></b></pre> 
+<input type="text" id="Eintrag170" maxlength="5"  ></input> kg <button id="Pruef170" onclick="Aufgabe170()">Prüfen</button></p></b></pre> 
     
  
                       <script>
