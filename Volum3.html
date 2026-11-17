@@ -7,18 +7,75 @@
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volumen</title><sup></sup>
   
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
+  
 </head>
 <body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button { font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+
+        img {
+               max-width: 100%;
+               height: auto;
+               display: block;
+            }    
+        
     </style>
+
+    <main>
 
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Volumen</p>  
@@ -27,25 +84,27 @@
 		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
         
                     
-<!--//Aufgabe 171-->                     
-                      
-    <pre><b><p class="Aufgabe">Aufgabe 171
+<div class="check">
+
+<!--//Aufgabe 171-->
+
+  <h2>Aufgabe 171</h2><p>
 
 Wie groß ist das Volumen V einer Pyramide mit 
 einer Grundfläche von 25 cm<sup>2</sup> und einer Höhe von 
-7 cm?       
+7 cm?</p>       
 
-<button  onclick="window.open('Volum_Aufgabe171.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe171.html');" >Lösung</button></p>
 
 <!--//Aufgabe 172-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 172
+  <h2>Aufgabe 172</h2><p>
 
 Wie groß ist das Volumen V einer quadratischen 
 Pyramide mit einer Grundseite von  8 cm und einer 
-Höhe von 13 cm?  
+Höhe von 13 cm?</p>  
 
-V = <input type="text" id="Eintrag172" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef172" onclick="Aufgabe172()">Prüfen</button></p></pre> 
+V = <input type="text" id="Eintrag172" maxlength="5"  ></input> cm<sup>3</sup> <button id="Pruef172" onclick="Aufgabe172()">Prüfen</button></p>
     
  
                       <script>
@@ -63,23 +122,23 @@ V = <input type="text" id="Eintrag172" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 173-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 173
+    <h2>Aufgabe 173</h2><p>
 
 Wie groß ist das Volumen V eines Kegels mit einem 
 Radius des Grundkreises von 10 cm und einer Höhe 
-von 15 cm?    
+von 15 cm?</p>    
 
-<button  onclick="window.open('Volum_Aufgabe173.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe173.html');" >Lösung</button></p>
 
 <!--//Aufgabe 174-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 174
+  <h2>Aufgabe 174</h2><p>
 
 Wie groß ist das Volumen V einer quadratischen 
 Pyramide mit einer Grundseite von  8,4 cm und 
-einer Höhe von 7,2 m? 
+einer Höhe von 7,2 m? </p>
 
-V = <input type="text" id="Eintrag174" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef174" onclick="Aufgabe174()">Prüfen</button> </p></pre>
+V = <input type="text" id="Eintrag174" maxlength="5"  ></input> cm<sup>3</sup> <button id="Pruef174" onclick="Aufgabe174()">Prüfen</button> </p>
 
                       <script>
                         function Aufgabe174() { 
@@ -96,23 +155,23 @@ V = <input type="text" id="Eintrag174" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 175-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 175
+    <h2>Aufgabe 175</h2><p>
 
 Ein Kegel hat ein Volumen V von 85,1 cm<sup>3</sup> und 
 einen Grundkreisradius r von 4,2 cm. 
-Wie groß ist seine Höhe h?   
+Wie groß ist seine Höhe h?</p>   
 
-<button  onclick="window.open('Volum_Aufgabe175.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe175.html');" >Lösung</button></p>
 
 <!--//Aufgabe 176-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 176
+  <h2>Aufgabe 176</h2><p>
 
 Ein Kegel hat ein Volumen V von 67,8 cm<sup>3</sup> und eine 
 Höhe h von 5,6 cm. 
-Wie groß ist sein Grundkreisradius r?  
+Wie groß ist sein Grundkreisradius r?</p>  
 
-r = <input type="text" id="Eintrag176" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef176" onclick="Aufgabe176()">Prüfen</button></p></pre> 
+r = <input type="text" id="Eintrag176" maxlength="3"  ></input> cm <button id="Pruef176" onclick="Aufgabe176()">Prüfen</button></p>
     
  
                       <script>
@@ -131,23 +190,23 @@ r = <input type="text" id="Eintrag176" maxlength="3" size="1" style= background-
 
 <!--//Aufgabe 177-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 177
+    <h2>Aufgabe 177</h2><p>
 
 Ein Kegel hat ein Volumen V von 24,2 cm<sup>3</sup> und eine 
 Grundfläche G von 12,3 cm<sup>2</sup>. Wie groß sind seine 
-Höhe h und sein Grundkreisradius r?   
+Höhe h und sein Grundkreisradius r?</p>   
 
-<button  onclick="window.open('Volum_Aufgabe177.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe177.html');" >Lösung</button></p>
 
 <!--//Aufgabe 178-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 178
+  <h2>Aufgabe 178</h2><p>
 
 Eine quadratische Pyramide hat ein Volumen V von 
 135,7 mm<sup>3</sup> und eine Höhe h von 6,9 mm. 
-Wie groß ist ihre Grundseite a?    
+Wie groß ist ihre Grundseite a?</p>    
 
-a = <input type="text" id="Eintrag178" maxlength="4" size="1" style= background-color:yellow ></input> mm <button id="Pruef178" onclick="Aufgabe178()">Prüfen</button></p></pre> 
+a = <input type="text" id="Eintrag178" maxlength="4"  ></input> mm <button id="Pruef178" onclick="Aufgabe178()">Prüfen</button></p>
     
  
                       <script>
@@ -165,23 +224,23 @@ a = <input type="text" id="Eintrag178" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 179-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 179
+    <h2>Aufgabe 179</h2><p>
 
 Eine quadratische Pyramide hat ein Volumen V von 
 76,5 cm<sup>3</sup> und eine Grundseite a von 4,2 cm. 
-Wie groß ist ihre Höhe h?     
+Wie groß ist ihre Höhe h?</p>     
 
-<button  onclick="window.open('Volum_Aufgabe179.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe179.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 180-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 180
+  <h2>Aufgabe 180</h2><p>
 
 Eine Pyramide hat ein Volumen V von 101,25 cm<sup>3</sup> 
 und eine Grundfläche G von 56,25 cm<sup>2</sup>. 
-Wie groß ist ihre Höhe h?  
+Wie groß ist ihre Höhe h?</p>  
 
-h = <input type="text" id="Eintrag180" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef180" onclick="Aufgabe180()">Prüfen</button></p></pre>  
+h = <input type="text" id="Eintrag180" maxlength="3"  ></input> cm <button id="Pruef180" onclick="Aufgabe180()">Prüfen</button></p>
 
   
  
@@ -200,27 +259,27 @@ h = <input type="text" id="Eintrag180" maxlength="3" size="1" style= background-
                       
 <!--//Aufgabe 181-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 181
+    <h2>Aufgabe 181</h2><p>
 
 Eine quadratische Pyramide hat eine Seitenhöhe h<sub>s</sub> 
 von 5 cm und eine Grundseite a von 6 cm. 
-Wie groß ist ihr Volumen V?  
+Wie groß ist ihr Volumen V?</p>  
 
-    <img src="Aufgabe158.jpg" >
+    <img src="Aufgabe158.jpg" ></p>
 
-<button  onclick="window.open('Volum_Aufgabe181.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe181.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 182-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 182
+  <h2>Aufgabe 182</h2><p>
 
 Ein Kegel hat eine Mantellinie s von 10 cm und 
 einen Grundkreisradius r von 6 cm. 
-Wie groß ist sein Volumen V?   
+Wie groß ist sein Volumen V?</p>   
 
-    <img src="Aufgabe159.jpg" > 
+    <img src="Aufgabe159.jpg" > </p>
 
-V = <input type="text" id="Eintrag182" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef182" onclick="Aufgabe182()">Prüfen</button></p></pre> 
+V = <input type="text" id="Eintrag182" maxlength="5"  ></input> cm<sup>3</sup> <button id="Pruef182" onclick="Aufgabe182()">Prüfen</button></p>
     
  
                       <script>
@@ -238,23 +297,23 @@ V = <input type="text" id="Eintrag182" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 183-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 183
+    <h2>Aufgabe 183</h2><p>
 
 Eine quadratische Pyramide hat eine Seitenhöhe h<sub>s</sub> 
 von 4 cm und eine Grundseite a von 3 cm. 
-Wie groß ist ihre Oberfläche O?  
+Wie groß ist ihre Oberfläche O?</p>  
 
-<button  onclick="window.open('Volum_Aufgabe183.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe183.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 184-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 184
+  <h2>Aufgabe 184</h2><p>
 
 Eine quadratische Pyramide hat eine Höhe h von 
 4 cm und eine Grundseite a von 12 cm. 
-Wie groß ist ihre Oberfläche O? 
+Wie groß ist ihre Oberfläche O?</p> 
 
-O = <input type="text" id="Eintrag184" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef184" onclick="Aufgabe184()">Prüfen</button></p></pre>  
+O = <input type="text" id="Eintrag184" maxlength="5"  ></input> cm<sup>2</sup> <button id="Pruef184" onclick="Aufgabe184()">Prüfen</button></p>
 
 
  
@@ -273,23 +332,23 @@ O = <input type="text" id="Eintrag184" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 185-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 185
+    <h2>Aufgabe 185</h2><p>
 
 Ein Kegel hat eine Mantellinie s von 3 cm und 
 einen Grundkreisradius r von 2 cm. 
-Wie groß ist seine Oberfläche O?  
+Wie groß ist seine Oberfläche O?</p>  
 
-<button  onclick="window.open('Volum_Aufgabe185.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe185.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 186-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 186
+  <h2>Aufgabe 186</h2><p>
 
 Ein Kegel hat eine Höhe h von 28 cm und einen
-Grundkreisradius r von 12 cm. 
-Wie groß ist seine Oberfläche O? 
+Grundkreisradius r von <br class="br-desk">12 cm. 
+Wie groß ist seine Oberfläche O?</p> 
 
-O = <input type="text" id="Eintrag186" maxlength="6" size="2" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef186" onclick="Aufgabe186()">Prüfen</button> </p></pre> 
+O = <input type="text" id="Eintrag186" maxlength="6"  ></input> cm<sup>2</sup> <button id="Pruef186" onclick="Aufgabe186()">Prüfen</button> </p>
 
 
                       <script>
@@ -307,23 +366,23 @@ O = <input type="text" id="Eintrag186" maxlength="6" size="2" style= background-
                       
 <!--//Aufgabe 187-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 187
+    <h2>Aufgabe 187</h2><p>
 
 Eine quadratische Pyramide hat eine Mantelfläche M 
 von 78,4 cm<sup>2</sup> und eine Grundseite a von 5,6 cm. 
-Wie groß ist ihr Volumen V?   
+Wie groß ist ihr Volumen V?</p>   
 
-<button  onclick="window.open('Volum_Aufgabe187.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe187.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 188-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 188
+  <h2>Aufgabe 188</h2><p>
 
 Eine quadratische Pyramide hat eine Mantelfläche M 
 von 209,1 cm<sup>2</sup> und eine Seitenhöhe h<sub>s</sub> von 12,3 cm. 
-Wie groß ist ihr Volumen V?     
+Wie groß ist ihr Volumen V?</p>     
 
-V = <input type="text" id="Eintrag188" maxlength="3" size="1" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef188" onclick="Aufgabe188()">Prüfen</button></p></pre> 
+V = <input type="text" id="Eintrag188" maxlength="3"  ></input> cm<sup>3</sup> <button id="Pruef188" onclick="Aufgabe188()">Prüfen</button></p>
     
  
                       <script>
@@ -341,23 +400,23 @@ V = <input type="text" id="Eintrag188" maxlength="3" size="1" style= background-
                       
 <!--//Aufgabe 189-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 189
+    <h2>Aufgabe 189</h2><p>
 
 Eine quadratische Pyramide hat eine Grundseite a 
 von 9,4 cm und eine Oberfläche O von 291,4 cm<sup>2</sup>. 
-Wie groß ist ihr Volumen V?    
+Wie groß ist ihr Volumen V?</p>    
 
-<button  onclick="window.open('Volum_Aufgabe189.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe189.html');" >Lösung</button></p>
 
 <!--//Aufgabe 190-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 190
+  <h2>Aufgabe 190</h2><p>
 
 Eine quadratische Pyramide hat eine Mantelfläche M 
 von 434 cm<sup>2</sup> und eine Oberfläche O von 783 cm<sup>2</sup>. 
-Wie groß ist ihr Volumen V?  
+Wie groß ist ihr Volumen V?</p>  
 
-V = <input type="text" id="Eintrag190" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef190" onclick="Aufgabe190()">Prüfen</button></p></pre>  
+V = <input type="text" id="Eintrag190" maxlength="5"  ></input> cm<sup>3</sup> <button id="Pruef190" onclick="Aufgabe190()">Prüfen</button></p>
 
 
                       <script>
@@ -375,14 +434,14 @@ V = <input type="text" id="Eintrag190" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 191-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 191
+  <h2>Aufgabe 191</h2><p>
 
 Wie groß ist das Volumen des dargestellten 
-Körpers?
+Körpers?</p>
 
-    <img src="Aufgabe168.jpg" >
+    <img src="Aufgabe168.jpg" ></p>
 
-V = <input type="text" id="Eintrag191" maxlength="2" size="1" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef191" onclick="Aufgabe191()">Prüfen</button> </p></pre> 
+V = <input type="text" id="Eintrag191" maxlength="2"  ></input> cm<sup>3</sup> <button id="Pruef191" onclick="Aufgabe191()">Prüfen</button> </p>
 
 
                       <script>
@@ -400,25 +459,25 @@ V = <input type="text" id="Eintrag191" maxlength="2" size="1" style= background-
                       
 <!--//Aufgabe 192-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 192
+    <h2>Aufgabe 192</h2><p>
 
 Wie groß ist das Volumen des dargestellten 
-Körpers?  
+Körpers? </p> 
 
-  <img src="Aufgabe169.jpg" >
+  <img src="Aufgabe169.jpg" ></p>
 
-<button  onclick="window.open('Volum_Aufgabe192.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe192.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 193-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 193
+  <h2>Aufgabe 193</h2><p>
 
 Wie groß ist das Volumen des dargestellten 
-Körpers?  
+Körpers?</p>  
 
-<img src="Aufgabe170.jpg" >
+<img src="Aufgabe170.jpg" ></p>
 
-V = <input type="text" id="Eintrag193" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef193" onclick="Aufgabe193()">Prüfen</button></p></pre> 
+V = <input type="text" id="Eintrag193" maxlength="5"  ></input> cm<sup>3</sup> <button id="Pruef193" onclick="Aufgabe193()">Prüfen</button></p>
     
  
                       <script>
@@ -436,25 +495,25 @@ V = <input type="text" id="Eintrag193" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 194-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 194
+    <h2>Aufgabe 194</h2><p>
 
 Wie groß ist das Volumen des dargestellten 
-Körpers?  
+Körpers?</p>  
 
-     <img src="Aufgabe171.jpg" >
+     <img src="Aufgabe171.jpg" ></p>
 
-<button  onclick="window.open('Volum_Aufgabe194.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe194.html');" >Lösung</button></p>  
                       
 <!--//Aufgabe 195-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 195
+  <h2>Aufgabe 195</h2><p>
 
 Wie groß ist die Oberfläche O des dargestellten 
-Körpers?  
+Körpers?</p>  
 
-      <img src="Aufgabe172.jpg" >
+      <img src="Aufgabe172.jpg" ></p>
 
-O = <input type="text" id="Eintrag195" maxlength="3" size="1" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef195" onclick="Aufgabe195()">Prüfen</button></p></pre>  
+O = <input type="text" id="Eintrag195" maxlength="3"  ></input> cm<sup>2</sup> <button id="Pruef195" onclick="Aufgabe195()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe195() { 
@@ -471,25 +530,25 @@ O = <input type="text" id="Eintrag195" maxlength="3" size="1" style= background-
                       
 <!--//Aufgabe 196-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 196
+    <h2>Aufgabe 196</h2><p>
 
 Wie groß ist die Oberfläche O des dargestellten 
-Körpers?   
+Körpers?</p>   
 
-    <img src="Aufgabe173.jpg" >
+    <img src="Aufgabe173.jpg" ></p>
 
-<button  onclick="window.open('Volum_Aufgabe196.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe196.html');" >Lösung</button></p>
 
 <!--//Aufgabe 197-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 197
+  <h2>Aufgabe 197</h2><p>
 
 Wie groß ist die Oberfläche O des dargestellten 
-Körpers?   
+Körpers?</p>   
 
-<img src="Aufgabe174.jpg" >
+<img src="Aufgabe174.jpg" ></p>
 
-O = <input type="text" id="Eintrag197" maxlength="4" size="1" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef197" onclick="Aufgabe197()">Prüfen</button></p></pre>  
+O = <input type="text" id="Eintrag197" maxlength="4"  ></input> cm<sup>2</sup> <button id="Pruef197" onclick="Aufgabe197()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe197() { 
@@ -506,25 +565,25 @@ O = <input type="text" id="Eintrag197" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 198-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 198
+    <h2>Aufgabe 198</h2><p>
 
 Wie groß ist die Oberfläche O des dargestellten 
-Körpers?   
+Körpers?</p>   
 
-<img src="Aufgabe175.jpg" >
+<img src="Aufgabe175.jpg" ></p>
 
-<button  onclick="window.open('Volum_Aufgabe198.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe198.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 199-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 199
+  <h2>Aufgabe 199</h2><p>
 
 Wie groß ist das Volumen V des dargestellten 
-Körpers? 
+Körpers?</p> 
 
-     <img src="Aufgabe176.jpg" >
+     <img src="Aufgabe176.jpg" ></p>
 
-V = <input type="text" id="Eintrag199" maxlength="2" size="1" style= background-color:yellow ></input> m<sup>3</sup> <button id="Pruef199" onclick="Aufgabe199()">Prüfen</button></p></pre>  
+V = <input type="text" id="Eintrag199" maxlength="2"  ></input> m<sup>3</sup> <button id="Pruef199" onclick="Aufgabe199()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe199() { 
@@ -541,24 +600,24 @@ V = <input type="text" id="Eintrag199" maxlength="2" size="1" style= background-
                       
 <!--//Aufgabe 200-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 200
+    <h2>Aufgabe 200</h2><p>
 
 Wie groß ist das Volumen V des dargestellten 
-Körpers?   
+Körpers?</p>   
 
-<img src="Aufgabe177.jpg" > 
+<img src="Aufgabe177.jpg" ></p> 
 
-<button  onclick="window.open('Volum_Aufgabe200.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe200.html');" >Lösung</button></p>  
                       
 <!--//Aufgabe 201-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 201
+  <h2>Aufgabe 201</h2><p>
 
 Ein Kegel hat ein Volumen von 804,248 cm<sup>3</sup>. 
 Wie groß sind seine Höhe h und sein Grundkreis-
-radius r, wenn sie sich wie 3:2 verhalten?  
+radius r, wenn sie sich wie 3:2 verhalten?</p>  
 
-r = <input type="text" id="Eintrag201" maxlength="1" size="1" style= background-color:yellow ></input> cm <button id="Pruef201" onclick="Aufgabe201()">Prüfen</button></p></pre>  
+r = <input type="text" id="Eintrag201" maxlength="1"  ></input> cm <button id="Pruef201" onclick="Aufgabe201()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe201() { 
@@ -575,24 +634,24 @@ r = <input type="text" id="Eintrag201" maxlength="1" size="1" style= background-
                       
 <!--//Aufgabe 202-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 202
+    <h2>Aufgabe 202</h2><p>
 
 Von einer quadratischen Pyramide wird in halber 
 Höhe die Spitze abgeschnitten. 
-Wie groß ist der Abfall in Prozent?  
+Wie groß ist der Abfall in Prozent?</p>  
 
-<button  onclick="window.open('Volum_Aufgabe202.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe202.html');" >Lösung</button></p>
                       
 <!--//Aufgabe 203-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 203
+  <h2>Aufgabe 203</h2><p>
 
 Die Mantelfläche M eines Kegels mit dem 
 Grundkreisradiusr = 6 cm ist doppelt so groß wie 
 seine Grundfläche G. 
-Wie groß ist seine Höhe h?    
+Wie groß ist seine Höhe h?</p>    
 
-h = <input type="text" id="Eintrag203" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef203" onclick="Aufgabe203()">Prüfen</button></p></pre>  
+h = <input type="text" id="Eintrag203" maxlength="4"  ></input> cm <button id="Pruef203" onclick="Aufgabe203()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe203() { 
@@ -609,27 +668,27 @@ h = <input type="text" id="Eintrag203" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 204-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 204
+    <h2>Aufgabe 204</h2><p>
 
 Eine Pyramide ist 5 cm hoch und hat als Grund-
 fläche ein gleichschenkliges Trapez mit den 
 parallelen Seiten a = 5 cm, c = 3 cm und der 
 Länge eines Schenkels c = 1,5 cm. 
-Wie groß ist ihr Volumen V?    
+Wie groß ist ihr Volumen V?</p>    
 
-<button  onclick="window.open('Volum_Aufgabe204.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe204.html');" >Lösung</button></p>  
 
 
 <!--//Aufgabe 205-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 205
+  <h2>Aufgabe 205</h2><p>
 
 Die Grundfläche und das Volumen eines Zylinders 
 und eines Kegels seien gleich groß. 
 Wie groß ist die Höhe h<sub>z</sub> des Zylinders, wenn der 
-Kegel eine Hohe h<sub>k</sub> = 6 cm hat? 
+Kegel eine Hohe h<sub>k</sub> = 6 cm hat?</p> 
 
-h<sub>z</sub> = <input type="text" id="Eintrag205" maxlength="1" size="1" style= background-color:yellow ></input> cm <button id="Pruef205" onclick="Aufgabe205()">Prüfen</button></p></pre>  
+h<sub>z</sub> = <input type="text" id="Eintrag205" maxlength="1"  ></input> cm <button id="Pruef205" onclick="Aufgabe205()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe205() { 
@@ -646,26 +705,26 @@ h<sub>z</sub> = <input type="text" id="Eintrag205" maxlength="1" size="1" style=
                       
 <!--//Aufgabe 206-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 206
+    <h2>Aufgabe 206</h2><p>
 
 Ein Zylinder hat als Achsenschnitt ein Quadrat 
 mit einer Seitenlänge von 4,5 cm. 
 Welches Volumen V hat der größtmögliche Kegel, 
-der daraus hergestellt werden kann?  
+der daraus hergestellt werden kann?</p>  
 
- <button  onclick="window.open('Volum_Aufgabe206.html');" >Lösung</button></p></pre>   
+ <button  onclick="window.open('Volum_Aufgabe206.html');" >Lösung</button></p> 
 
 
 <!--//Aufgabe 207-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 207
+  <h2>Aufgabe 207</h2><p>
 
 Ein gerader Kegel wird parallel zu seinem Grund-
 kreis so geschnitten, dass sein Volumen halbiert 
 wird. Wie hängen der Grundkreisradius r<sub>1</sub> und der 
-Radius der Schnittfläche r<sub>2</sub> voneinander ab?  
+Radius der Schnittfläche r<sub>2</sub> voneinander ab?</p>  
 
-r<sub>2</sub> = <input type="text" id="Eintrag207" maxlength="4" size="1" style= background-color:yellow ></input> * r<sub>1</sub> <button id="Pruef207" onclick="Aufgabe207()">Prüfen</button></p></pre>  
+r<sub>2</sub> = <input type="text" id="Eintrag207" maxlength="4"  ></input> * r<sub>1</sub> <button id="Pruef207" onclick="Aufgabe207()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe207() { 
@@ -682,27 +741,27 @@ r<sub>2</sub> = <input type="text" id="Eintrag207" maxlength="4" size="1" style=
                       
 <!--//Aufgabe 208-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 208
+    <h2>Aufgabe 208</h2><p>
 
 Aus einem Kegel mit einem Grundkreisradius 
 r = 4,9 cm und einer Höhe h von 13,2 cm soll die 
 größte quadratische Pyramide gleicher Höhe 
 gefertigt werden. 
-Wie groß ist der Abfall A?  
+Wie groß ist der Abfall A? </p> 
 
-<button  onclick="window.open('Volum_Aufgabe208.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe208.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 209-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 209
+  <h2>Aufgabe 209</h2><p>
 
 Der Achsenschnitt eines Kegels ist ein gleich-
 schenkliges Dreieck mit einer Höhe h von 3 cm und 
 der Länge l einesSchenkels von 5 cm. 
 Wie groß sind das Volumen V und die Mantelfläche 
-M des Kegels? 
+M des Kegels?</p> 
 
-V = <input type="text" id="Eintrag209" maxlength="4" size="1" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef209" onclick="Aufgabe209()">Prüfen</button></p></pre>  
+V = <input type="text" id="Eintrag209" maxlength="4"  ></input> cm<sup>3</sup> <button id="Pruef209" onclick="Aufgabe209()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe209() { 
@@ -719,29 +778,29 @@ V = <input type="text" id="Eintrag209" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 210-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 210
+    <h2>Aufgabe 210</h2><p>
 
 Ein Hohlzylinder hat einen Innenradius von 1 cm, 
-einen Außenradius von 3 cm und eine Höhe von 
+einen Außenradius von <br class="br-desk">3 cm und eine Höhe von 
 5 cm. Wie groß sind die Höhen eines volumen-
-gleichen Kegels, wenn dessen Grundkreisradius 
-a) dem arithmetischen Mittel oder 
+gleichen Kegels, wenn dessen Grundkreisradius</p> 
+a) dem arithmetischen Mittel oder </p>
 b) dem geometrischen Mittel der Zylinderradien 
-entspricht?  
+entspricht? </p> 
 
-<button  onclick="window.open('Volum_Aufgabe210.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Volum_Aufgabe210.html');" >Lösung</button></p>
 
 <!--//Aufgabe 211-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 211
+  <h2>Aufgabe 211</h2><p>
 
 Wie groß ist das Volumen des Rotationskörpers, 
 wenn a + b = 12 cm und wenn sich a:b 
-wie b:(a + b) verhält? 
+wie b:(a + b) verhält?</p> 
 
-     <img src="Aufgabe188.jpg" >
+     <img src="Aufgabe188.jpg" ></p>
 
-V = <input type="text" id="Eintrag211" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef211" onclick="Aufgabe211()">Prüfen</button></p></pre>  
+V = <input type="text" id="Eintrag211" maxlength="5"  ></input> cm<sup>3</sup> <button id="Pruef211" onclick="Aufgabe211()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe211() { 
@@ -758,25 +817,25 @@ V = <input type="text" id="Eintrag211" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 212-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 212
+    <h2>Aufgabe 212</h2><p>
 
 Wie groß ist die Mantelfläche M einer Pyramide 
 mit einem regelmäßigen Sechseck, 
 Seitenlänge = 6 cm, als Grundfläche und einer 
-Seitenhöhe h<sub>s</sub> von 10 cm? 
+Seitenhöhe h<sub>s</sub> von 10 cm?</p> 
 
-<button  onclick="window.open('Volum_Aufgabe212.html');" >Lösung</button></p></pre>  
+<button  onclick="window.open('Volum_Aufgabe212.html');" >Lösung</button></p>
 
 <!--//Aufgabe 213-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 213
+  <h2>Aufgabe 213</h2><p>
 
 Ein Würfel und eine Pyramide haben gleiches 
 Volumen von 1 000 cm<sup>3</sup> und gleich große 
 Grundflächen. 
-Wie groß ist die Höhe h der Pyramide?  
+Wie groß ist die Höhe h der Pyramide?</p>  
 
-h = <input type="text" id="Eintrag213" maxlength="2" size="1" style= background-color:yellow ></input> cm <button id="Pruef213" onclick="Aufgabe213()">Prüfen</button></p></pre>  
+h = <input type="text" id="Eintrag213" maxlength="2"  ></input> cm <button id="Pruef213" onclick="Aufgabe213()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe213() { 
@@ -793,25 +852,25 @@ h = <input type="text" id="Eintrag213" maxlength="2" size="1" style= background-
                       
 <!--//Aufgabe 214-->
 
-    <pre><p class="Aufgabe">Aufgabe 214
+    <h2>Aufgabe 214</h2><p>
 
 Wie groß sind die Oberfläche O und das Volumen V 
-eines Oktaeders mit Seitenlängen a von je 4,8 cm?
+eines Oktaeders mit Seitenlängen a von je 4,8 cm?</p>
 
-<button  onclick="window.open('Volum_Aufgabe214.html');" >Lösung</button></p></pre>  
+<button  onclick="window.open('Volum_Aufgabe214.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 215-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 215
+  <h2>Aufgabe 215</h2><p>
 
 Aus einer quadratischen Pyramide mit einer 
 Grundseite a von 6 cm und einer Höhe h von 8 cm 
 wird ein Würfel abgetrennt, dessen Grundfläche 
 auf der Pyramidengrundfläche liegt und 4 Ecken 
 auf den Pyramidenseitenkanten. Wie groß sind 
-eine Würfelseite b und der Abfall A?  
+eine Würfelseite b und der Abfall A?</p>  
 
-b = <input type="text" id="Eintrag215" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef215" onclick="Aufgabe215()">Prüfen</button></p></pre>  
+b = <input type="text" id="Eintrag215" maxlength="3"  ></input> cm <button id="Pruef215" onclick="Aufgabe215()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe215() { 
@@ -828,20 +887,20 @@ b = <input type="text" id="Eintrag215" maxlength="3" size="1" style= background-
                       
 <!--//Aufgabe 216-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 216
+    <h2>Aufgabe 216</h2><p>
 
 das Volumen V und die Mantelfläche M der
 quadratischen Pyramide? Wie groß ist ihre neue 
 Höhe h, wenn man die Grundfläche beibehält, aber 
-das Volumen um 1/5 verringert?      
+das Volumen um 1/5 verringert?</p>      
 
-<img src="Aufgabe193.jpg" >
+<img src="Aufgabe193.jpg" ></p>
 
-<button  onclick="window.open('Volum_Aufgabe216.html');" >Lösung</button></p></b></pre>  
+<button  onclick="window.open('Volum_Aufgabe216.html');" >Lösung</button></p>
 
 
 
-          <a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a>   
+          <a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a></div></main>   
 	      
           
         <script>

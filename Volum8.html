@@ -7,18 +7,75 @@
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volumen</title>
   
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
+  
 </head>
 <body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button {font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+
+        img {
+               max-width: 100%;
+               height: auto;
+               display: block;
+            }    
+        
     </style>
+
+    <main>
 
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Volumen</p>  
@@ -27,27 +84,29 @@
 		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
         
 
- <!--//Aufgabe 340-->                     
-                      
-    <pre><b><p class="Aufgabe">Aufgabe 340
-        
+ <div class="check">
+
+<!--//Aufgabe 340-->
+
+  <h2>Aufgabe 340</h2><p>
+
 Für 3 D Filme hat ein Kino eine Kuppel in Form 
 einer Halbkugel mit einem Durchmesser von 15 m. 
 Sie soll neu gestrichen werden. 
-Wie groß ist die zu streichende Fläche A?   
+Wie groß ist die zu streichende Fläche A?</p>   
 
-<button  onclick="window.open('Volum_Aufgabe340.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe340.html');" >Lösung</button></p>
 
 <!--//Aufgabe 341-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 341
+  <h2>Aufgabe 341</h2><p>
 
 Ein Luftballon wird so weit aufgeblasen, dass 
 sich seine kugelförmige Oberfläche verdoppelt. 
 Um welchen Faktor m hat sich sein ursprüngliches 
-Volumen vergrößert?   
+Volumen vergrößert?</p>   
 
-m = <input type="text" id="Eintrag341" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef341" onclick="Aufgabe341()">Prüfen</button></p></pre>  
+m = <input type="text" id="Eintrag341" maxlength="4"  ></input> <button id="Pruef341" onclick="Aufgabe341()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe341() { 
@@ -64,25 +123,25 @@ m = <input type="text" id="Eintrag341" maxlength="4" size="1" style= background-
                       
  <!--//Aufgabe 342-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 342
+    <h2>Aufgabe 342</h2><p>
         
 Ein Mensch hat ungefähr 400 Millionen kugel-
 förmige Lungenbläschen mit einem Durchmesser von 
 0,2 mm. Wie groß müsste der Radius r einer Kugel 
 sein, die die gleiche Oberfläche hat wie alle 
-Lungenbläschen zusammen?   
+Lungenbläschen zusammen?</p>   
 
-<button  onclick="window.open('Volum_Aufgabe342.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe342.html');" >Lösung</button></p>
 
 <!--//Aufgabe 343-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 343
+  <h2>Aufgabe 343</h2><p>
 
 Eine Discokugel mit einem Durchmesser von 40 cm 
 hat auf der Oberfläche kleine je 1 cm<sup>2</sup> große 
-Spiegel. Wie viele solcher Spiegel passen darauf?   
+Spiegel. Wie viele solcher Spiegel passen darauf?</p>   
 
-n = <input type="text" id="Eintrag343" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef343" onclick="Aufgabe343()">Prüfen</button></p></pre>  
+n = <input type="text" id="Eintrag343" maxlength="4"  ></input> <button id="Pruef343" onclick="Aufgabe343()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe343() { 
@@ -99,24 +158,24 @@ n = <input type="text" id="Eintrag343" maxlength="4" size="1" style= background-
 
 <!--//Aufgabe 344-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 344
+    <h2>Aufgabe 344</h2><p>
         
 Wie viele Bleikugeln mit einem Radius von 1 mm 
 braucht man, um daraus eine Kugel mit einem 
-Radius von 10 cm herzustellen?  
+Radius von 10 cm herzustellen?</p>  
 
-<button  onclick="window.open('Volum_Aufgabe344.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe344.html');" >Lösung</button></p>
 
 <!--//Aufgabe 345-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 345
+  <h2>Aufgabe 345</h2><p>
 
 Ein Tonquader hat eine Länge von 10 cm, eine 
 Breite von 12 cm und eine Höhe von 15 cm. Wie 
 viele Tonkugeln mit einem Durchmesser von 3 mm 
-kann man daraus formen?    
+kann man daraus formen?</p>    
 
-n = <input type="text" id="Eintrag345" maxlength="6" size="2" style= background-color:yellow ></input> Kugeln <button id="Pruef345" onclick="Aufgabe345()">Prüfen</button></p></pre>  
+n = <input type="text" id="Eintrag345" maxlength="6"  ></input> Kugeln <button id="Pruef345" onclick="Aufgabe345()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe345() { 
@@ -133,27 +192,27 @@ n = <input type="text" id="Eintrag345" maxlength="6" size="2" style= background-
 
 <!--//Aufgabe 346-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 346
+    <h2>Aufgabe 346</h2><p>
         
 Aus einer Kugel mit einem Durchmesser von 60 cm 
 sollen 1 000 kleine Kugeln erschmolzen werden? 
 Wie groß ist der Durchmesser d einer kleinen 
-Kugel?  
+Kugel?</p>  
 
-<button  onclick="window.open('Volum_Aufgabe346.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe346.html');" >Lösung</button></p>
 
 <!--//Aufgabe 347-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 347
+  <h2>Aufgabe 347</h2><p>
 
 Ein Jugendhandball hat einen Umfang von 54 cm. 
 Wie viel Leder braucht man zu seiner Herstellung, 
 wenn mit 20% Verschnitt gerechnet wird? 
 Für einen Männerhandball braucht man 
 einschließlicheinem Verschnitt von 20% 1 330 cm<sup>2</sup> 
-Leder. Wie groß ist sein Umfang U?   
+Leder. Wie groß ist sein Umfang U?</p>   
 
-U = <input type="text" id="Eintrag347" maxlength="2" size="1" style= background-color:yellow ></input> cm <button id="Pruef347" onclick="Aufgabe347()">Prüfen</button></p></pre>  
+U = <input type="text" id="Eintrag347" maxlength="2"  ></input> cm <button id="Pruef347" onclick="Aufgabe347()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe347() { 
@@ -170,26 +229,26 @@ U = <input type="text" id="Eintrag347" maxlength="2" size="1" style= background-
 
 <!--//Aufgabe 348-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 348
+    <h2>Aufgabe 348</h2><p>
         
 6 Spielkugeln sind in einer Holzkiste (Länge 
 24 cm, Breite 16 cm) so verpackt, dass sie die 
 Außenwände berühren. 
 Welchen Durchmesser d hat eine kleine Kugel, die 
 in die Zwischenräume zwischen den großen Kugeln 
-passt?  
+passt?</p>  
 
-<button  onclick="window.open('Volum_Aufgabe348.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe348.html');" >Lösung</button></p>
 
 <!--//Aufgabe 349-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 349
+  <h2>Aufgabe 349</h2><p>
 
 Wie schwer ist eine Hohlkugel aus Glas mit einem 
 Außendurchmesser von 7 cm und einer Wandstärke 
-von 2 mm, wenn sie eine Dichte von 2,5 g/cm<sup>3</sup> hat?   
+von 2 mm, wenn sie eine Dichte von 2,5 g/cm<sup>3</sup> hat?</p>   
 
-Sie wiegt <input type="text" id="Eintrag349" maxlength="4" size="1" style= background-color:yellow ></input> g. <button id="Pruef349" onclick="Aufgabe349()">Prüfen</button></p></pre>  
+Sie wiegt <input type="text" id="Eintrag349" maxlength="4"  ></input> g. <button id="Pruef349" onclick="Aufgabe349()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe349() { 
@@ -206,27 +265,27 @@ Sie wiegt <input type="text" id="Eintrag349" maxlength="4" size="1" style= backg
 
 <!--//Aufgabe 350-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 350
+    <h2>Aufgabe 350</h2><p>
         
 Eine Platinkugel mit einem Radius von 4 cm und 2 
 mit einem Radius von je 3 cm stehen zur Wahl. 
 Um wie viel Prozent p unterscheiden sich deren 
-Volumina, wenn das größere 100% entsprechen soll?  
+Volumina, wenn das größere 100% entsprechen soll?</p>  
 
-<button  onclick="window.open('Volum_Aufgabe350.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe350.html');" >Lösung</button></p>
 
 <!--//Aufgabe 351-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 351
+  <h2>Aufgabe 351</h2><p>
 
 Ein halbkugelförmiger Kupferkessel mit einem 
 Durchmesser von 1,35 m wird in einer Großküche 
 eingesetzt. Er soll mit Butter ausgestrichen 
 werden. Wie viel Butter braucht man, wenn 1 g 
 für 10 dm<sup>2</sup> ausreicht? Wie viel l 
-Suppe können darin maximal zubereitet werden?    
+Suppe können darin maximal zubereitet werden?</p>    
 
-<input type="text" id="Eintrag351" maxlength="3" size="1" style= background-color:yellow ></input> l <button id="Pruef351" onclick="Aufgabe351()">Prüfen</button></p></pre>  
+<input type="text" id="Eintrag351" maxlength="3"  ></input> l <button id="Pruef351" onclick="Aufgabe351()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe351() { 
@@ -243,27 +302,27 @@ Suppe können darin maximal zubereitet werden?
 
 <!--//Aufgabe 352-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 352
+    <h2>Aufgabe 352</h2><p>
         
 Wie viel Kugeln Eis können aus 3 Packungen mit 
 jeweils 1 l Inhalt mit einem Eisportionierer mit 
-5 cm Durchmesser ausgegeben werden?    
+5 cm Durchmesser ausgegeben werden?</p>    
 
-<button  onclick="window.open('Volum_Aufgabe352.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe352.html');" >Lösung</button></p>
 
 <!--//Aufgabe 353-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 353
+  <h2>Aufgabe 353</h2><p>
 
 Ein Messzylinder zeigt eine Wassermenge von 
 58 cm<sup>3</sup> an. Welche Wassermenge M wird angezeigt, 
-wenn 3 Kugeln mit den Radien 1 cm, 1,5 cm und 
+wenn 3 Kugeln mit den Radien 1 cm, <br class="br-desk">1,5 cm und 
 2 cm eingetaucht werden? 
 Wie viele Kugeln n mit einem Radius von 1,5 cm 
 könnte man noch hinzufügen, wenn naximal 200 cm<sup>3</sup> 
-hineinpassen?    
+hineinpassen?</p>    
 
-M = <input type="text" id="Eintrag353" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef353" onclick="Aufgabe353()">Prüfen</button></p></pre>  
+M = <input type="text" id="Eintrag353" maxlength="5"  ></input> cm<sup>3</sup> <button id="Pruef353" onclick="Aufgabe353()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe353() { 
@@ -280,23 +339,23 @@ M = <input type="text" id="Eintrag353" maxlength="5" size="2" style= background-
 
 <!--//Aufgabe 354-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 354
+    <h2>Aufgabe 354</h2><p>
         
 Wie dick ist ein Ölfilm, der aus einem Öltropfen 
 mit einem Durchmesser von 4 mm entsteht und sich 
 auf einer kreisrunden Fläche mit einem Radius 
-von 1 200 mm ausbreitet?   
+von 1 200 mm ausbreitet?</p>   
 
-<button  onclick="window.open('Volum_Aufgabe354.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe354.html');" >Lösung</button></p>
 
 <!--//Aufgabe 355-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 355
+  <h2>Aufgabe 355</h2><p>
 
 Für die Hülle eines Freiballons braucht man 
-415 m<sup>2</sup> Stoff? Wie groß ist sein Volumen V?    
+415 m<sup>2</sup> Stoff? Wie groß ist sein Volumen V?</p>    
 
-V = <input type="text" id="Eintrag355" maxlength="5" size="2" style= background-color:yellow ></input> m<sup>3</sup> <button id="Pruef355" onclick="Aufgabe355()">Prüfen</button></p></pre>  
+V = <input type="text" id="Eintrag355" maxlength="5"  ></input> m<sup>3</sup> <button id="Pruef355" onclick="Aufgabe355()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe355() { 
@@ -313,28 +372,28 @@ V = <input type="text" id="Eintrag355" maxlength="5" size="2" style= background-
 
 <!--//Aufgabe 356-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 356
+    <h2>Aufgabe 356</h2><p>
         
 In einen zum Teil mit Wasser gefüllten 
 zylindrischen Messbecher mit einem Radius von 
 5 cm wird eine Stahlkugel geworfen, dabei steigt 
 der Wasserspiegel um 4 cm an. 
-Wie groß ist der Radius r der Kugel?  
+Wie groß ist der Radius r der Kugel?</p>  
 
-<button  onclick="window.open('Volum_Aufgabe356.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe356.html');" >Lösung</button></p>
 
 <!--//Aufgabe 357-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 357
+  <h2>Aufgabe 357</h2><p>
 
 Atomreaktoren sind von einer kugelförmigen 
 Sicherheitshülle aus Stahl umgeben. 
 Wie viel wiegt eine solche Hülle bei einem 
 Kugelinnendurchmesser von 56 m, einer 
 Wandstärke von 30 mm und einer Dichte von 
-7,94 kg/dm<sup>3</sup>?     
+7,94 kg/dm<sup>3</sup>?</p>     
 
-Sie wiegt <input type="text" id="Eintrag357" maxlength="4" size="1" style= background-color:yellow ></input> t. <button id="Pruef357" onclick="Aufgabe357()">Prüfen</button></p></pre>  
+Sie wiegt <input type="text" id="Eintrag357" maxlength="4"  ></input> t. <button id="Pruef357" onclick="Aufgabe357()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe357() { 
@@ -351,19 +410,19 @@ Sie wiegt <input type="text" id="Eintrag357" maxlength="4" size="1" style= backg
 
 <!--//Aufgabe 358-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 358
+    <h2>Aufgabe 358</h2><p>
         
 Aus 4 Metallkugeln mit einem Durchmesser von 
 50 mm soll eine erschmolzen werden. 
 Wie groß ist der Radius r der großen Kugel? 
 Um wie viel Prozent ist die Oberfläche der großen 
-Kugel kleiner als die der 4 Kugeln? 
+Kugel kleiner als die der 4 Kugeln?</p> 
 
-<button  onclick="window.open('Volum_Aufgabe358.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe358.html');" >Lösung</button></p>
 
 <!--//Aufgabe 359-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 359
+  <h2>Aufgabe 359</h2><p>
 
 Eine Lunge enthält etwa 400 000 000 Lungenbläschen 
 mit einem Durchmesser von 0,2 mm. 
@@ -372,9 +431,9 @@ Lungenbläschen? Welchen Durchmesser d hätte eine
 Kugel mit der gleichen Oberfläche? 
 Welche Oberfläche O hätte eine Kugel, die das 
 gleiche Volumen wie die gesamten Lungenbläschen 
-hat?    
+hat?</p>    
 
-O = <input type="text" id="Eintrag359" maxlength="5" size="2" style= background-color:yellow ></input> dm<sup>2</sup> <button id="Pruef359" onclick="Aufgabe359()">Prüfen</button></p></pre>  
+O = <input type="text" id="Eintrag359" maxlength="5"  ></input> dm<sup>2</sup> <button id="Pruef359" onclick="Aufgabe359()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe359() { 
@@ -391,25 +450,25 @@ O = <input type="text" id="Eintrag359" maxlength="5" size="2" style= background-
 
 <!--//Aufgabe 360-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 360
+    <h2>Aufgabe 360</h2><p>
         
 Aus einer Bleikugel mit dem Durchmesser 1 cm 
 sollen 10 gleich große Kugeln gegossen werden. 
 Wie groß ist der Durchmesser d einer dieser 
-Kugeln?  
+Kugeln?</p>  
 
-<button  onclick="window.open('Volum_Aufgabe360.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe360.html');" >Lösung</button></p>
 
 <!--//Aufgabe 361-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 361
+  <h2>Aufgabe 361</h2><p>
 
 Wie schwer ist eine Chromschicht von 0,2 mm Dicke 
 und einer Dichte von 6,8 g/cm<sup>3</sup>, die auf 64 
 Stahlkugeln mit einem Durchmesser von je 5 cm 
-aufgebracht wird?   
+aufgebracht wird?</p>   
 
-Es sind <input type="text" id="Eintrag361" maxlength="5" size="2" style= background-color:yellow ></input> g. <button id="Pruef361" onclick="Aufgabe361()">Prüfen</button></p></pre>  
+Es sind <input type="text" id="Eintrag361" maxlength="5"  ></input> g. <button id="Pruef361" onclick="Aufgabe361()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe361() { 
@@ -426,24 +485,24 @@ Es sind <input type="text" id="Eintrag361" maxlength="5" size="2" style= backgro
 
 <!--//Aufgabe 362-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 362
+    <h2>Aufgabe 362</h2><p>
         
 Die Oberfläche einer Kugel mit einem Radius von 
 8,4 cm wird durch Abschleifen um ein Drittel 
 verkleinert. Wie groß ist dann der Durchmesser d 
-der neuen Kugel?   
+der neuen Kugel?</p>   
 
-<button  onclick="window.open('Volum_Aufgabe362.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe362.html');" >Lösung</button></p>
 
 <!--//Aufgabe 363-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 363
+  <h2>Aufgabe 363</h2><p>
 
 Eine Hohlkugel mit einer Wandstärke von 3 mm soll 
 1 l fassen können. 
-Wie groß ist ihr äußerer Durchmesser d?   
+Wie groß ist ihr äußerer Durchmesser d?</p>   
 
-d = <input type="text" id="Eintrag363" maxlength="2" size="1" style= background-color:yellow ></input> cm <button id="Pruef363" onclick="Aufgabe363()">Prüfen</button></p></pre>  
+d = <input type="text" id="Eintrag363" maxlength="2"  ></input> cm <button id="Pruef363" onclick="Aufgabe363()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe363() { 
@@ -460,24 +519,24 @@ d = <input type="text" id="Eintrag363" maxlength="2" size="1" style= background-
 
 <!--//Aufgabe 364-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 364
+    <h2>Aufgabe 364</h2><p>
         
 Eine Messingkugel mit einer Dichte von 8,85 g/cm<sup>3</sup> 
-hat eine Masse von 1,6 kg. 
-Wie groß ist ihr Durchmesser d?   
+hat eine Masse von <br class="br-desk">1,6 kg. 
+Wie groß ist ihr Durchmesser d?</p>   
 
-<button  onclick="window.open('Volum_Aufgabe364.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe364.html');" >Lösung</button></p>
 
 <!--//Aufgabe 365-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 365
+  <h2>Aufgabe 365</h2><p>
 
 Wie groß ist der Materialbedarf M für 100 
 halbkugelförmige Dichtungen mit einem Radius von 
 7 mm, die auf der ebenen Fläche eine 3 mm tiefe 
-Ausbohrung mit 4 mm Durchmesser haben?   
+Ausbohrung mit 4 mm Durchmesser haben?</p>   
 
-M = <input type="text" id="Eintrag365" maxlength="2" size="1" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef365" onclick="Aufgabe365()">Prüfen</button></p></pre>  
+M = <input type="text" id="Eintrag365" maxlength="2"  ></input> cm<sup>3</sup> <button id="Pruef365" onclick="Aufgabe365()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe365() { 
@@ -494,23 +553,23 @@ M = <input type="text" id="Eintrag365" maxlength="2" size="1" style= background-
 
 <!--//Aufgabe 366-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 366
+    <h2>Aufgabe 366</h2><p>
         
 Wie groß ist die Massendifferenz m von 1 000 
 Stahlkugelnmit einem Durchmesser von 1 mm und 
 einer Dichte von 7,85 g/cm<sup>3</sup> und einem 
-Stahlwürfel mit einer Seitenlänge von 1 cm?   
+Stahlwürfel mit einer Seitenlänge von 1 cm?</p>   
 
-<button  onclick="window.open('Volum_Aufgabe366.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe366.html');" >Lösung</button></p>
 
 <!--//Aufgabe 367-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 367
+  <h2>Aufgabe 367</h2><p>
 
-Welche Dichte  hat eine massive Kugel, wenn sie 
-zur Hälfte in Wasser eintaucht?   
+Welche Dichte hat eine massive Kugel, wenn sie 
+zur Hälfte in Wasser eintaucht?</p>   
 
-ρ = <input type="text" id="Eintrag367" maxlength="3" size="1" style= background-color:yellow ></input> g/cm<sup>3</sup> <button id="Pruef367" onclick="Aufgabe367()">Prüfen</button></p></pre>  
+ρ = <input type="text" id="Eintrag367" maxlength="3"  ></input> g/cm<sup>3</sup> <button id="Pruef367" onclick="Aufgabe367()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe367() { 
@@ -527,25 +586,25 @@ zur Hälfte in Wasser eintaucht?
 
 <!--//Aufgabe 368-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 368
+    <h2>Aufgabe 368</h2><p>
         
 Für eine kugelförmige Ballonhülle braucht man 
 12,5 m<sup>2</sup> Stoff. 
 Wie groß ist der Durchmesser d des Ballons, wenn 
-mit 10% Verschnitt gerechnet wird?   
+mit 10% Verschnitt gerechnet wird?</p>   
 
-<button  onclick="window.open('Volum_Aufgabe368.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe368.html');" >Lösung</button></p>
 
 <!--//Aufgabe 369-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 369
+  <h2>Aufgabe 369</h2><p>
 
 Die kugelförmige Spitze eines Turmes hat einen 
 Durchmesser von 30 cm. Sie soll mit 10 g Gold mit 
 einer Dichte von 17 g/cm<sup>3</sup> überzogen werden. 
-Wie dick ist die Schicht? 
+Wie dick ist die Schicht?</p> 
 
-<input type="text" id="Eintrag369" maxlength="5" size="2" style= background-color:yellow ></input> mm <button id="Pruef369" onclick="Aufgabe369()">Prüfen</button></p></pre>  
+<input type="text" id="Eintrag369" maxlength="5"  ></input> mm <button id="Pruef369" onclick="Aufgabe369()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe369() { 
@@ -562,27 +621,27 @@ Wie dick ist die Schicht?
 
 <!--//Aufgabe 370-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 370
+    <h2>Aufgabe 370</h2><p>
         
 Ein zylindrischer Bottich mit einem Innen-
 durchmesser von 0,9 m und einer Innenhöhe von 
 1,2 m soll durch einen halbkugelförmigen mit 
 gleichem Volumen ersetzt werden. 
-Welchen Innendurchmesser d hat der neue Bottich?   
+Welchen Innendurchmesser d hat der neue Bottich?</p>   
 
-<button  onclick="window.open('Volum_Aufgabe370.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe370.html');" >Lösung</button></p>
 
 <!--//Aufgabe 371-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 371
+  <h2>Aufgabe 371</h2><p>
 
 Eine kugelförmige Gummiblase mit einer Wandddicke 
 von 0,4 mm schließt 1 l Gas ein. 
 Welche Wanddicke s hat die Blase, wenn sich das 
 Gasvolumen durch Erwärmung auf 1,8 l vergrößert
-und sich die Blase gleichmäßig ausdehnt? 
+und sich die Blase gleichmäßig ausdehnt? </p>
 
-s = <input type="text" id="Eintrag371" maxlength="3" size="1" style= background-color:yellow ></input> mm <button id="Pruef371" onclick="Aufgabe371()">Prüfen</button></p></pre>  
+s = <input type="text" id="Eintrag371" maxlength="3"  ></input> mm <button id="Pruef371" onclick="Aufgabe371()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe371() { 
@@ -599,24 +658,24 @@ s = <input type="text" id="Eintrag371" maxlength="3" size="1" style= background-
 
 <!--//Aufgabe 372-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 372
+    <h2>Aufgabe 372</h2><p>
         
 Eine heiße Kugel mit einem Volumen von 2,4 dm<sup>3</sup> 
 schrumpft beim Erkalten um 10%. 
-Wie groß ist ihr Durchmesser d nach dem Erkalten?  
+Wie groß ist ihr Durchmesser d nach dem Erkalten?</p>  
 
-<button  onclick="window.open('Volum_Aufgabe372.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe372.html');" >Lösung</button></p>
 
 <!--//Aufgabe 373-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 373
+  <h2>Aufgabe 373</h2><p>
 
 Aus einer massiven Halbkugel mit einem Durchmesser 
 von 34 cm soll soll eine Halbkugel so ausgedreht 
 werden, dass sie nur noch halb soviel wiegt. 
-Wie groß ist der Durchmesser d der Ausdrehung?  
+Wie groß ist der Durchmesser d der Ausdrehung?</p>  
 
-d = <input type="text" id="Eintrag373" maxlength="2" size="1" style= background-color:yellow ></input> cm <button id="Pruef373" onclick="Aufgabe373()">Prüfen</button></p></pre>  
+d = <input type="text" id="Eintrag373" maxlength="2"  ></input> cm <button id="Pruef373" onclick="Aufgabe373()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe373() { 
@@ -633,26 +692,26 @@ d = <input type="text" id="Eintrag373" maxlength="2" size="1" style= background-
 
 <!--//Aufgabe 374-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 374
+    <h2>Aufgabe 374</h2><p>
         
 Eine Halbkugel aus Blech mit einem Radius von 
 22 cm ist aus einer Kappe und einer Zone 
 zusammengesetzt. Wie hoch ist die Zone, wenn 
 deren Fläche gleich groß wie die der Kappe sein 
-soll?   
+soll? </p>  
 
-<button  onclick="window.open('Volum_Aufgabe374.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe374.html');" >Lösung</button></p>
 
 <!--//Aufgabe 375-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 375
+  <h2>Aufgabe 375</h2><p>
 
 Eine halbkugelförmige Steinplastik mit einem 
 Durchmesser von 70 cm, besteht aus einer Schicht 
 und einem Segment mit gleicher Höhe. 
-Wie groß ist das Volumen V der Schicht?  
+Wie groß ist das Volumen V der Schicht?</p>  
 
-V = <input type="text" id="Eintrag375" maxlength="4" size="1" style= background-color:yellow ></input> dm<sup>3</sup> <button id="Pruef375" onclick="Aufgabe375()">Prüfen</button></p></pre>  
+V = <input type="text" id="Eintrag375" maxlength="4"  ></input> dm<sup>3</sup> <button id="Pruef375" onclick="Aufgabe375()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe375() { 
@@ -669,27 +728,27 @@ V = <input type="text" id="Eintrag375" maxlength="4" size="1" style= background-
 
 <!--//Aufgabe 376-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 376
+    <h2>Aufgabe 376</h2><p>
         
 Damit eine Holzkugel mit einem Durchmesser von 
 8 cm auf ein Rundholz mit kegeliger Spitze 
 geleimt werden kann, ist eine Aussparung in der 
 Form eines Sektors mit einem Kegelöffungswinkel 
-von 60° nötig. Wie groß ist der Abfall A?  
+von 60° nötig. Wie groß ist der Abfall A?</p>  
 
-<button  onclick="window.open('Volum_Aufgabe376.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe376.html');" >Lösung</button></p>
 
 <!--//Aufgabe 377-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 377
+  <h2>Aufgabe 377</h2><p>
 
 Ein Deckel in Form eines Kugelsegmentes hat einen 
 Radius von 16 cm und eine Höhe von 2 cm. 
 Welchen Radius r muss die Gussform haben, wenn er 
 zu einem Segment mit der Höhe 4 cm umgegossen 
-werden soll?   
+werden soll?</p>   
 
-r = <input type="text" id="Eintrag377" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef377" onclick="Aufgabe377()">Prüfen</button></p></pre>  
+r = <input type="text" id="Eintrag377" maxlength="3"  ></input> cm <button id="Pruef377" onclick="Aufgabe377()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe377() { 
@@ -706,25 +765,25 @@ r = <input type="text" id="Eintrag377" maxlength="3" size="1" style= background-
 
 <!--//Aufgabe 378-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 378
+    <h2>Aufgabe 378</h2><p>
         
 Wie groß ist die Masse m des Kugelbolzens, wenn 
-seine Dichte 7,85 g/cm<sup>3</sup> beträgt?   
+seine Dichte 7,85 g/cm<sup>3</sup> beträgt?</p>   
 
-     <img src = "Aufgabe355.jpg">
+     <img src = "Aufgabe355.jpg"></p>
 
-<button  onclick="window.open('Volum_Aufgabe378.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe378.html');" >Lösung</button></p>
 
 <!--//Aufgabe 379-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 379
+  <h2>Aufgabe 379</h2><p>
 
 Bei einer Härteprüfung wird eine Stahlkugel 
 0,4 cm tief in ein Werkstück eingedrückt. 
 Die Eindruckfläche ist 4,5 cm<sup>2</sup> groß.
-Welchen Durchmesser d hat die Kugel?   
+Welchen Durchmesser d hat die Kugel?</p>   
 
-d = <input type="text" id="Eintrag379" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef379" onclick="Aufgabe379()">Prüfen</button></p></pre>  
+d = <input type="text" id="Eintrag379" maxlength="4"  ></input> cm <button id="Pruef379" onclick="Aufgabe379()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe379() { 
@@ -741,27 +800,27 @@ d = <input type="text" id="Eintrag379" maxlength="4" size="1" style= background-
 
 <!--//Aufgabe 380-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 380
+    <h2>Aufgabe 380</h2><p>
         
 Ein kugelförmiges Schiebegewicht mit einem 
 Durchmesser von 4 cm und einer Dichte von 
 7,2 g/cm<sup>3</sup> gleitet auf einer Stange von 8 mm 
 Durchmesser. 
 Wie groß ist seine Masse m, wenn es mittig 
-aufgebohrt wurde?  
+aufgebohrt wurde?</p>  
 
-<button  onclick="window.open('Volum_Aufgabe380.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe380.html');" >Lösung</button></p>
 
 <!--//Aufgabe 381-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 381
+  <h2>Aufgabe 381</h2><p>
 
 Wie groß ist die Fläche A der Kugelpfanne, die 
-als Aufnahme für ein Stützgelenk dient?    
+als Aufnahme für ein Stützgelenk dient?</p>    
 
-<img src = "Aufgabe358.jpg">
+<img src = "Aufgabe358.jpg"></p>
 
-A = <input type="text" id="Eintrag381" maxlength="4" size="1" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef381" onclick="Aufgabe381()">Prüfen</button></p></pre>  
+A = <input type="text" id="Eintrag381" maxlength="4"  ></input> cm<sup>2</sup> <button id="Pruef381" onclick="Aufgabe381()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe381() { 
@@ -778,25 +837,25 @@ A = <input type="text" id="Eintrag381" maxlength="4" size="1" style= background-
 
 <!--//Aufgabe 382-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 382
+    <h2>Aufgabe 382</h2><p>
         
 Eine Zierkugel mit einem Durchmesser von 80 cm 
 ist so abgeflacht, dass die Auflagefläche einen 
 Durchmesser von 25 cm hat. 
-Wie groß ist das Volumen V der Kugel?  
+Wie groß ist das Volumen V der Kugel?</p>  
 
-<button  onclick="window.open('Volum_Aufgabe382.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe382.html');" >Lösung</button></p>
 
 <!--//Aufgabe 383-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 383
+  <h2>Aufgabe 383</h2><p>
 
 Wie groß ist die Masse m der symmetrischen Linse 
-bei einer Dichte von 3,1 g/cm<sup>3</sup>?   
+bei einer Dichte von <br class="br-desk">3,1 g/cm<sup>3</sup>?</p>   
    
-      <img src = "Aufgabe360.jpg">
+      <img src = "Aufgabe360.jpg"></p>
 
-m = <input type="text" id="Eintrag383" maxlength="4" size="1" style= background-color:yellow ></input> g <button id="Pruef383" onclick="Aufgabe383()">Prüfen</button></p></pre>  
+m = <input type="text" id="Eintrag383" maxlength="4"  ></input> g <button id="Pruef383" onclick="Aufgabe383()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe383() { 
@@ -813,26 +872,26 @@ m = <input type="text" id="Eintrag383" maxlength="4" size="1" style= background-
 
 <!--//Aufgabe 384-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 384
+    <h2>Aufgabe 384</h2><p>
         
 Wie groß ist die gekrümmte Fläche A der 
-symmetrischen Doppeltkonkavlinse?  
+symmetrischen Doppeltkonkavlinse?</p>  
 
-<img src = "Aufgabe361.jpg">
+<img src = "Aufgabe361.jpg"></p>
 
-<button  onclick="window.open('Volum_Aufgabe384.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe384.html');" >Lösung</button></p>
 
 <!--//Aufgabe 385-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 385
+  <h2>Aufgabe 385</h2><p>
 
 Auf einen Zylinder mit einem Durchmesser von 
 1,5 m sind beidseitig 25 cm hohe Kugelkappen 
 angeschweißt. Der so entstandene Kessel hat eine 
 Gesamtlänge von 3,8 m. 
-Wie groß ist seine Oberfläche O?   
+Wie groß ist seine Oberfläche O?</p>   
 
-O = <input type="text" id="Eintrag385" maxlength="4" size="1" style= background-color:yellow ></input> m<sup>2</sup> <button id="Pruef385" onclick="Aufgabe385()">Prüfen</button></p></pre>  
+O = <input type="text" id="Eintrag385" maxlength="4"  ></input> m<sup>2</sup> <button id="Pruef385" onclick="Aufgabe385()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe385() { 
@@ -849,26 +908,26 @@ O = <input type="text" id="Eintrag385" maxlength="4" size="1" style= background-
 
 <!--//Aufgabe 386-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 386
+    <h2>Aufgabe 386</h2><p>
         
 Welche Masse m haben 50 Bolzen mit einer Dichte 
-von 7,85 g/cm<sup>3</sup>?   
+von 7,85 g/cm<sup>3</sup>?</p>   
 
-     <img src = "Aufgabe363.jpg">
+     <img src = "Aufgabe363.jpg"></p>
 
-<button  onclick="window.open('Volum_Aufgabe386.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe386.html');" >Lösung</button></p>
 
 <!--//Aufgabe 387-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 387
+  <h2>Aufgabe 387</h2><p>
 
 Ein Stehaufmännchen hat einen halbkugelförmigen 
 Kunststofffuß mit einem Durchmesser von 25 mm. 
 Wie groß ist der Materialbedarf M für ein 8 mm 
 hohes Kugelsegment aus Blei, mit dem er 
-beschwert wird?   
+beschwert wird?</p>   
 
-M = <input type="text" id="Eintrag387" maxlength="4" size="1" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef387" onclick="Aufgabe387()">Prüfen</button></p></pre>  
+M = <input type="text" id="Eintrag387" maxlength="4"  ></input> cm<sup>3</sup> <button id="Pruef387" onclick="Aufgabe387()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe387() { 
@@ -885,27 +944,27 @@ M = <input type="text" id="Eintrag387" maxlength="4" size="1" style= background-
 
 <!--//Aufgabe 388-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 388
+    <h2>Aufgabe 388</h2><p>
         
 Eine Kugelvase hat einen Innendurchmessser von 
 16 cm. Boden und Öffnung sind gleich groß und 
 haben einen Durchmesser von 9 cm. 
-Wie groß ist das Volumen V der Vase?    
+Wie groß ist das Volumen V der Vase?</p>    
 
-<button  onclick="window.open('Volum_Aufgabe388.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe388.html');" >Lösung</button></p>
 
 <!--//Aufgabe 389-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 389
+  <h2>Aufgabe 389</h2><p>
 
 Ein Kessel besteht aus einem 2,4 m langen Rohr 
 mit einer lichten Weite von 80 cm. Er ist auf 
 beiden Seiten mit einer Kugelkappe abgeschlossen, 
 deren Mittelpunkt im Schwerpunkt des Rohres 
 liegt. Wie groß sind das Volumen V und die 
-Oberfläche O des Kessels?    
+Oberfläche O des Kessels?</p>    
 
-V = <input type="text" id="Eintrag389" maxlength="4" size="1" style= background-color:yellow ></input> m<sup>3</sup> <button id="Pruef389" onclick="Aufgabe389()">Prüfen</button></p></pre>  
+V = <input type="text" id="Eintrag389" maxlength="4"  ></input> m<sup>3</sup> <button id="Pruef389" onclick="Aufgabe389()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe389() { 
@@ -922,25 +981,25 @@ V = <input type="text" id="Eintrag389" maxlength="4" size="1" style= background-
 
 <!--//Aufgabe 390-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 390
+    <h2>Aufgabe 390</h2><p>
         
 Wie groß sind das Volumen V. die Oberfläche O und 
 die Fläche A des Achsenschnittes des Ziersteins 
-aus Marmor?   
+aus Marmor?</p>   
 
-<img src = "Aufgabe367.jpg">
+<img src = "Aufgabe367.jpg"></p>
 
-<button  onclick="window.open('Volum_Aufgabe390.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe390.html');" >Lösung</button></p>
 
 <!--//Aufgabe 391-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 391
+  <h2>Aufgabe 391</h2><p>
 
-Wie groß ist die Wassermenge V in dem Stehkolben? 
+Wie groß ist die Wassermenge V in dem Stehkolben?</p> 
 
-    <img src = "Aufgabe368.jpg">
+    <img src = "Aufgabe368.jpg"></p>
 
-V = <input type="text" id="Eintrag391" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef391" onclick="Aufgabe391()">Prüfen</button></p></pre>  
+V = <input type="text" id="Eintrag391" maxlength="5"  ></input> cm<sup>3</sup> <button id="Pruef391" onclick="Aufgabe391()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe391() { 
@@ -957,27 +1016,27 @@ V = <input type="text" id="Eintrag391" maxlength="5" size="2" style= background-
 
 <!--//Aufgabe 392-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 392
+    <h2>Aufgabe 392</h2><p>
         
 Wie groß ist das Volumen V, das der Behälter für 
-Weizen einschließlich Deckel umfasst?   
+Weizen einschließlich Deckel umfasst? </p>  
 
-<img src = "Aufgabe369.jpg">
+<img src = "Aufgabe369.jpg"></p>
 
-<button  onclick="window.open('Volum_Aufgabe392.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe392.html');" >Lösung</button></p>
 
 <!--//Aufgabe 393-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 393
+  <h2>Aufgabe 393</h2><p>
 
 Zwei Kugeln mit einem Radius von 27 mm und einem 
 von 15 mm  werden so abgeschliffen, dass sie eine 
 gemeinsame Berührungsfläche mit einem Durchmesser 
 von 23 mm haben.
 Wie groß sind die Volumina der beiden Segmente 
-nach dem Abschleifen, kleineres zuerst? 
+nach dem Abschleifen, kleineres zuerst?</p> 
 
-V<sub>1</sub> = <input type="text" id="Eintrag393" maxlength="3" size="1" style= background-color:yellow ></input> mm<sup>3</sup> <button id="Pruef393" onclick="Aufgabe393()">Prüfen</button></p></pre>  
+V<sub>1</sub> = <input type="text" id="Eintrag393" maxlength="3"  ></input> mm<sup>3</sup> <button id="Pruef393" onclick="Aufgabe393()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe393() { 
@@ -994,25 +1053,25 @@ V<sub>1</sub> = <input type="text" id="Eintrag393" maxlength="3" size="1" style=
 
 <!--//Aufgabe 394-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 394
+    <h2>Aufgabe 394</h2><p>
         
 Wie groß ist die Masse m des Rings, wenn er eine 
-Dichte von 21,4 g/cm<sup>3</sup> hat?    
+Dichte von 21,4 g/cm<sup>3</sup> hat?</p>    
 
-<img src = "Aufgabe371.jpg">
+<img src = "Aufgabe371.jpg"></p>
 
-<button  onclick="window.open('Volum_Aufgabe394.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe394.html');" >Lösung</button></p>
 
 <!--//Aufgabe 395-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 395
+  <h2>Aufgabe 395</h2><p>
 
 Wie groß ist die Masse m des Deckels aus Grauguss, 
-wenn er eine Dichte von 7,2 g/cm<sup>3</sup> hat?  
+wenn er eine Dichte von 7,2 g/cm<sup>3</sup> hat?</p>  
 
-<img src = "Aufgabe372.jpg">
+<img src = "Aufgabe372.jpg"></p>
 
-m = <input type="text" id="Eintrag395" maxlength="2" size="1" style= background-color:yellow ></input> kg <button id="Pruef395" onclick="Aufgabe395()">Prüfen</button></p></pre>  
+m = <input type="text" id="Eintrag395" maxlength="2"  ></input> kg <button id="Pruef395" onclick="Aufgabe395()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe395() { 
@@ -1029,27 +1088,27 @@ m = <input type="text" id="Eintrag395" maxlength="2" size="1" style= background-
 
 <!--//Aufgabe 396-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 396
+    <h2>Aufgabe 396</h2><p>
         
 Wie groß ist das Volumen V der Kugel nach dem 
-Aufbohren?    
+Aufbohren?</p>    
 
-<img src = "Aufgabe373.jpg">
+<img src = "Aufgabe373.jpg"></p>
 
-<button  onclick="window.open('Volum_Aufgabe396.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe396.html');" >Lösung</button></p>
 
 <!--//Aufgabe 397-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 397
+  <h2>Aufgabe 397</h2><p>
 
 In einer 100 g Tüte sind 20 Schokokugeln mit einem 
-Durchmesser von 20 mm. Wie viel Kugeln müssten in 
+Durchmesser von <br class="br-desk">20 mm. Wie viel Kugeln müssten in 
 einer Tüte sein, wenn ihr Durchmesser halb so groß 
 wäre? Welchen Durchmesser d hätte eine Kugel aus 
-der gleichenMenge Schokolade wie der Inhalt einer 
-Tüte?  
+der gleichen Menge Schokolade wie der Inhalt einer 
+Tüte?</p>  
 
-d = <input type="text" id="Eintrag397" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef397" onclick="Aufgabe397()">Prüfen</button></p></pre>  
+d = <input type="text" id="Eintrag397" maxlength="4"  ></input> cm <button id="Pruef397" onclick="Aufgabe397()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe397() { 
@@ -1066,18 +1125,18 @@ d = <input type="text" id="Eintrag397" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 398-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 398
+    <h2>Aufgabe 398</h2><p>
         
 Eine Hohlkugel besteht aus 80 cm<sup>3</sup> Schokolade und 
 hat einen Umfang von 40 cm. 
 Welche Dicke d hat die Schicht? 
 Welchen Durchmesser d hätte eine mit einer 
-Schichtdicke von 3 mm bei gleicher Menge?     
+Schichtdicke von 3 mm bei gleicher Menge?</p>     
 
-<button  onclick="window.open('Volum_Aufgabe398.html');" >Lösung</button></p></b></pre>                      
+<button  onclick="window.open('Volum_Aufgabe398.html');" >Lösung</button></p>               
 
 
-<a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a> 
+<a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a></div></main> 
 	      
           
         <script>

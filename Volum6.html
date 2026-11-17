@@ -7,18 +7,75 @@
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volumen</title>
   
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
+  
 </head>
 <body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button { font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+
+        img {
+               max-width: 100%;
+               height: auto;
+               display: block;
+            }    
+        
     </style>
+
+    <main>
 
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Volumen</p>
@@ -26,16 +83,18 @@
     <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
 		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
 
+<div class="check">
+
 <!--//Aufgabe 267-->
 
-  <pre><b><p class ="Aufgabe" >Aufgabe 267
+  <h2>Aufgabe 267</h2><p>
 
 Wie groß sind das Dachvolumen V und die mit 
-Schindeln zu deckende Dachfläche A? 
+Schindeln zu deckende Dachfläche A?</p> 
 
-<img src="Aufgabe244.jpg" >
+<img src="Aufgabe244.jpg" ></p>
 
-V = <input type="text" id="Eintrag267" maxlength="4" size="1" style= background-color:yellow ></input> m<sup>3</sup> <button id="Pruef267" onclick="Aufgabe267()">Prüfen</button></p></pre>  
+V = <input type="text" id="Eintrag267" maxlength="4"  ></input> m<sup>3</sup> <button id="Pruef267" onclick="Aufgabe267()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe267() { 
@@ -52,25 +111,25 @@ V = <input type="text" id="Eintrag267" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 268-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 268
+    <h2>Aufgabe 268</h2><p>
 
 Wie viel wiegt der Schornstein, wenn seine Dichte 
-1,8 kg/dm<sup>3</sup> beträgt?    
+1,8 kg/dm<sup>3</sup> beträgt?</p>    
 
-      <img src="Aufgabe245.jpg" >
+      <img src="Aufgabe245.jpg" ></p>
 
-<button  onclick="window.open('Volum_Aufgabe268.html');" >Lösung</button></p></pre>                       
+<button  onclick="window.open('Volum_Aufgabe268.html');" >Lösung</button></p>                   
 
 <!--//Aufgabe 269-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 269
+  <h2>Aufgabe 269</h2><p>
 
 Ein Korken ist 3,2 cm hoch, hat die Form eines 
 Kegelstumpfes mit den Durchmessern 3,6 cm und 
 2,4 cm und eine Dichte von 0,24 g/cm<sup>3</sup>. 
-Welche Masse m haben 1 000 Stück?  
+Welche Masse m haben 1 000 Stück?</p>  
 
-m = <input type="text" id="Eintrag269" maxlength="4" size="1" style= background-color:yellow ></input> kg <button id="Pruef269" onclick="Aufgabe269()">Prüfen</button></p></pre>  
+m = <input type="text" id="Eintrag269" maxlength="4"  ></input> kg <button id="Pruef269" onclick="Aufgabe269()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe269() { 
@@ -87,7 +146,7 @@ m = <input type="text" id="Eintrag269" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 270-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 270
+    <h2>Aufgabe 270</h2><p>
 
 Ein Fabrikschornstein ist 85 m hoch, hat unten 
 einen Innendurchmesser von 3,6 m und oben einen 
@@ -95,21 +154,21 @@ von 1,9 m. Seine radial gemessene Wandstärke
 beträgt unten 1,1 m und nimmt nach oben gleich-
 mäßig auf 0,25 m ab. Welche Masse m hat der 
 Kamin, wenn das Mauerwerk eine Dichte von 
-1,8 kg/dm<sup>3</sup> hat?     
+<br class="br-desk">1,8 kg/dm<sup>3</sup> hat?</p>     
 
-<button  onclick="window.open('Volum_Aufgabe270.html');" >Lösung</button></p></pre>                       
+<button  onclick="window.open('Volum_Aufgabe270.html');" >Lösung</button></p>                  
 
 <!--//Aufgabe 271-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 271
+  <h2>Aufgabe 271</h2><p>
 
 Ein Baumstamm ist 32,6 m lang, hat unten einen 
 Umfang von 2,2 m und oben einen von 80 cm. 
 Wie groß ist seine Masse m, wenn man ihn als 
 Kegelstumpf auffasst und er eine Dichte 
-von 0,75 kg/dm<sup>3</sup> hat ?  
+von 0,75 kg/dm<sup>3</sup> hat ?</p>  
 
-m = <input type="text" id="Eintrag271" maxlength="4" size="1" style= background-color:yellow ></input> kg <button id="Pruef271" onclick="Aufgabe271()">Prüfen</button></p></pre>  
+m = <input type="text" id="Eintrag271" maxlength="4"  ></input> kg <button id="Pruef271" onclick="Aufgabe271()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe271() { 
@@ -126,26 +185,26 @@ m = <input type="text" id="Eintrag271" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 272-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 272
+    <h2>Aufgabe 272</h2><p>
 
 Wie groß ist die Masse m des Verbindungsteils, 
-wenn seine Dichte 7,85 g/cm<sup>3</sup> beträgt?     
+wenn seine Dichte <br class="br-desk">7,85 g/cm<sup>3</sup> beträgt?</p>     
 
-     <img src="Aufgabe249.jpg" >
+     <img src="Aufgabe249.jpg" ></p>
 
-<button  onclick="window.open('Volum_Aufgabe272.html');" >Lösung</button></p></pre>                       
+<button  onclick="window.open('Volum_Aufgabe272.html');" >Lösung</button></p>                     
 
 <!--//Aufgabe 273-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 273
+  <h2>Aufgabe 273</h2><p>
 
 Der Kohlenbunker ist oben offen. 
 Wie viel m<sup>3</sup> Kohlen fasst er, und wie groß ist der 
-Materialbedarf M in m<sup>2</sup>?   
+Materialbedarf M in m<sup>2</sup>?</p>   
 
-     <img src="Aufgabe250.jpg" >
+     <img src="Aufgabe250.jpg" ></p>
 
-Er fasst <input type="text" id="Eintrag273" maxlength="3" size="1" style= background-color:yellow ></input> m<sup>3</sup>. <button id="Pruef273" onclick="Aufgabe273()">Prüfen</button></p></pre>  
+Er fasst <input type="text" id="Eintrag273" maxlength="3"  ></input> m<sup>3</sup>. <button id="Pruef273" onclick="Aufgabe273()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe273() { 
@@ -162,26 +221,26 @@ Er fasst <input type="text" id="Eintrag273" maxlength="3" size="1" style= backgr
                       
 <!--//Aufgabe 274-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 274
+    <h2>Aufgabe 274</h2><p>
 
 Welche Masse m hat das Verbindungsteil, wenn 
-seine Dichte 7,2 g/cm<sup>3</sup> beträgt?      
+seine Dichte 7,2 g/cm<sup>3</sup> beträgt?</p>      
 
-     <img src="Aufgabe251.jpg" >
+     <img src="Aufgabe251.jpg" ></p>
 
-<button  onclick="window.open('Volum_Aufgabe274.html');" >Lösung</button></p></pre>                       
+<button  onclick="window.open('Volum_Aufgabe274.html');" >Lösung</button></p>                    
 
 <!--//Aufgabe 275-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 275
+  <h2>Aufgabe 275</h2><p>
 
 Aus 10 m<sup>3</sup> Beton sollen 3 gleich große Fundamente 
 in der Form eines quadratischen Pyramidenstumpfes 
 gegossen werden. Welche Höhe h hat ein fertiges 
 Fundament, wenn seine Grundkante 0,8 m und seine 
-Deckkante 0,5 m misst?    
+Deckkante 0,5 m misst?</p>    
 
-h = <input type="text" id="Eintrag275" maxlength="4" size="1" style= background-color:yellow ></input> m <button id="Pruef275" onclick="Aufgabe275()">Prüfen</button></p></pre>  
+h = <input type="text" id="Eintrag275" maxlength="4"  ></input> m <button id="Pruef275" onclick="Aufgabe275()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe275() { 
@@ -198,28 +257,28 @@ h = <input type="text" id="Eintrag275" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 276-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 276
+    <h2>Aufgabe 276</h2><p>
 
 Ein 55 cm langer Dreikantstahl hat die Form eines 
 Pyramidenstumpfes mit gleichseitigen Dreiecken 
 als Grund- und Deckfläche. Seitenlänge unten 
-20 cm, oben 5 cm. Wie groß ist der Abfall A, wenn 
+<br class="br-desk">20 cm, oben 5 cm. Wie groß ist der Abfall A, wenn 
 der Stumpf zu einer geraden Pyramide mit gleicher 
-Grundfläche abgeschliffen wird?   
+Grundfläche abgeschliffen wird?</p>   
 
-<button  onclick="window.open('Volum_Aufgabe276.html');" >Lösung</button></p></pre>                       
+<button  onclick="window.open('Volum_Aufgabe276.html');" >Lösung</button></p>                      
 
 <!--//Aufgabe 277-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 277
+  <h2>Aufgabe 277</h2><p>
 
 Wie viel g Farbe braucht man, um den Auffüll-
 trichter außen zu streichen, wenn man mit 150 g 
-Farbe 1 m<sup>2</sup> streichen kann?  
+Farbe 1 m<sup>2</sup> streichen kann?</p>  
 
-     <img src="Aufgabe254.jpg" >
+     <img src="Aufgabe254.jpg" ></p>
 
-Man braucht <input type="text" id="Eintrag277" maxlength="4" size="1" style= background-color:yellow ></input> g. <button id="Pruef277" onclick="Aufgabe277()">Prüfen</button></p></pre>  
+Man braucht <input type="text" id="Eintrag277" maxlength="4"  ></input> g. <button id="Pruef277" onclick="Aufgabe277()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe277() { 
@@ -236,27 +295,26 @@ Man braucht <input type="text" id="Eintrag277" maxlength="4" size="1" style= bac
                       
 <!--//Aufgabe 278-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 278
+    <h2>Aufgabe 278</h2><p>
 
 Ein Kunststoffhalbzeug in der Form eines sechs-
 eckigen Pyramidenstumpfes mit der Grundkante 
 a = 4 cm, der Deckkante b = 3 cm und der Höhe 
 h = 5 cm wird in einen gleich hohen Stumpf mit 
 der Grundkante d = 5 cm umgepresst. 
-Welche Seitenlänge e hat die neue Deckkante? 
+Welche Seitenlänge e hat die neue Deckkante?</p> 
 
-<button  onclick="window.open('Volum_Aufgabe278.html');" >Lösung</button></p></pre>  
+<button  onclick="window.open('Volum_Aufgabe278.html');" >Lösung</button></p>
 
 <!--//Aufgabe 279-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 279
+  <h2>Aufgabe 279</h2><p>
 
-Welches Volumen V hat die dargestellte Aufnahme-
-spitze? 
+Welches Volumen V hat die dargestellte Aufnahmespitze?</p> 
 
-<img src="Aufgabe256.jpg" >
+<img src="Aufgabe256.jpg" ></p>
 
-V = <input type="text" id="Eintrag279" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef279" onclick="Aufgabe279()">Prüfen</button></p></pre>  
+V = <input type="text" id="Eintrag279" maxlength="5"  ></input> cm<sup>3</sup> <button id="Pruef279" onclick="Aufgabe279()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe279() { 
@@ -273,27 +331,27 @@ V = <input type="text" id="Eintrag279" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 280-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 280
+    <h2>Aufgabe 280</h2><p>
 
 Wie viel cm<sup>2</sup> Blech braucht man für die Herstellung 
 des Kruges, wenn man für die Nahtstellen mit 
-5% Zuschlag rechnen muss?  
+5% Zuschlag rechnen muss? </p> 
 
-<img src="Aufgabe257.jpg" >
+<img src="Aufgabe257.jpg" ></p>
 
-<button  onclick="window.open('Volum_Aufgabe280.html');" >Lösung</button></p></pre>  
+<button  onclick="window.open('Volum_Aufgabe280.html');" >Lösung</button></p>
 
 <!--//Aufgabe 281-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 281
+  <h2>Aufgabe 281</h2><p>
 
 Ein Bolzen ist 280 mm lang und hat einen Durch-
 messer von 40 mm. 
 Wie groß ist der Materialabfall A, wenn er an 
 beiden Enden auf einer Länge von 80 mm auf eine 
-Neigung von 1 : 10 abgedreht wird?  
+Neigung von 1 : 10 abgedreht wird?</p>  
 
-A = <input type="text" id="Eintrag281" maxlength="4" size="1" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef281" onclick="Aufgabe281()">Prüfen</button></p></pre>  
+A = <input type="text" id="Eintrag281" maxlength="4"  ></input> cm<sup>3</sup> <button id="Pruef281" onclick="Aufgabe281()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe281() { 
@@ -310,24 +368,24 @@ A = <input type="text" id="Eintrag281" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 282-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 282
+    <h2>Aufgabe 282</h2><p>
 
 Welches Volumen V hat ein Eimer mit den 
 Durchmessern 28 cm und 19 cm sowie einer Höhe von 
-28 cm in Litern? 
+28 cm in Litern?</p> 
 
-<button  onclick="window.open('Volum_Aufgabe282.html');" >Lösung</button></p></pre>  
+<button  onclick="window.open('Volum_Aufgabe282.html');" >Lösung</button></p>
 
 <!--//Aufgabe 283-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 283
+  <h2>Aufgabe 283</h2><p>
 
 Wie viel m<sup>3</sup> Erdreich müssen für den Wall 
-aufgeschüttet werden?   
+aufgeschüttet werden?</p>   
 
-<img src="Aufgabe260.jpg" >
+<img src="Aufgabe260.jpg" ></p>
 
-Es sind <input type="text" id="Eintrag283" maxlength="5" size="2" style= background-color:yellow ></input> m<sup>3</sup>. <button id="Pruef283" onclick="Aufgabe283()">Prüfen</button></p></pre>  
+Es sind <input type="text" id="Eintrag283" maxlength="5"  ></input> m<sup>3</sup>. <button id="Pruef283" onclick="Aufgabe283()">Prüfen</button></p></pre>  
 
                       <script>
                         function Aufgabe283() { 
@@ -344,25 +402,25 @@ Es sind <input type="text" id="Eintrag283" maxlength="5" size="2" style= backgro
                       
 <!--//Aufgabe 284-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 284
+    <h2>Aufgabe 284</h2><p>
 
 Wie viel g wiegen 100 solcher Aluminiumnieten, 
-wenn sie eine Dichte von 2,7 g/cm<sup>3</sup> haben?  
+wenn sie eine Dichte von 2,7 g/cm<sup>3</sup> haben?</p>  
 
-     <img src="Aufgabe261.jpg" >
+     <img src="Aufgabe261.jpg" ></p>
 
-<button  onclick="window.open('Volum_Aufgabe284.html');" >Lösung</button></p></pre>  
+<button  onclick="window.open('Volum_Aufgabe284.html');" >Lösung</button></p>
 
 <!--//Aufgabe 285-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 285
+  <h2>Aufgabe 285</h2><p>
 
 Wie groß ist der Blechbedarf A für den Trichter, 
-wenn man für die Nahtstellen 5% Zuschlag ansetzt?   
+wenn man für die Nahtstellen 5% Zuschlag ansetzt?</p>   
 
-     <img src="Aufgabe262.jpg" >
+     <img src="Aufgabe262.jpg" ></p>
 
-A = <input type="text" id="Eintrag285" maxlength="5" size="2" style= background-color:yellow ></input> mm<sup>2</sup> <button id="Pruef285" onclick="Aufgabe285()">Prüfen</button></p></pre>  
+A = <input type="text" id="Eintrag285" maxlength="5"  ></input> mm<sup>2</sup> <button id="Pruef285" onclick="Aufgabe285()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe285() { 
@@ -379,28 +437,28 @@ A = <input type="text" id="Eintrag285" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 286-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 286
+    <h2>Aufgabe 286</h2><p>
 
 Wie hoch wird ein Kegelstumpf, der aus einem 
 Bleikegel mit einer Höhe von 5,5 cm und einem 
 Radius der Grundfläche von 1,5 cm gegossen wird, 
 wenn er gleiche Grundfläche wie der Kegel und 
 eine Deckfläche mit einem Radius von 0,5 cm
-haben soll?   
+haben soll?</p>   
 
-<button  onclick="window.open('Volum_Aufgabe286.html');" >Lösung</button></p></pre>  
+<button  onclick="window.open('Volum_Aufgabe286.html');" >Lösung</button></p>
 
 <!--//Aufgabe 287-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 287
+  <h2>Aufgabe 287</h2><p>
 
 Wie lang muss ein Rundstahl mit einem Durchmesser 
 von 25 mm sein, aus dem ein Kegelstumpf mit einer 
 Höhe von110 mm und den Durchmessern 48 mm und 
 32 mm geschmiedet werden soll, wenn für den 
-Abbrand 3% Längenzuschlag berechnet werden?   
+Abbrand 3% Längenzuschlag berechnet werden?</p>   
 
-Länge l = <input type="text" id="Eintrag287" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef287" onclick="Aufgabe287()">Prüfen</button></p></pre>  
+Länge l = <input type="text" id="Eintrag287" maxlength="4"  ></input> cm <button id="Pruef287" onclick="Aufgabe287()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe287() { 
@@ -417,26 +475,26 @@ Länge l = <input type="text" id="Eintrag287" maxlength="4" size="1" style= back
                       
 <!--//Aufgabe 288-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 288
+    <h2>Aufgabe 288</h2><p>
 
 Wie viel Liter passen in den an dem Pfeiler 
-befestigten Wasserbehälter?   
+befestigten Wasserbehälter?</p>   
 
-<img src="Aufgabe265.jpg" >
+<img src="Aufgabe265.jpg" ></p>
 
-<button  onclick="window.open('Volum_Aufgabe288.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe288.html');" >Lösung</button></p>
 
 <!--//Aufgabe 289-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 289
+  <h2>Aufgabe 289</h2><p>
 
 Wie groß ist das Volumen V des in der Vorder-     
-und Draufsicht dargestellten Zeitungsständers?  
+und Draufsicht dargestellten Zeitungsständers?</p>  
 
-     <img src="Aufgabe266.jpg" >
+     <img src="Aufgabe266.jpg" ></p>
 
 
-V = <input type="text" id="Eintrag289" maxlength="4" size="1" style= background-color:yellow ></input> dm<sup>3</sup> <button id="Pruef289" onclick="Aufgabe289()">Prüfen</button></p></pre>  
+V = <input type="text" id="Eintrag289" maxlength="4"  ></input> dm<sup>3</sup> <button id="Pruef289" onclick="Aufgabe289()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe289() { 
@@ -453,27 +511,27 @@ V = <input type="text" id="Eintrag289" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 290-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 290
+    <h2>Aufgabe 290</h2><p>
 
 Wie groß ist das Volumen V der Lagerbuchse?    
 
-<img src="Aufgabe267.jpg" >
+<img src="Aufgabe267.jpg" ></p>
 
-<button  onclick="window.open('Volum_Aufgabe290.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe290.html');" >Lösung</button></p>
 
 <!--//Aufgabe 291-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 291
+  <h2>Aufgabe 291</h2><p>
 
 In der voll ausgegossenen Form für Bleiguss steht 
 das fertige blaue Gussteil mit einer Dichte von 
 11,34 kg/dm<sup>3</sup> nach dem Erkalten auf einer Höhe 
 von 2/3h. Welches Volumen V hatte das flüssige 
-Blei mit einer Dichte von 10,64 kg/dm<sup>3</sup>?   
+Blei mit einer Dichte von 10,64 kg/dm<sup>3</sup>?</p>   
 
-     <img src="Aufgabe268.jpg" >
+     <img src="Aufgabe268.jpg" ></p>
 
-V = <input type="text" id="Eintrag291" maxlength="5" size="2" style= background-color:yellow ></input> dm<sup>3</sup> <button id="Pruef291" onclick="Aufgabe291()">Prüfen</button></p></pre>  
+V = <input type="text" id="Eintrag291" maxlength="5"  ></input> dm<sup>3</sup> <button id="Pruef291" onclick="Aufgabe291()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe291() { 
@@ -490,26 +548,26 @@ V = <input type="text" id="Eintrag291" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 292-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 292
+    <h2>Aufgabe 292</h2><p>
 
 Welche Höhe h muss eine Kunststoffscheibe mit 
 einem Durchmesser von 50 mm haben, damit daraus 
-die Buchsegepresst werden kann?   
+die Buchsegepresst werden kann?</p>   
 
-     <img src="Aufgabe269.jpg" >
+     <img src="Aufgabe269.jpg" ></p>
 
-<button  onclick="window.open('Volum_Aufgabe292.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe292.html');" >Lösung</button></p>
 
 <!--//Aufgabe 293-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 293
+  <h2>Aufgabe 293</h2><p>
 
 Welche Masse m hat das Kupplungsteil bei einer 
-Dichtevon 7,2 g/cm<sup>3</sup>?  
+Dichtevon 7,2 g/cm<sup>3</sup>?</p>  
 
-<img src="Aufgabe270.jpg" >
+<img src="Aufgabe270.jpg" ></p>
 
-m = <input type="text" id="Eintrag293" maxlength="4" size="1" style= background-color:yellow ></input> g <button id="Pruef293" onclick="Aufgabe293()">Prüfen</button></p></pre>  
+m = <input type="text" id="Eintrag293" maxlength="4"  ></input> g <button id="Pruef293" onclick="Aufgabe293()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe293() { 
@@ -526,17 +584,17 @@ m = <input type="text" id="Eintrag293" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 294-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 294
+    <h2>Aufgabe 294</h2><p>
 
 Welche Masse m hat die Buchse bei einer Dichte 
-von 8,3 g/cm<sup>3</sup>?   
+von 8,3 g/cm<sup>3</sup>?</p>   
 
-<img src="Aufgabe271.jpg" >
+<img src="Aufgabe271.jpg" ></p>
 
-<button  onclick="window.open('Volum_Aufgabe294.html');" >Lösung</button></p></b></pre>
+<button  onclick="window.open('Volum_Aufgabe294.html');" >Lösung</button></p>
 
 
-<a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a> 
+<a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a></div></main> 
           
         <script>
             document.body.addEventListener("input", function(inputEvent) {

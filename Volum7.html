@@ -7,18 +7,75 @@
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Volumen</title>
   
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
+  
 </head>
 <body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button { font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+
+        img {
+               max-width: 100%;
+               height: auto;
+               display: block;
+            }    
+        
     </style>
+
+    <main>
 
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Volumen</p>  
@@ -26,14 +83,16 @@
     <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
 		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
 
+<div class="check">
+
 <!--//Aufgabe 295-->
 
-  <pre><b><p class ="Aufgabe" >Aufgabe 295
+  <h2>Aufgabe 295</h2><p>
 
 Wie groß ist das Volumen V einer Kugel mit einem
-Durchmesser von 9 cm? 
+Durchmesser von 9 cm?</p> 
 
-V = <input type="text" id="Eintrag295" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef295" onclick="Aufgabe295()">Prüfen</button></p></pre>  
+V = <input type="text" id="Eintrag295" maxlength="5"  ></input> cm<sup>3</sup> <button id="Pruef295" onclick="Aufgabe295()">Prüfen</button></p></pre>  
 
                       <script>
                         function Aufgabe295() { 
@@ -50,21 +109,21 @@ V = <input type="text" id="Eintrag295" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 296-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 296
+    <h2>Aufgabe 296</h2><p>
 
 Wie groß ist das Volumen V des Mondes mit einem 
-Durchmesser von 3 476 km?   
+Durchmesser von <br class="br-desk">3 476 km?</p>   
 
-<button  onclick="window.open('Volum_Aufgabe296.html');" >Lösung</button></p></pre>                       
+<button  onclick="window.open('Volum_Aufgabe296.html');" >Lösung</button></p>                    
 
 <!--//Aufgabe 297-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 297
+  <h2>Aufgabe 297</h2><p>
 
 Wie groß ist das Volumen V einer Kugel mit einem 
-Radius von 14 cm? 
+Radius von 14 cm?</p> 
 
-V = <input type="text" id="Eintrag297" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef297" onclick="Aufgabe297()">Prüfen</button></p></pre>  
+V = <input type="text" id="Eintrag297" maxlength="5"  ></input> cm<sup>3</sup> <button id="Pruef297" onclick="Aufgabe297()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe297() { 
@@ -81,21 +140,21 @@ V = <input type="text" id="Eintrag297" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 298-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 298
+    <h2>Aufgabe 298</h2><p>
 
 Wie groß ist das Volumen V des Jupiter mit einem 
-Radius von 71 400 km?    
+Radius von 71 400 km?</p>    
 
-<button  onclick="window.open('Volum_Aufgabe298.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Volum_Aufgabe298.html');" >Lösung</button></p>
 
 <!--//Aufgabe 299-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 299
+  <h2>Aufgabe 299</h2><p>
 
 Wie groß ist der Radius r einer Kugel mit einem 
-Volumen von 216 cm<sup>3</sup>? 
+Volumen von 216 cm<sup>3</sup>?</p> 
 
-r = <input type="text" id="Eintrag299" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef299" onclick="Aufgabe299()">Prüfen</button></p></pre>  
+r = <input type="text" id="Eintrag299" maxlength="3"  ></input> cm <button id="Pruef299" onclick="Aufgabe299()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe299() { 
@@ -112,23 +171,23 @@ r = <input type="text" id="Eintrag299" maxlength="3" size="1" style= background-
                       
 <!--//Aufgabe 300-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 300
+    <h2>Aufgabe 300</h2><p>
 
 Wie groß ist der Radius r einer Kugel mit einem 
-Volumen von 45 l?    
+Volumen von 45 l?</p>    
 
-<button  onclick="window.open('Volum_Aufgabe300.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Volum_Aufgabe300.html');" >Lösung</button></p>
 
 <!--//Aufgabe 301-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 301
+  <h2>Aufgabe 301</h2><p>
 
 Wie groß ist die Masse m einer Kugel für den 
 Kugelstoßwettbewerb von männlichen Jugendlichen, 
 wenn ihr Durchmesser 10,7 cm und ihre Dichte 
-7,86 g/cm<sup>3</sup> beträgt?  
+7,86 g/cm<sup>3</sup> beträgt?</p>  
 
-m = <input type="text" id="Eintrag301" maxlength="1" size="1" style= background-color:yellow ></input> kg <button id="Pruef301" onclick="Aufgabe301()">Prüfen</button></p></pre>  
+m = <input type="text" id="Eintrag301" maxlength="1"  ></input> kg <button id="Pruef301" onclick="Aufgabe301()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe301() { 
@@ -145,23 +204,23 @@ m = <input type="text" id="Eintrag301" maxlength="1" size="1" style= background-
                       
 <!--//Aufgabe 302-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 302
+    <h2>Aufgabe 302</h2><p>
 
 Wie groß ist der Durchmesser d einer Kugel für 
 den Kugelstoßwettbewerb von Männern, wenn ihre 
-Masse 7,26 kg und ihre Dichte 7,86 g/cm<sup>3</sup> beträgt?    
+Masse 7,26 kg und ihre Dichte 7,86 g/cm<sup>3</sup> beträgt?</p>    
 
-<button  onclick="window.open('Volum_Aufgabe302.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Volum_Aufgabe302.html');" >Lösung</button></p>
 
 <!--//Aufgabe 303-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 303
+  <h2>Aufgabe 303</h2><p>
 
 Eine Kugel hat einen Radius von 3 cm. 
 Welchen Radius r hat eine Kugel mit dem 
-achtfachen Volumen?  
+achtfachen Volumen?</p>  
 
-r = <input type="text" id="Eintrag303" maxlength="1" size="1" style= background-color:yellow ></input> cm <button id="Pruef303" onclick="Aufgabe303()">Prüfen</button></p></pre>  
+r = <input type="text" id="Eintrag303" maxlength="1"  ></input> cm <button id="Pruef303" onclick="Aufgabe303()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe303() { 
@@ -178,21 +237,21 @@ r = <input type="text" id="Eintrag303" maxlength="1" size="1" style= background-
                       
 <!--//Aufgabe 304-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 304
+    <h2>Aufgabe 304</h2><p>
 
 Wie groß ist die Oberfläche O einer Kugel mit 
-einem Radius von 4 cm?     
+einem Radius von 4 cm? </p>    
 
-<button  onclick="window.open('Volum_Aufgabe304.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Volum_Aufgabe304.html');" >Lösung</button></p>
 
 <!--//Aufgabe 305-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 305
+  <h2>Aufgabe 305</h2><p>
 
 Wie groß ist die Oberfläche O einer Kugel mit 
-einem Durchmesser von 7 cm?  
+einem Durchmesser von <br class="br-desk">7 cm?</p>  
 
-O = <input type="text" id="Eintrag305" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef305" onclick="Aufgabe305()">Prüfen</button></p></pre>  
+O = <input type="text" id="Eintrag305" maxlength="5"  ></input> cm<sup>2</sup> <button id="Pruef305" onclick="Aufgabe305()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe305() { 
@@ -209,21 +268,21 @@ O = <input type="text" id="Eintrag305" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 306-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 306
+    <h2>Aufgabe 306</h2><p>
 
 Wie groß  ist der Radius r einer Kugel mit einer 
-Oberfläche von 1 357 dm<sup>2</sup>?  
+Oberfläche von 1 357 dm<sup>2</sup>? </p> 
 
-<button  onclick="window.open('Volum_Aufgabe306.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Volum_Aufgabe306.html');" >Lösung</button></p>
 
 <!--//Aufgabe 307-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 307
+  <h2>Aufgabe 307</h2><p>
 
 Wie groß ist die Oberfläche O des Mars, wenn er 
-einen Durchmesser von 6 800 km hat?   
+einen Durchmesser von <br class="br-desk">6 800 km hat?</p>   
 
-O = <input type="text" id="Eintrag307" maxlength="4" size="1" style= background-color:yellow ></input> * 10<sup>8</sup> km<sup>2</sup> <button id="Pruef307" onclick="Aufgabe307()">Prüfen</button></p></pre>  
+O = <input type="text" id="Eintrag307" maxlength="4"  ></input> * 10<sup>8</sup> km<sup>2</sup> <button id="Pruef307" onclick="Aufgabe307()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe307() { 
@@ -240,24 +299,24 @@ O = <input type="text" id="Eintrag307" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 308-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 308
+    <h2>Aufgabe 308</h2><p>
 
 Eine Hohlkugel hat einen Innendurchmesser von 
 18 cm und einen außen von 22 cm. Wie groß sind 
-ihr Volumen V und ihre Oberfläche O?   
+ihr Volumen V und ihre Oberfläche O?</p>   
 
-<button  onclick="window.open('Volum_Aufgabe308.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe308.html');" >Lösung</button></p>
 
 <!--//Aufgabe 309-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 309
+  <h2>Aufgabe 309</h2><p>
 
 Aus einem Zylinder mit einem Durchmesser von 16 cm 
 und einer Höhe von 21 cm sind an beiden Enden 
 Halbkugeln ausgefräst worden. Wie groß sind sein 
-Volumen V und seine Oberfläche O?   
+Volumen V und seine Oberfläche O?</p>   
 
-O = <input type="text" id="Eintrag309" maxlength="4" size="1" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef309" onclick="Aufgabe309()">Prüfen</button></p></pre>  
+O = <input type="text" id="Eintrag309" maxlength="4"  ></input> cm<sup>2</sup> <button id="Pruef309" onclick="Aufgabe309()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe309() { 
@@ -274,25 +333,25 @@ O = <input type="text" id="Eintrag309" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 310-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 310
+    <h2>Aufgabe 310</h2><p>
 
 An einem Zylinder mit einem Durchmesser von 12 cm 
 und einer Höhe von 18 cm werden an beiden Enden 
 Halbkugeln aufgesetzt. Wie groß sind sein 
-Volumen V und seine Oberfläche O?  
+Volumen V und seine Oberfläche O?</p>  
 
-<button  onclick="window.open('Volum_Aufgabe310.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe310.html');" >Lösung</button></p>
 
 <!--//Aufgabe 311-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 311
+  <h2>Aufgabe 311</h2><p>
 
 Auf einen Kegel mit einem Grundkreisdurchmesser 
 von 26 cm und einer Mantellinie von 30 cm ist 
 eine Halbkugel aufgesetzt. Wie groß sind das 
-Volumen V und die Oberfläche O des Körpers?   
+Volumen V und die Oberfläche O des Körpers?</p>   
 
-V = <input type="text" id="Eintrag311" maxlength="4" size="1" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef311" onclick="Aufgabe311()">Prüfen</button></p></pre>  
+V = <input type="text" id="Eintrag311" maxlength="4"  ></input> cm<sup>3</sup> <button id="Pruef311" onclick="Aufgabe311()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe311() { 
@@ -309,24 +368,24 @@ V = <input type="text" id="Eintrag311" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 312-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 312
+    <h2>Aufgabe 312</h2><p>
 
 Eine Kugel hat eine Oberfläche von 18,3 cm<sup>2</sup>. 
-Wie groß ist ihr Volumen V?   
+Wie groß ist ihr Volumen V?</p>   
 
-<button  onclick="window.open('Volum_Aufgabe312.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe312.html');" >Lösung</button></p>
 
 <!--//Aufgabe 313-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 313
+  <h2>Aufgabe 313</h2><p>
 
 Auf einem Zylinder mit einem Durchmesser von 
 96 mm und einer Höhe von 38 mm sitzt mittig 
 eine Halbkugel mit einem Durchmesser von 42 mm. 
 Wie groß sind das Volumen V und die Oberfläche O 
-des Körpers?    
+des Körpers?</p>    
 
-O = <input type="text" id="Eintrag313" maxlength="3" size="1" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef313" onclick="Aufgabe313()">Prüfen</button></p></pre>  
+O = <input type="text" id="Eintrag313" maxlength="3"  ></input> cm<sup>2</sup> <button id="Pruef313" onclick="Aufgabe313()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe313() { 
@@ -343,29 +402,28 @@ O = <input type="text" id="Eintrag313" maxlength="3" size="1" style= background-
                       
 <!--//Aufgabe 314-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 314
+    <h2>Aufgabe 314</h2><p>
         
 Auf einem Zylinder mit einem Durchmesser von 5 cm 
 und einer Höhe von 6,3 cm sitzen am einen Ende 
 ein 5,9 cm hoher Kegel, am anderen eine Halbkugel 
 mit gleicher Grundfläche wie der Zylinder. Wie 
 groß sind das Volumen V und die Oberfläche O des 
-Körpers?    
+Körpers?</p>    
 
-<button  onclick="window.open('Volum_Aufgabe314.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe314.html');" >Lösung</button></p>
 
 <!--//Aufgabe 315-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 315
+  <h2>Aufgabe 310</h2><p>
 
-Auf eine quadratische Pyramide mit einer Seiten-
-länge von 12 mm und einer Höhe von 9 mm ist 
+Auf eine quadratische Pyramide mit einer Seitenlänge von 12 mm und einer Höhe von 9 mm ist 
 mittig auf der Grundfläche eine Halbkugel mit 
 einem Durchmesser von 12 mm aufgesetzt. Wie groß 
 sind das Volumen V und die Oberfläche O des 
-Körpers?    
+Körpers?</p>    
 
-O = <input type="text" id="Eintrag315" maxlength="5" size="2" style= background-color:yellow ></input> mm<sup>2</sup> <button id="Pruef315" onclick="Aufgabe315()">Prüfen</button></p></pre>  
+O = <input type="text" id="Eintrag315" maxlength="5"  ></input> mm<sup>2</sup> <button id="Pruef315" onclick="Aufgabe315()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe315() { 
@@ -382,24 +440,24 @@ O = <input type="text" id="Eintrag315" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 316-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 316
+    <h2>Aufgabe 316</h2><p>
         
 An einer Seitenfläche eines Würfels mit einer 
 Seitenlänge von 3 cm ist mittig eine Halbkugel 
 mit einem Durchmesser von 3 cm ausgefräst worden. 
 Wie groß sind das Volumen V und die Oberfläche O 
-des Körpers?     
+des Körpers?</p>     
 
-<button  onclick="window.open('Volum_Aufgabe316.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe316.html');" >Lösung</button></p>
 
 <!--//Aufgabe 317-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 317
+  <h2>Aufgabe 317</h2><p>
 
 Eine Kugel hat ein Volumen von 1,674 dm<sup>3</sup>. 
-Wie groß ist ihre Oberfläche O?   
+Wie groß ist ihre Oberfläche O?</p>   
 
-O = <input type="text" id="Eintrag317" maxlength="4" size="1" style= background-color:yellow ></input> dm<sup>2</sup> <button id="Pruef317" onclick="Aufgabe317()">Prüfen</button></p></pre>  
+O = <input type="text" id="Eintrag317" maxlength="4"  ></input> dm<sup>2</sup> <button id="Pruef317" onclick="Aufgabe317()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe317() { 
@@ -416,24 +474,24 @@ O = <input type="text" id="Eintrag317" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 318-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 318
+    <h2>Aufgabe 318</h2><p>
         
 Eine Kugel hat einen Radius von 5 cm. 
 Welche Höhe h hat ein Kegel mit gleichem 
-Grundkreisradius und Volumen?    
+Grundkreisradius und Volumen?</p>    
 
-<button  onclick="window.open('Volum_Aufgabe318.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe318.html');" >Lösung</button></p>
 
 <!--//Aufgabe 319-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 319
+  <h2>Aufgabe 319</h2><p>
 
 Einem Würfel mit der Seitenlänge a ist eine Kugel 
 ein- und eine umbeschrieben. 
 In welchem Verhältnis stehen ihre Volumina und 
-ihre Oberflächen zueinander? 
+ihre Oberflächen zueinander?</p> 
 
-V<sub>w</sub> : V<sub>i</sub> : V<sub>a</sub> = 1 : 0,523 : <input type="text" id="Eintrag319" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef319" onclick="Aufgabe319()">Prüfen</button></p></pre>  
+V<sub>w</sub> : V<sub>i</sub> : V<sub>a</sub> = 1 : 0,523 : <input type="text" id="Eintrag319" maxlength="4"  ></input> <button id="Pruef319" onclick="Aufgabe319()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe319() { 
@@ -450,29 +508,29 @@ V<sub>w</sub> : V<sub>i</sub> : V<sub>a</sub> = 1 : 0,523 : <input type="text" i
                       
 <!--//Aufgabe 320-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 320
+    <h2>Aufgabe 320</h2><p>
         
 Zylinder mit dem Radius r und der Höhe 2r ist 
 eine Kugel ein- und eine umbeschrieben. 
 In welchem Verhältnis stehen ihre Volumina und 
-ihre Oberflächen zueinander?     
+ihre Oberflächen zueinander?</p>     
 
-   <img src="Aufgabe297.jpg">
+   <img src="Aufgabe297.jpg"></p>
 
-<button  onclick="window.open('Volum_Aufgabe320.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe320.html');" >Lösung</button></p>
 
 <!--//Aufgabe 321-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 321
+  <h2>Aufgabe 321</h2><p>
 
 Einem Zylinder mit dem Radius r und der Höhe 2r 
 sind eine Kugel und ein Kegel einbeschrieben. 
 In welchem Verhältnis stehen ihre Volumina 
-zueinander? 
+zueinander?</p> 
 
-<img src="Aufgabe298.jpg">
+<img src="Aufgabe298.jpg"></p>
 
-V<sub>z</sub> : V<sub>ku</sub> : V<sub>k</sub> = 1 : 0,67 : <input type="text" id="Eintrag321" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef321" onclick="Aufgabe321()">Prüfen</button></p></pre>  
+V<sub>z</sub> : V<sub>ku</sub> : V<sub>k</sub> = 1 : 0,67 : <input type="text" id="Eintrag321" maxlength="4"  ></input> <button id="Pruef321" onclick="Aufgabe321()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe321() { 
@@ -489,25 +547,25 @@ V<sub>z</sub> : V<sub>ku</sub> : V<sub>k</sub> = 1 : 0,67 : <input type="text" i
                       
 <!--//Aufgabe 322-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 322
+    <h2>Aufgabe 322</h2><p>
         
 Eine Kugel mit dem Durchmesser d und ein Würfel 
 mit der Seitenlänge a haben gleiches Volumen. 
 In welchem Verhältnis stehen ihre Oberflächen 
-zueinander?     
+zueinander?</p>     
 
-<button  onclick="window.open('Volum_Aufgabe322.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe322.html');" >Lösung</button></p>
 
 <!--//Aufgabe 323-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 323
+  <h2>Aufgabe 323</h2><p>
 
 Eine Kugel mit dem Durchmesser d und ein Würfel 
 mit der Seitenlänge a haben gleiche Oberfläche. 
 In welchem Verhältnis stehen ihre Volumina 
-zueinander?  
+zueinander?</p>  
 
-V<sub>w</sub> : V<sub>k</sub> = <input type="text" id="Eintrag323" maxlength="5" size="2" style= background-color:yellow ></input> <button id="Pruef323" onclick="Aufgabe323()">Prüfen</button></p></pre>  
+V<sub>w</sub> : V<sub>k</sub> = <input type="text" id="Eintrag323" maxlength="5"  ></input> <button id="Pruef323" onclick="Aufgabe323()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe323() { 
@@ -524,23 +582,23 @@ V<sub>w</sub> : V<sub>k</sub> = <input type="text" id="Eintrag323" maxlength="5"
                       
 <!--//Aufgabe 324-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 324
+    <h2>Aufgabe 324</h2><p>
         
 Um wie viel Prozent werden das Volumen und die 
 Oberfläche einer Kugel größer, wenn deren Radius 
-um 10% vergrößert wird?      
+um 10% vergrößert wird?</p>      
 
-<button  onclick="window.open('Volum_Aufgabe324.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe324.html');" >Lösung</button></p>
 
 <!--//Aufgabe 325-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 325
+  <h2>Aufgabe 325</h2><p>
 
 Um wie viel Prozent werden das Volumen und die 
 Oberfläche einer Kugel kleiner, wenn deren Radius 
-um 10% verkleinert wird?   
+um 10% verkleinert wird?</p>   
 
-O um <input type="text" id="Eintrag325" maxlength="2" size="1" style= background-color:yellow ></input> % <button id="Pruef325" onclick="Aufgabe325()">Prüfen</button></p></pre>  
+O um <input type="text" id="Eintrag325" maxlength="2"  ></input> % <button id="Pruef325" onclick="Aufgabe325()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe325() { 
@@ -557,25 +615,25 @@ O um <input type="text" id="Eintrag325" maxlength="2" size="1" style= background
                       
 <!--//Aufgabe 326-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 326
+    <h2>Aufgabe 326</h2><p>
         
 Die Oberfläche einer Kugel mit dem Radius r<sub>1</sub> ist 
 gleich groß wie die eines Zylinders, dessen 
 Achsenschnitt quadratisch mit den Seitenlängen 
 2r<sub>2</sub> ist. 
-In welchem Verhältnis stehen r<sub>1</sub> und r<sub>2</sub>?    
+In welchem Verhältnis stehen r<sub>1</sub> und r<sub>2</sub>?</p>    
 
-<button  onclick="window.open('Volum_Aufgabe326.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe326.html');" >Lösung</button></p>
 
 <!--//Aufgabe 327-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 327
+  <h2>Aufgabe 327</h2><p>
 
 Eine Hohlkugel hat ein Volumen von 40 cm<sup>3</sup> und eine 
-Wandstärke s von 1 cm. 
-Wie groß sind die Radien r<sub>i</sub> und r<sub>a</sub>?   
+Wandstärke s von <br class="br-desk">1 cm. 
+Wie groß sind die Radien r<sub>i</sub> und r<sub>a</sub>?</p>   
 
-r<sub>i</sub> = <input type="text" id="Eintrag327" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef327" onclick="Aufgabe327()">Prüfen</button></p></pre>  
+r<sub>i</sub> = <input type="text" id="Eintrag327" maxlength="4"  ></input> cm <button id="Pruef327" onclick="Aufgabe327()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe327() { 
@@ -592,25 +650,25 @@ r<sub>i</sub> = <input type="text" id="Eintrag327" maxlength="4" size="1" style=
                       
 <!--//Aufgabe 328-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 328
+    <h2>Aufgabe 328</h2><p>
         
 Die Radien zweier Kugeln verhalten sich wie 1:3. 
 Wie verhalten sich ihre Volumina und ihre 
-Oberflächen zueinander?    
+Oberflächen zueinander?</p>    
 
-<button  onclick="window.open('Volum_Aufgabe328.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe328.html');" >Lösung</button></p>
 
 <!--//Aufgabe 329-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 329
+  <h2>Aufgabe 329</h2><p>
 
 Die Radien zweier Kugeln verhalten sich wie 1:2, 
 und r<sub>2</sub> = 4 cm. Wie groß sind das 
 Volumen V und die Oberfläche O einer dritten 
 Kugel, deren Radius r das arithmetische Mittel 
-der beiden Radien ist?    
+der beiden Radien ist?</p>    
 
-V = <input type="text" id="Eintrag329" maxlength="3" size="1" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef329" onclick="Aufgabe329()">Prüfen</button></p></pre>  
+V = <input type="text" id="Eintrag329" maxlength="3"  ></input> cm<sup>3</sup> <button id="Pruef329" onclick="Aufgabe329()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe329() { 
@@ -627,26 +685,26 @@ V = <input type="text" id="Eintrag329" maxlength="3" size="1" style= background-
                       
 <!--//Aufgabe 330-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 330
+    <h2>Aufgabe 330</h2><p>
         
 In welchem Verhältnis stehen die Volumina dreier 
 Kugeln, von denen die eine die Seitenflächen, 
 die zweite die Seitenkanten eines Würfels berührt 
-und die dritte dessen Eckpunkte umfasst?    
+und die dritte dessen Eckpunkte umfasst?</p>    
 
-<button  onclick="window.open('Volum_Aufgabe330.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe330.html');" >Lösung</button></p>
 
 <!--//Aufgabe 331-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 331
+  <h2>Aufgabe 331</h2><p>
 
 Zwei Kugeln, deren Volumina sich wie 4 : 3 
 verhalten, berühren sich. Ihr Mittelpunktsabstand 
 beträgt 12 cm. 
 Wie groß ist derDurchmesser d₁ der kleineren 
-Kugel, wie groß das Volumen V<sub>2</sub> der größeren?    
+Kugel, wie groß das Volumen V<sub>2</sub> der größeren?</p>    
 
-V<sub>2</sub> = <input type="text" id="Eintrag331" maxlength="6" size="2" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef331" onclick="Aufgabe331()">Prüfen</button></p></pre>  
+V<sub>2</sub> = <input type="text" id="Eintrag331" maxlength="6"  ></input> cm<sup>3</sup> <button id="Pruef331" onclick="Aufgabe331()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe331() { 
@@ -663,33 +721,35 @@ V<sub>2</sub> = <input type="text" id="Eintrag331" maxlength="6" size="2" style=
                       
 <!--//Aufgabe 332-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 332
+    <h2>Aufgabe 332</h2><p>
         
 Die Radien einer Hohlkugel stehen im Verhältnis 
 r<sub>a</sub> : r<sub>i</sub> = m : n. In welchem Verhältnis stehen 
 das Volumen der Hohlkugel zum Volumen der 
 Innenkugel? In welchen Verhältnis stehen r<sub>a</sub> : r<sub>i</sub>, 
 wenn das Volumen der Hohlkugel gleich dem Volumen 
-der Innenkugel ist?     
+der Innenkugel ist?</p>     
 
-<button  onclick="window.open('Volum_Aufgabe332.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe332.html');" >Lösung</button></p>
 
 <!--//Aufgabe 333-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 333
+  <h2>Aufgabe 333</h2><p>
 
-<img src="Aufgabe310.jpg">    
+<img src="Aufgabe310.jpg"></p>    
 
 8 Kugeln mit dem Radius r = 5,3 cm sind so 
 angeordnet, dass die Verbindung ihrer Mittel-
 punkte einen Würfel ergibt. Wie groß ist das 
 Volumen V der 6 Kugeln, deren Mittelpunkte auf 
 den Seitendiagonalen des Würfels liegen und die 
-die umliegenden Kugeln berühren? 
-V = <input type="text" id="Eintrag333" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef333" onclick="Aufgabe333()">Prüfen</button>
+die umliegenden Kugeln berühren?</p>
+
+V = <input type="text" id="Eintrag333" maxlength="5"  ></input> cm<sup>3</sup> <button id="Pruef333" onclick="Aufgabe333()">Prüfen</button></p>
+
 Wie groß ist das Volumen V<sub>1</sub> der Kugel, deren 
 Mittelpunkt der Schnittpunkt der Raumdiagonalen 
-ist und die die umliegenden Kugeln berührt?   </p></pre>  
+ist und die die umliegenden Kugeln berührt?   </p>
 
                       <script>
                         function Aufgabe333() { 
@@ -706,25 +766,25 @@ ist und die die umliegenden Kugeln berührt?   </p></pre>
 
 <!--//Aufgabe 334-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 334
+    <h2>Aufgabe 334</h2><p>
         
 Bei einer Kugelzone mit einer Höhe h von 2 cm und 
-einerFläche M von 30 cm<sup>2</sup> entspricht der große 
+einerFläche M von <br class="br-desk">30 cm<sup>2</sup> entspricht der große 
 Durchmesser dem Durchmesser der dazugehörigen 
 Kugel. Wie groß ist das Volumen V der zur Zone 
-gehörenden Schicht?  
+gehörenden Schicht?</p>  
 
-<button  onclick="window.open('Volum_Aufgabe334.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe334.html');" >Lösung</button></p>
 
 <!--//Aufgabe 335-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 335
+  <h2>Aufgabe 335</h2><p>
 
 Ein Kugelabschnitt hat eine Fläche von 25 cm<sup>2</sup> 
 und eine Höhe von 2 cm. Wie groß ist das 
-Volumen V der dazugehörigen Kugel? 
+Volumen V der dazugehörigen Kugel?</p> 
 
-V = <input type="text" id="Eintrag335" maxlength="4" size="1" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef335" onclick="Aufgabe335()">Prüfen</button></p></pre>  
+V = <input type="text" id="Eintrag335" maxlength="4"  ></input> cm<sup>3</sup> <button id="Pruef335" onclick="Aufgabe335()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe335() { 
@@ -741,25 +801,25 @@ V = <input type="text" id="Eintrag335" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 336-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 336
+    <h2>Aufgabe 336</h2><p>
         
 Ein Kugelsektor hat ein Volumen von 20 cm<sup>3</sup>. 
 Der dazugehörige Kugelabschnitt hat eine Fläche 
 von 10 cm<sup>2</sup>. Wie groß sind die Höhe h 
-des Abschnitts und der Radius r der Kugel?   
+des Abschnitts und der Radius r der Kugel?</p>   
 
-<button  onclick="window.open('Volum_Aufgabe336.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe336.html');" >Lösung</button></p>
 
 <!--//Aufgabe 337-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 337
+  <h2>Aufgabe 337</h2><p>
 
 Wie hoch muss der zu einem Kugelsektor gehörige 
 Abschnitt sein, wenn er die gleiche Fläche wie 
 der dazugehörige Kegelmantel hat und der 
-Kugelradius 15 cm beträgt? 
+Kugelradius 15 cm beträgt?</p> 
 
-h = <input type="text" id="Eintrag337" maxlength="1" size="1" style= background-color:yellow ></input> cm <button id="Pruef337" onclick="Aufgabe337()">Prüfen</button></p></pre>  
+h = <input type="text" id="Eintrag337" maxlength="1"  ></input> cm <button id="Pruef337" onclick="Aufgabe337()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe337() { 
@@ -776,23 +836,23 @@ h = <input type="text" id="Eintrag337" maxlength="1" size="1" style= background-
 
 <!--//Aufgabe 338-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 338
+    <h2>Aufgabe 338</h2><p>
         
 Eine Kugel hat einen Radius von 5 cm. Wie hoch 
 ist der zu einem Kugelsektor gehörige Abschnitt, 
 wenn das Volumen des Sektors ein Viertel des 
-Kugelvolumens beträgt?    
+Kugelvolumens beträgt?</p>    
 
-<button  onclick="window.open('Volum_Aufgabe338.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Volum_Aufgabe338.html');" >Lösung</button></p>
 
 <!--//Aufgabe 339-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 339
+  <h2>Aufgabe 339</h2><p>
 
 Welches Volumen V hat ein Kugelabschnitt mit 
-einer Fläche von 40 cm<sup>2</sup> und einer Höhe von 1 cm?  
+einer Fläche von 40 cm<sup>2</sup> und einer Höhe von 1 cm?</p>  
 
-V = <input type="text" id="Eintrag339" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>3</sup> <button id="Pruef339" onclick="Aufgabe339()">Prüfen</button></p></b></pre>  
+V = <input type="text" id="Eintrag339" maxlength="5"  ></input> cm<sup>3</sup> <button id="Pruef339" onclick="Aufgabe339()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe339() { 
@@ -807,7 +867,7 @@ V = <input type="text" id="Eintrag339" maxlength="5" size="2" style= background-
                          
                       </script>                                  
 
-<a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a>    
+<a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a></div></main>    
 	      
           
         <script>
